@@ -126,14 +126,13 @@ Git을 사용하는 방법은 크게 두 가지로 나뉜다.
 ## 3. Git Workflow (add, commit, push, reset, revert, log, status)
 
 ### Goal : 코드백업이 어떻게 이루어지는지 commit과 reset, revert 명령을 통해 알아보기
-
+### keyword : add, commit, push, reset, revert, log, status
 ![git_workflow](./img/git_workflow.jpg)
 - workspace에서 add명령을 통하면, index 영역으로 간다.
 - git은 two page 방식으로(add, commit이라는 두 단계로 나누어) commit을 진행한다.
 - 어떤 파일을 commit할 건지, 파일을 골라서 add를 통해 local repository에 넣은 다음에, remote repository(원격 저장소)에 올린다.
 
-### add, commit, push, reset, revert, log, status
-
+### 3.1. commit과 revert로 되돌리기
 아래 명령어를 하나씩 사용해보자.
 
 ![github_make_12](./img/github_mk_12.png)
@@ -166,6 +165,106 @@ Git을 사용하는 방법은 크게 두 가지로 나뉜다.
 - - -
 
 ## 4. Branch
-- 분기점을 생성하고, 동일한 소스코드에서 다른 개발을 하기 위한 기능
 ![git_branches_1](./img/git-branches.png)
 ( 이미지 출처 : https://rogerdudler.github.io/git-guide/index.ko.html )
+
+
+- 분기점을 생성하고, 동일한 소스코드에서 다른 개발을 하기 위한 기능
+
+- branch를 통해 기준점이 되는 분기점을 잡고, 해당 분기점에서 동시에 여러 개발자들이 다른 기능을 각각 추구할 수 있게 된다. 동일한 버전의 소스코드를 나누어 갖고, 특정 기능을 branch별로 나누어서 개발에 들어갈 수 있다. 생산성을 높일 수 있는 좋은 기능이다.
+- 우리는 이미 branch를 사용하고 있다.  git은 처음 세팅(git init)할 때, master라는 branch를 기본값으로 만들어 준다. 새로운 branch를 만들어서 이동하지 않았다면 모든 작업들을 master branch에서 이루어졌을 것이다. 
+
+### Goal : git을 이용한 협업의 과정인 branch를 생성, 이동, 합치는 과정에 대해서 알아보겠다.
+### keyword : branch, merge, checkout, conflict
+
+### 4.1. branch 확인하기
+- 터미널(windows의 경우 powershell) 실행
+- 해당 디렉토리로 이동
+
+![git_branches_2](./img/branch__2.png)
+
+- ```git branch``` : 로컬 저장소의 branch 리스트를 나타낸다.
+![git_branches_3](./img/branch__3.png)
+
+- ```git branch -r``` : 원격 저장소의 branch 리스트를 나타낸다.
+![git_branches_4](./img/branch__4.png)
+
+- ```git branch -a``` : 원격/로컬 저장소의 branch 리스트를 나타낸다.
+![git_branches_5](./img/branch__5.png)
+
+### 4.2. branch 생성 및 이동하기
+#### branch 생성
+- ```git branch <branch 이름>```
+- ex) ```git branch login_logic```
+![git_branches_6](./img/branch__6.png)
+
+#### branch 이동
+- ```git checkout <branch 이름>```
+- ex) ```git checkout login_logic```
+![git_branches_7](./img/branch__7.png)
+
+#### branch 생성과 이동 한번에
+- ```git checkout -b <branch 이름> ```
+- ex) ```git checkout -b signup_logic```
+
+
+### 4.3. merge
+- login_logic branch로 이동한 다음에 commit을 몇개 작성하고, git log를 한다면?
+![git_branches_8](./img/branch__8.png)
+- master, login_logic branch가 나뉘어진 걸 확인할 수 있다.
+- branch를 생성하고 이동하는 건 알겠는데, 두 개의 branch를 합치고 싶으면(그래야 개발했던 내용들이 합쳐지는 거 아닌지)?
+- 그러한 과정을 merge라고 부른다. 두 개의 브랜치의 코드를 합쳐주는 기능이다.
+
+- ```git merge <합칠 브랜치>```
+- **Warning!**
+    - **merge를 실행하면 현재 branch에 합쳐진다.**
+    - **master branch에 login_logic을 합치고 싶다면 master branch에서 merge를 진행해야한다.**
+    
+- ```git checkout master```
+- ```git merge login_logic```
+
+- merge가 위험한 이유 : 하나의 가정
+    ![git_branches_9](./img/branch__9.png)
+    - 우리 서비스에 문제가 있어서 그걸 고치기 위한 branch(issue100, issue 101)를 만들었다. 
+    - master branch에서는 온전히 동작하는 완벽한 코드가 올라와야 한다. 그래서 master branch에서 작업을 하면 안 된다.
+    - 그리고 issue100 branch로 이동해서 git_test1.txt를 수정한다.
+    ![git_branches_10](./img/branch__10.png)
+    - 그리고 add, commit까지 진행한다.,
+    - 그리고 이번엔 issue101 branch로 이동해서 git_test1.txt를 수정한다.
+    ![git_branches_11](./img/branch__11.png)
+    
+    - 기능 수정이 완료되었다. 이제 두 개의 branch를 master에 합치겠다.
+        - ```git checkout master```
+        - ```git merge issue100```
+        ![git_branches_12](./img/branch__12.png)
+        - master branch에 issue100을 merge 했다.
+        
+    - 이제 master branch에 issue101 branch를 merge 하겠다.
+        - ```git merge issue101```
+        ![git_branches_13](./img/branch__13.png)
+        
+    - 같은 파일에 같은 부분을 수정한 branch를 merge하게 되면 지금처럼 conflict가 발생하는데 이러한 부분은 직접 수정해줘야한다.
+    
+        ![git_branches_14](./img/branch__14.png)
+        
+    - 이렇게 수정하고 commit을 진행하겠다.
+        - ```git add git_test1.txt```
+        - ```git commit -m "issue101 branch 합칩"
+        ![git_branches_15](./img/branch__15.png)
+    
+    - 지금과 같은 과정을 통해 merge를 진행하고, conflict가 생긴 경우를 살펴보았다.
+    - merge를 진행하고 나면 branch는 어떻게 될까?
+        - ```git log```
+        ![git_branches_16](./img/branch__16.png)
+        
+    - issue branch들이 남아 있어서 log가 지저분해보인다면?
+        - 할 일을 다한 branch들이니 지워도 된다.
+            - ```git branch -d <지우고 싶은 branch>```
+            - ```git branch -d issue100```
+            - ```git branch -d issue101```
+        ![git_branches_17](./img/branch__17.png)
+        ![git_branches_18](./img/branch__18.png)
+        
+    - branch가 없어지고, 깔끔해졌다.
+    
+    
