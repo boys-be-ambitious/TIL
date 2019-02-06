@@ -1,33 +1,40 @@
 # 1. Git
-![git_intoroduction](./img/git.jpeg)
+![git_intoroduction_1](./img/git.jpeg)
 
-- 리눅스 토발즈가 개발한 분산형 버전 관리 시스템(VCS)
+- 리눅스 토발즈가 개발한 분산형 버전 관리 시스템(DVCS)
 
-## 1.1. VCS(Vesion Control System)란?
-- 동일한 정보에 대한 여러 버전을 관리하는 것
-- 프로그래밍의 세계에서는 소스코드를 일컫는다.
+## 1.1. DVCS (Distributed Vesion Control System)란?
+- 동일한 정보에 대한 여러 버전(소스코드)을 관리하는 시스템으로, 우리가 알고 있는 Git이 대표적 제품이다.
+- 클라이언트는 서버 저장소를 통째로 로컬에 복제해서 사용한다. 즉, 그림으로 보면 다음과 같다.
+
+![git_intoroduction_2](./img/distributed-version-control-system.png)
+
 
 ## 1.2. Git의 기원
 - 버전 관리 시스템으로 BitKeeper를 쓰며 리눅스를 개발하고 있던 리눅스 토발즈는 BitKeeper의 여러 이념들의 충돌과 성능에 화가 나서 2주 만에 버전 관리 시스템 Git을 만들었다.
 
 ## 1.3. Git의 특징
-- 빠른 속도, 단순한 구조
-- 분산형 저장소 지원
+- 단순한 구조에서 오는 빠른 속도
+- 분산형 저장소 지원 (완벽한 분산 처리)
 - 비선형적 개발(브랜치를 나누어 개발)가능
+- 속도나 크기면에서 대형 Project에 적합
+
+![git_intoroduction_3](./img/git-local-operation.png)
+( 이미지 출처 : https://git-scm.com/ )
+
+![git_intoroduction_4](./img/git-local-operation-1.png)
+( 이미지 출처 : http://egloos.zum.com/incredible/v/7278471 )
+
 
 ## 1.4. Git의 장점
-- 코드 백업
-- 저장소를 통한 협업
-
-- 소스코드를 주고 받지 않아도 동시 작업 가능 -> **생산성 증가**
+- 소스코드를 주고 받지 않아도 동시 작업(저장소를 통한 협업) 가능 -> **생산성 증가**
 - 수정 내용을 **Commit** 단위로 관리, 원하는 시점으로 돌아가기 가능 -> **백업**
 - **Branch** 단위로 개발하여 A를 개발하던 도중 B라는 기능 추가 -> **편안한 테스트 가능**
 - 인터넷이 없어도 개발이 가능 -> **장소 제약이 없어짐**
 
 ## 1.5. Git 설치
-[공식 홈페이지](https://git-scm.com/)에 들어가서 다운로드 하고, Next를 눌러서 진행하면 설치 완료된다.
-
-[한글 참고 문서](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98)
+- [공식 홈페이지](https://git-scm.com/)에서 다운로드하고, 설치한다.
+- [한글 참고 문서](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98)
 
 ## 1.6. Git 사용 방법
 Git을 사용하는 방법은 크게 두 가지로 나뉜다.
@@ -37,7 +44,6 @@ Git을 사용하는 방법은 크게 두 가지로 나뉜다.
 - 프로그래머라면, GUI보다 CLI 환경에 익숙해지는 게 더 좋으므로 CLI 환경으로 진행하겠다.
 - GUI를 사용하고 싶은 사람은 [SourceTree](https://www.sourcetreeapp.com/) for Windows, Mac 이나 [SmartGit](https://www.syntevo.com/smartgit/) for Ubuntu를 추천한다.
 
-- - -
 - - -
 
 # 2. GitHub
@@ -131,7 +137,6 @@ Git을 사용하는 방법은 크게 두 가지로 나뉜다.
 아래 명령어를 하나씩 사용해보자.
 
 ![github_make_12](./img/github_mk_12.png)
-
 ![github_make_13](./img/github_mk_13.png)
 ![github_make_14](./img/github_mk_14.png)
 ![github_make_15](./img/github_mk_15.png)
@@ -157,3 +162,10 @@ Git을 사용하는 방법은 크게 두 가지로 나뉜다.
     - 파일이 사라지지만, git log에는 내역이 다 나와 있음.
     - commit을 되돌리기 위해선 ```revert```를 사용.
     - 원격저장소와 로컬 저장소의 commit log가 꼬이면 push가 복잡해지므로 ```reset```은 사용하지 말자.
+    
+- - -
+
+## 4. Branch
+- 분기점을 생성하고, 동일한 소스코드에서 다른 개발을 하기 위한 기능
+![git_branches_1](./img/git-branches.png)
+( 이미지 출처 : https://rogerdudler.github.io/git-guide/index.ko.html )

@@ -12,42 +12,38 @@
 
 ### 2. Data Engineering Overview
 #### Data Engineering Intro
-    - Case Study
-    
+    - Case Study  
 #### Big Data Intro
     - Hadoop
     - MapReduce
     - Hive
     - 분산 DB
+#### RDBMS 실습 및 효율화
+    - Managed RDBMS(RDS)
+    - Scale Up
+    - Load Balancing 
 
 ### 3. Spark
 #### Python for Spark
 #### Spark Intro
     - Core Concept
     - RDD, DataFrame, Machine Learning 
-    
 #### Spark Practice 1, 2 - DataFrame
     - Spark DataFrame
     - Spark SQL
     - Spark DataFrame UDF
     - Spark DataFrame Analytic Function
-    
 #### Spark Cluster
     - Spark Cluster 구축 리뷰 (EMR)
     - Master, Slave Script
     - Cluster 구조 (이론)
     - Cluster UI
-    
 #### Spark Practice 3 - Spark Streaming
     - Spark Streaming 이론 수업
     - 실습환경 구축
     - 트위터 실시간 분석 실습
 
 ### 4. Practice using Cloud Platform
-#### RDBMS 실습 및 효율화
-    - Managed RDBMS(RDS)
-    - Scale Up
-    - Load Balancing 
 #### 1. Preprocessing & Storage
     - AWS GLUE
     - EMR
