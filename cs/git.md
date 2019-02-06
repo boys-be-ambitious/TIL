@@ -38,7 +38,6 @@ Git을 사용하는 방법은 크게 두 가지로 나뉜다.
 - GUI를 사용하고 싶은 사람은 [SourceTree](https://www.sourcetreeapp.com/) for Windows, Mac 이나 [SmartGit](https://www.syntevo.com/smartgit/) for Ubuntu를 추천한다.
 
 - - -
-- - -
 
 # 2. GitHub
 ![github_introduction](./img/github.png)
@@ -93,9 +92,24 @@ Git을 사용하는 방법은 크게 두 가지로 나뉜다.
 - **Warning !** :  **해당 디렉토리**에 **민감한 개인정보**가 있다면 폴더에서 지우거나, 다른 폴더로 이동한 다음에 진행한다.
 - 디렉토리의 위치로 이동했는지 확인하고, 아래와 같은 명령어를 내린다.
 
+
+![github_make_7](./img/github_mk_7.png)
+
 - ```git init```
-    - git으로 이제 이 폴더를 관리하겠다는 명령어 (최초선언)
+    - git으로 이제 이 폴더를 관리하겠다는 명령어 (최초 선언)
 - ```git add -A```
     - 현재 git이 관리하고 있지 않는 파일, 폴더, 코드를 전부 추가하겠다.
 - ```git commit -m "first commit"```
     - 추가한 파일, 폴더, 코드에 관한 주석(어떤게 뭐가 바뀌었고, 무엇을 추가했는지 상세하게 적어줄수록 좋다.)
+
+![github_make_8](./img/github_mk_8.png)
+![github_make_9](./img/github_mk_9.png)
+![github_make_10](./img/github_mk_10.png)
+
+- 이제 마지막!
+    - ```git remote add origin "{github repository 에 나온 주소를 복사하여 붙여넣기}"```
+    - ```git remote -v```
+    - ```git push -u origin master```
+
+![github_make_11](./img/github_mk_11.png)
+- github 홈페이지를 새로고침하면 위와 같이 새로운 저장소가 생성되었다!
