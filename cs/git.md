@@ -264,7 +264,11 @@ Git을 사용하는 방법은 크게 두 가지로 나뉜다.
             - ```git branch -d issue101```
         ![git_branches_17](./img/branch__17.png)
         ![git_branches_18](./img/branch__18.png)
-        
-    - branch가 없어지고, 깔끔해졌다.
     
+    - branch가 없어지고, 깔끔해졌다.
+
+### 5. Conclusion
+- git에 대한 기초 중의 기초를 정리했다.
+- 이제 git을 통해서 작업을 backup하고, 나누어 개발하고, 협업하는 것을 알았다.
+- 잘 쓰려면 멀었다...
     
