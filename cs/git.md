@@ -38,6 +38,7 @@ Git을 사용하는 방법은 크게 두 가지로 나뉜다.
 - GUI를 사용하고 싶은 사람은 [SourceTree](https://www.sourcetreeapp.com/) for Windows, Mac 이나 [SmartGit](https://www.syntevo.com/smartgit/) for Ubuntu를 추천한다.
 
 - - -
+- - -
 
 # 2. GitHub
 ![github_introduction](./img/github.png)
@@ -113,3 +114,41 @@ Git을 사용하는 방법은 크게 두 가지로 나뉜다.
 
 ![github_make_11](./img/github_mk_11.png)
 - github 홈페이지를 새로고침하면 위와 같이 새로운 저장소가 생성되었다!
+
+- - -
+
+## 3. Git Workflow (add, commit, push, reset, revert, log, status)
+
+### Goal : 코드백업이 어떻게 이루어지는지 commit과 reset, revert 명령을 통해 알아보기
+
+![git_workflow](./img/git_workflow.jpg)
+- workspace에서 add명령을 통하면, index 영역으로 간다.
+- git은 two page 방식으로(add, commit이라는 두 단계로 나누어) commit을 진행한다.
+- 어떤 파일을 commit할 건지, 파일을 골라서 add를 통해 local repository에 넣은 다음에, remote repository(원격 저장소)에 올린다.
+
+### add, commit, push, reset, revert, log, status
+
+아래 명령어를 하나씩 사용해보자.
+
+- ```first.txt```라는 파일 만들기
+    - ```touch first.txt```
+    
+-  git의 현재 상태 확인하기
+    - ```git status```
+    
+- ```add``` 명령을 통해 index 영역으로 보내기
+    - ```git add first.txt```
+    
+-  git의 현재 상태 확인하기
+    - ```git status```
+    
+- commit을 통해 local repository에 보내기
+    - ```git commit -m "create first.txt"```
+    
+- git log를 통해 commit 되돌리기
+    - ```git log```
+    - ```git revert {git log에 나와 있는 해당 commit id 4자리 숫자 입력}```
+    - VIM 창이 뜨면 ```wq```를 눌러서 나가준다.
+    - 파일이 사라지지만, git log에는 내역이 다 나와 있음.
+    - commit을 되돌리기 위해선 ```revert```를 사용.
+    - 원격저장소와 로컬 저장소의 commit log가 꼬이면 push가 복잡해지므로 ```reset```은 사용하지 말자.
