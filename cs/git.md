@@ -130,6 +130,11 @@ Git을 사용하는 방법은 크게 두 가지로 나뉜다.
 
 아래 명령어를 하나씩 사용해보자.
 
+![github_make_12](./img/github_mk_12.png)
+
+![github_make_13](./img/github_mk_13.png)
+![github_make_14](./img/github_mk_14.png)
+![github_make_15](./img/github_mk_15.png)
 - ```first.txt```라는 파일 만들기
     - ```touch first.txt```
     
