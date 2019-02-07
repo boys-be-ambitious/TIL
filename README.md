@@ -1,29 +1,13 @@
-Jupyter Notebook
-README
-Last Checkpoint: 1분 전
-(unsaved changes)
-Current Kernel Logo
-Python 3 
-File
-Edit
-View
-Insert
-Cell
-Kernel
-Widgets
-Help
-
-
 ## Today I Learned
 ![today-i-learned](./img/TIL.jpg)
 [![HitCount](http://hits.dwyl.io/boys-be-ambitious//TIL.svg)](http://hits.dwyl.io/boys-be-ambitious//TIL)
 ​
-- 시작일 : 2019년 2월 7일
+- 시작일 : 2019년 2월 6일
 ​
 ## 작성규칙
-- 언어나 기술명으로 폴더를 만든다(root에 문서를 만들지 않는다)
-- python의 경우 ipynb(혹은 py)으로 생성, python이 아닌 다른 언어라면 md파일(혹은 html파일) 권장
-- 파일명은 영어로
+- 언어나 기술명으로 폴더를 만든다(root에 문서를 만들지 않는다).
+- python의 경우 ipynb(혹은 py)으로 생성, python이 아닌 다른 언어라면 md파일(혹은 html파일) 권장한다.
+- 파일명은 영어로 작성한다.
 ​
 ## Folder Structure
 ```
@@ -81,7 +65,7 @@ Help
 ├──├──├── Network
 ├──├──├── Docker
 ├── 3) Git
-├── 4) Scarping
+├── 4) Scraping
 ├── 5) SQL
 ├── 6) Statistics
 ```
