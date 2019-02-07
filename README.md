@@ -1,18 +1,3 @@
-Jupyter Notebook
-README
-Last Checkpoint: 1분 전
-(unsaved changes)
-Current Kernel Logo
-Python 3 
-File
-Edit
-View
-Insert
-Cell
-Kernel
-Widgets
-Help
-
 
 ## Today I Learned
 ![today-i-learned](./img/TIL.jpg)
