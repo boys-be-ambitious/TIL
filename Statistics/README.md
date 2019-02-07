@@ -2,7 +2,8 @@
 # Statistics for Data Analytics
 
 <img align = "center" src = "https://yourlistingexpert.com/wp-content/uploads/2018/01/seo-statistics-1170x659.jpg">
-[![HitCount](http://hits.dwyl.io/boys-be-ambitious/TIL/Statistics.svg)](http://hits.dwyl.io/boys-be-ambitious/TIL/Statistics)
+
+[![HitCount](http://hits.dwyl.io/boys-be-ambitious//Statistics.svg)](http://hits.dwyl.io/boys-be-ambitious//Statistics)
 
 
 ## Index
