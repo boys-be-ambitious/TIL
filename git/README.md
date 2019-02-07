@@ -1,5 +1,6 @@
 # 1. Git
 ![git_intoroduction_1](./img/git.jpeg)
+[![HitCount](http://hits.dwyl.io/boys-be-ambitious//Git.svg)](http://hits.dwyl.io/boys-be-ambitious//Git)
 
 - 리눅스 토발즈가 개발한 분산형 버전 관리 시스템(DVCS)
 

@@ -1,6 +1,7 @@
 ## Web Scarping
 
 ![web-scraping-diagram](./img/scraping_0.png)
+[![HitCount](http://hits.dwyl.io/boys-be-ambitious//Scraping.svg)](http://hits.dwyl.io/boys-be-ambitious//Scraping)
 
 - 그동안 회사에서 진행했던 데이터 수집 프로젝트는 아래와 같습니다.
     - 공정거래위원회
