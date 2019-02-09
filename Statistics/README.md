@@ -4,8 +4,7 @@
 
 [![HitCount](http://hits.dwyl.io/boys-be-ambitious//Statistics.svg)](http://hits.dwyl.io/boys-be-ambitious//Statistics)
 
-
-## Index
+## Table of Contents
 ## 1. 데이터 분석에 앞서
     1.1. 분석의 목적
     1.2. 요구 조건 정의
@@ -168,11 +167,10 @@
 
 - - -
 
-# Contents
+# [Contents]
 ## 1. 데이터 분석에 앞서
 ### 1.1. 분석의 목적
-    비즈니스적인 관점에서 보면 조직의 목표를 효율적(최소비용 최대효과, 선택과 집중)으로 달성하기 위해 데이터 분석을 한다.
-    즉, '이익(Profit)'을 위해서 분석을 한다. 조금 더 상세한 내용은 아래와 같다.
+    비즈니스적인 관점에서 보면 조직의 목표를 효율적(최소비용 최대효과, 선택과 집중)으로 달성하기 위해 데이터 분석을 한다. 즉, '이익(Profit)'을 위해서 분석을 한다. 조금 더 상세한 내용은 아래와 같다.
 
     - 1) 매출 증대
         - 규모의 경제 (시장의 파이는 한정되어 있고, 경쟁자는 많기)때문에 매출 증대에는 한계가 있다.
@@ -189,10 +187,10 @@
 ### 1.3. 신호와 소음
     - Garbage in garbage out.
         - 품질이 좋지 않은 (input)데이터로 분석을 하면, 분석 결과(output)의 질이 좋지 않다.
-        - '노이즈'를 제거해야 한다(데이터 정합성).
+        - '노이즈'를 제거해야 한다 (데이터 정합성 개선).
             - Noise : Outlier(이상치), Missing value(결측치), Dupliceted values(중복값)
 
-### 1.4. (예측 프로세스) 맛보기 - 분류 알고리즘을 머릿 속으로 만들어 보기
+### 1.4. (예측 프로세스) 맛보기 - 분류 알고리즘을 만들어 보기
 #### 1.4.1. 개와 고양이 구분하기
     - 가정
         - 1. 개와 고양이 사진이 500장씩 있다.
@@ -255,7 +253,8 @@
             - 금요일 저녁, 부인이 남편한테 기저귀 부탁 + 남편이 맥주를 사지 않았을까 하는 추측
         - 넷플릭스 영화 추천
         - 유투브 영상 추천
-- [CF Algorithm](http://khanrc.tistory.com/entry/%EC%B6%94%EC%B2%9C-%EC%8B%9C%EC%8A%A4%ED%85%9CRecommendation-System)
+        
+    - [CF Algorithm](http://khanrc.tistory.com/entry/%EC%B6%94%EC%B2%9C-%EC%8B%9C%EC%8A%A4%ED%85%9CRecommendation-System)
 
 
 ## 2. 통계의 기초
@@ -946,7 +945,7 @@ src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
         - ex) 동전던지기 -> '앞/뒤' <br>
     <br>
     - 결과
-        - 동전 앞, 뒤 / 주사위 1~6 : Discrete R.V
+        - 동전 앞, 뒤 / 주사위 1~6 : Discrete R.V <br>
         - 시속 30km/h : Continuous R.V <br>
         <br>
 - ex) 마케팅
@@ -959,7 +958,7 @@ src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
 - Probability Distribution ?
 - **데이터(재료)에 따라서 방법론(요리법)이 달라진다.**
     - 확률 변수와 확률 분포에 따라서 분석법이 정해진다.
-    - 이항분포 / 다항분포 / 정규분포 ...
+    - 이항분포 / 다항분포 / 정규분포
         - 동전의 앞,뒤 ... 이항분포
         - 주사위 1~6 ... 다항분포
         - y값에 따라 이항/다항 분포로 나뉜다.
