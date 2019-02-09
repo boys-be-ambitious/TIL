@@ -278,7 +278,9 @@
         - 고려할 수 있는 부분(성별, 지역, 연령 등)을 다 고려해서 Random Sampling(무작위 추출)을 해야한다.
         - Bias(편향)를 고려하고 Sampling해야 한다. Bias된 데이터는 오염되었다.
         - 허나, 100% 완벽한 통계는 없다.
-        
+
+$$x_{1,2} = {-b\pm\sqrt{b^2 - 4ac} \over 2a}.$$
+      
 \begin{equation} 
 표본 평균 : \overline{x} 
 \end{equation}
