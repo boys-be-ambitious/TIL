@@ -272,12 +272,15 @@
 \begin{equation}
 모평균 : \mu
 \end{equation}
+
 \begin{equation}
 모표준편차 : \sigma^2
 \end{equation}
+
 \begin{equation}
 표준편차 : \sigma, \sqrt{\sigma^2}
 \end{equation}
+
         - 허나, 모집단은 (현실적으로)측정할 수 없다.
 
     - 표본 (Sample)
@@ -289,9 +292,11 @@
 \begin{equation} 
 표본 평균 : \overline{x} 
 \end{equation}
+
 \begin{equation}
 표본 분산 : s^2
 \end{equation}
+
 \begin{equation}
 표본 표준 편차 : s, \sqrt{s^2}
 \end{equation}
