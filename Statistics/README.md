@@ -253,8 +253,7 @@
             - 금요일 저녁, 부인이 남편한테 기저귀 부탁 + 남편이 맥주를 사지 않았을까 하는 추측
         - 넷플릭스 영화 추천
         - 유투브 영상 추천
-        
-    - [CF Algorithm](http://khanrc.tistory.com/entry/%EC%B6%94%EC%B2%9C-%EC%8B%9C%EC%8A%A4%ED%85%9CRecommendation-System)
+- [CF Algorithm](http://khanrc.tistory.com/entry/%EC%B6%94%EC%B2%9C-%EC%8B%9C%EC%8A%A4%ED%85%9CRecommendation-System)
 
 
 ## 2. 통계의 기초
@@ -276,8 +275,7 @@
 - 모평균 : <img src="http://latex.codecogs.com/svg.latex?\mu" border="0"/>
 - 모표준편차 : <img src="http://latex.codecogs.com/svg.latex?\sigma^2" border="0"/>
 - 표준편차 : <img src="http://latex.codecogs.com/svg.latex?\sigma" border="0"/>,
-<img 
-src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
+<img src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
 
 - 표본 평균 : <img src="http://latex.codecogs.com/svg.latex?\overline{x} " border="0"/>
 
@@ -306,10 +304,10 @@ src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
 #### 2.3.2. 중심극한정리
     - 표본의 수가 충분히 많으면 모든 확률 분포는 정규분포에 수렴하며, 평균은 실제 평균에 점점 가까워진다.
         - 그래서 (질 좋은)'Big' data가 중요하다.
+
     - 통계에서는 정규분포를 따른다고 가정하고 문제를 푼다.
     
 <img src="https://t1.daumcdn.net/cfile/tistory/26096850584796AC02">
-
 - 출처 : [나부랭이 수학 블로그](http://math7.tistory.com/16)
 
 ### 2.4. 점추정과 구간추정
@@ -324,7 +322,6 @@ src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
     - 평균이 어떠한 구간 사이에 있다고 추정한다.
 
 <img src="https://t1.daumcdn.net/cfile/tistory/2265A54B54CB52C50B">
-
 - 이미지 출처 : [나부랭이 수학 블로그](http://math7.tistory.com/120)
 
 ### 2.5. Outlier (이상치)
@@ -347,7 +344,7 @@ src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
         - 1Q - (1.5 * IQR) ~ 3Q + (1.5 * IQR)
 
             
-    - 고민
+    - 나의 고민
         - (실수로 입력된 이상치는 제거하는 게 맞지만 그게 아닌) 이상치는 이상치가 아닐 수 있다.
         
             - 현실은 이상치에 주목하는데 그걸 날려버릴 필요가 있을까?
@@ -375,7 +372,6 @@ src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
                 - 최빈값
                 - 평균값
 
-
 ## 3. 분석의 종류
 ### 3.1. '차이'를 보는 분석
 #### 3.1.1. T-test
@@ -395,6 +391,7 @@ src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
 #### 3.3.2. 연관성 분석
     - Correlation Analysis
         - 변수들끼리의 상관관계가 있는지 분석
+
     - ex) Correlation Matrix, Association Analysis(연관성 분석, 장바구니 분석)
 
 
@@ -413,13 +410,13 @@ src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
 
 - - -
 
-|||차이|영향력|연관성|효과|
-|---|---|---|---|
+|-|-|차이|영향력|연관성|효과|
+|---|---|---|---|---|---|
 |${H_0}$||X|X|X|X|
 |${H_1}$||O|O|O|O|
 
 |사실 / 결정|H0 채택|H0 기각|
-|---|---|---|---|
+|---|---|---|
 |${H_0}$ True|옳은 결정|1종오류|
 |${H_1}$ False|2종 오류(β)|옳은 결정|
 
