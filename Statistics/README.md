@@ -266,14 +266,13 @@
     
 #### 2.1.2. 모집단과 표본
     - 모집단(Population)
-        - 우리가 알고 싶은 것
-        - 모평균 : <img src="http://latex.codecogs.com/svg.latex?\mu" border="0"/>
-        - 모표준편차 : <img src="http://latex.codecogs.com/svg.latex?\sigma^2" border="0"/>
-        - 표준편차 : <img src="http://latex.codecogs.com/svg.latex?\sigma" border="0"/>,
-        <img 
-        src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
+        - 우리가 알고 싶은 것, 허나 모집단은 (현실적으로) 측정할 수 없다.
 
-        - 허나, 모집단은 (현실적으로)측정할 수 없다.
+- 모평균 : <img src="http://latex.codecogs.com/svg.latex?\mu" border="0"/>
+- 모표준편차 : <img src="http://latex.codecogs.com/svg.latex?\sigma^2" border="0"/>
+- 표준편차 : <img src="http://latex.codecogs.com/svg.latex?\sigma" border="0"/>,
+<img 
+src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
 
     - 표본 (Sample)
         - 그래서 Samplig(표본 추출)하는 것이다.
