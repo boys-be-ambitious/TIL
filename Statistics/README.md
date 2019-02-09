@@ -268,20 +268,19 @@
     - 모집단(Population)
         - 우리가 알고 싶은 것, 허나 모집단은 (현실적으로) 측정할 수 없다.
 
-- 모평균 : <img src="http://latex.codecogs.com/svg.latex?\mu" border="0"/>
-- 모표준편차 : <img src="http://latex.codecogs.com/svg.latex?\sigma^2" border="0"/>
-- 표준편차 : <img src="http://latex.codecogs.com/svg.latex?\sigma" border="0"/>,
-<img 
-src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
-
     - 표본 (Sample)
         - 그래서 Samplig(표본 추출)하는 것이다.
         - 고려할 수 있는 부분(성별, 지역, 연령 등)을 다 고려해서 Random Sampling(무작위 추출)을 해야한다.
         - Bias(편향)를 고려하고 Sampling해야 한다. Bias된 데이터는 오염되었다.
         - 허나, 100% 완벽한 통계는 없다.
 
-- 표본 평균 : <img src="http://latex.codecogs.com/svg.latex?\overline{x} " border="0"/>
+- 모평균 : <img src="http://latex.codecogs.com/svg.latex?\mu" border="0"/>
+- 모표준편차 : <img src="http://latex.codecogs.com/svg.latex?\sigma^2" border="0"/>
+- 표준편차 : <img src="http://latex.codecogs.com/svg.latex?\sigma" border="0"/>,
+<img 
+src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
 
+- 표본 평균 : <img src="http://latex.codecogs.com/svg.latex?\overline{x} " border="0"/>
 
 - 표본 분산 : <img src="http://latex.codecogs.com/svg.latex?s^2" border="0"/>
 
