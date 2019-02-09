@@ -464,10 +464,11 @@ src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
     - 가설이 통계적으로 맞았는지 틀렸는지 알려주는 기준(값)
     - 확률분포에서 귀무가설을 기각하는 영역을 말한다.
     - 기각역에 검정통계량이 위치하면 귀무가설을 기각한다.
-    - 양측검정인 경우 기각역은 유의수준 / 2 이고, 단측검정인 경우 기각역은 유의수준과 같다.<br>
-    <br>
+    - 양측검정인 경우 기각역은 유의수준 / 2 이고, 단측검정인 경우 기각역은 유의수준과 같다.
+    
 <img src = "https://t1.daumcdn.net/cfile/tistory/2376B13458D9C13F29">
-- __임계치__ : 신뢰구간에서 기각역으로 넘어가는 기준이 되는 x값을 말한다.
+
+- **임계치** : 신뢰구간에서 기각역으로 넘어가는 기준이 되는 x값을 말한다.
 
 <img src = "https://t1.daumcdn.net/cfile/tistory/222B073358D9C2BD09">
 
@@ -1001,12 +1002,9 @@ src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
     - **추정**
         - Sample을 통해 Population을 추정한다.
         - 추정에는 점추정과 구간추정이 있다.
-        - 구간 추정에는 신뢰구간이 있음.<br>
-<br>
+        - 구간 추정에는 신뢰구간이 있음.
 - 기본적으로 세 가지만 따지게 된다
-    - __정규성 / 등분산성 / 독립성__
-
-
+    - **정규성 / 등분산성 / 독립성**
 
 #### 8.2.1. 정규성
 - obj : **구간 추정을 잘 하기 위해서**
@@ -1070,14 +1068,13 @@ src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
     - 조심해야할 것들 (정규성, 독립성, 등분산성)을 생각하고 분석에 들어가야 한다.
     - 어떤 목적을 가지고, 해야하는 것과 하지 말아야 할 것을 판단하는 게 핵심이다.<br>
 <br>
-- 확률 실험을 많이 하면 할수록 정규분포의 모양을 갖는다. <br>
-    - __중심극한정리__
+- 확률 실험을 많이 하면 할수록 정규분포의 모양을 갖는다.
+    - **중심극한정리**
         - "N(표집수)가 충분히 많으면, 모든 확률분포는 정규분포로 수렴하며, 평균은 실제 평균에 점점 가까워진다" <br>
 <br>
 - 왜 이 분석법을 활용하면 안 되는가?
-    - 특정 상황에서 어떤 분석을 써야하고, 안 써야하는지에 대한 기준을 갖는 것. <br>
-        - __이렇게 하면 틀린다를 기준으로 분석에 임하자__ <br>
-        <br>
+    - 특정 상황에서 어떤 분석을 써야하고, 안 써야하는지에 대한 기준을 갖는 것.
+        - **이렇게 하면 틀린다를 기준으로 분석에 임하자**
 
 - 수학과 통계는 비슷하다?
     - 통계는 허수를 다루지 않는다. 확률로 시작해서 확률로 끝나는 학문이다. <br>
@@ -1119,9 +1116,8 @@ src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
                     - 단순 선형 회귀 (Simple Linear Regression)
                         - 독립변수가 하나일 때 종속 변수의 값을 예측
                         - 예) 여름철의 기온과 아이스크림의 판매량과의 경향성을 파악하면 미래의 일을 예측할 수 있음
-\begin{equation}
-y = \beta_0 + \beta_1\chi + \varepsilon
-\end{equation}
+
+<img src="http://latex.codecogs.com/svg.latex?y=\beta_0+\beta_1\chi+\varepsilon" border="0"/>
                         
                         - β0 : y절편 (독립변수가 0일 때, 종속변수의 평균값)
                         - β1 : 기울기 (독립변수가 한 단위 증가함에 따라 발생하게 되는 종속변수 평균치의 증가분)
@@ -1136,10 +1132,7 @@ y = \beta_0 + \beta_1\chi + \varepsilon
                         - 독립변수가 두 개 이상일 때 종속변수의 값 예측
                         - 예) 여름철의 기온, 아이스크림 가격, 소득이 아이스크림의 판매량에 미치는 영향을 분석 및 예측
                         
-
-\begin{equation}
-y = \beta_0 + \beta_1\chi_1 + \beta_2\chi_2 + \beta_3\chi_3 +  ... + \varepsilon
-\end{equation}
+<img src="http://latex.codecogs.com/svg.latex?y=\beta_0+\beta_1\chi_1+\beta_2\chi_2+\beta_3\chi_3+...+\varepsilon" border="0"/>
 
                     - 다중공선성(Multicollinearity)
                     - 회귀 모형의 타당성
@@ -1173,9 +1166,7 @@ y = \beta_0 + \beta_1\chi_1 + \beta_2\chi_2 + \beta_3\chi_3 +  ... + \varepsilon
                     - 종속변수가 범주형일 때의 회귀식을 추정하여 분류 문제에 적용하기 위해 사용한다.
                     - 기존의 선형 회귀식
 
-\begin{equation}
-y = \beta_0 + \beta_1\chi + \varepsilon
-\end{equation}
+<img src="http://latex.codecogs.com/svg.latex?y=\beta_0+\beta_1\chi+\varepsilon" border="0"/>
 
                     - 예측된 Y값이 0~1사이의 값을 가짐 -> 기존의 선형 회귀식을 사용하기 어려움
 
@@ -1187,9 +1178,9 @@ y = \beta_0 + \beta_1\chi + \varepsilon
                                 - P = P(Y=1) : 어떤 사건이 일어날 확률
                             2. Odds 계산
                                 - 사건이 발생할 확률 / 사건이 발생하지 않을 확률
-\begin{equation}
-odds = \frac p{1-P} = \frac {p(성공)}{1-P(실패)}
-\end{equation}
+
+<img src="http://latex.codecogs.com/svg.latex?odds=\frac{p}{1-P}=\frac{p(성공)}{1-P(실패)}" border="0"/>
+
 
 <img src="http://latex.codecogs.com/svg.latex?0<Odds<\infty" border="0"/>
 
@@ -1217,7 +1208,7 @@ odds = \frac p{1-P} = \frac {p(성공)}{1-P(실패)}
                         - 회귀계수가 음수일 때, x값이 증가하면 P(Y = 1)이 감소
                         - x가 한 단위 증가할 때 Odds가 
                         
-<img src="http://latex.codecogs.com/svg.latex?{\e^eta_i}}" border="0"/> 만큼 증가
+<img src="http://latex.codecogs.com/svg.latex?{e^{\beta}}_{i}" border="0"/> 만큼 증가
               
                     - Simple linear regression
                         - y = -0.2 + 0.25 hours
