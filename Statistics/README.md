@@ -1,5 +1,13 @@
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 # Statistics for Data Analytics
+
 
 <img align = "center" src = "https://yourlistingexpert.com/wp-content/uploads/2018/01/seo-statistics-1170x659.jpg">
 
