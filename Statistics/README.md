@@ -467,7 +467,7 @@ src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
     - 양측검정인 경우 기각역은 유의수준 / 2 이고, 단측검정인 경우 기각역은 유의수준과 같다.<br>
     <br>
 <img src = "https://t1.daumcdn.net/cfile/tistory/2376B13458D9C13F29">
-- **임계치** : 신뢰구간에서 기각역으로 넘어가는 기준이 되는 x값을 말한다.
+- __임계치__ : 신뢰구간에서 기각역으로 넘어가는 기준이 되는 x값을 말한다.
 
 <img src = "https://t1.daumcdn.net/cfile/tistory/222B073358D9C2BD09">
 
@@ -487,9 +487,10 @@ src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
     - 검정에서 쓰이는 분포에서 기각역 이상의 영역이 유의확률
     <br>
 <br>
-- **자유도**
-    - x값이 가질 수 있는 값의 범위를 말한다.
-    - 자유도가 주어지지 않는 경우, 자유도= 표본수(n) - 1
+
+- __자유도__
+    - x값이 가질 수 있는 값의 범위를 말한다. <br>
+    - 자유도가 주어지지 않는 경우, 자유도= 표본수(n)- 1
 
 #### 결국, 유의수준과 유의확률 밖에 보지 않는다. 그리고 유의수준은 임의(0.05)로 정한다
 
@@ -1003,7 +1004,7 @@ src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
         - 구간 추정에는 신뢰구간이 있음.<br>
 <br>
 - 기본적으로 세 가지만 따지게 된다
-    - **정규성 / 등분산성 / 독립성**
+    - __정규성 / 등분산성 / 독립성__
 
 
 
@@ -1069,28 +1070,29 @@ src="http://latex.codecogs.com/svg.latex?\sqrt{\sigma^2}" border="0"/>
     - 조심해야할 것들 (정규성, 독립성, 등분산성)을 생각하고 분석에 들어가야 한다.
     - 어떤 목적을 가지고, 해야하는 것과 하지 말아야 할 것을 판단하는 게 핵심이다.<br>
 <br>
-- 확률 실험을 많이 하면 할수록 정규분포의 모양을 갖는다.
-    - **중심극한정리**
-        - "N(표집수)가 충분히 많으면, 모든 확률분포는 정규분포로 수렴하며, 평균은 실제 평균에 점점 가까워진다"<br>
+- 확률 실험을 많이 하면 할수록 정규분포의 모양을 갖는다. <br>
+    - __중심극한정리__
+        - "N(표집수)가 충분히 많으면, 모든 확률분포는 정규분포로 수렴하며, 평균은 실제 평균에 점점 가까워진다" <br>
 <br>
-- 이 분석법을 왜 하면 안 되냐?
-    - 특정 상황에서 어떤 분석을 써야하고, 안 써야하는지에 대한 기준을 갖는 것.
-        - **이렇게 하면 틀린다를 기준으로 분석에 임하자**<br>
+- 왜 이 분석법을 활용하면 안 되는가?
+    - 특정 상황에서 어떤 분석을 써야하고, 안 써야하는지에 대한 기준을 갖는 것. <br>
+        - __이렇게 하면 틀린다를 기준으로 분석에 임하자__ <br>
         <br>
+
 - 수학과 통계는 비슷하다?
-    - 통계는 허수를 다루지 않는다. 확률로 시작해서 확률로 끝나는 학문이다.
-    - 애초에 실수값만 다루는 게 통계고, 거기에서 이어지는 통계 가정론은 랜덤으로 시작해서 추정으로 끝난다.
-    - 99%라도 100번 중에 1번이 바로 나올 수도 있다. 정답은 없다. 그 누구도 모르는 것이다.
-    - ex) 일본의 방사능 쓰나미, 파도 높이 11m는 안 올 것이라고 생각해서 방파제를 10m로 만들었다(10m이상의 파도의 확률이 0.3% 정도... 재수 없게 발생한 것이다).
-        - 일본이 오판했던 것은 파도 높이다. 몇 m만 높게 쌓았으면 방지가 되었을 것이다. 일본 방사능 문제는 지진이 아니라 파도 높이 때문이었다.
-        - 파도 높이는 확률로 판단했다. 그게 바로 통계다. 장담할 수 없다. 정답이 없다. 수학은 정답이 있지만 통계는 정답이 없다.
-    - 반대로 생각하면, 이렇게 하지 말라(실수는 하지 말라)는 식으로 접근할 수 있다.
-    - 통계는 성능을 개선 시키는 것이지 정답은 아니다. 실수는 하지 않는다는 것은 확실하다. 그렇게 가는 것이다.
-    - 분석이라는 것은 애매하다. 통계는 다 구간추정이다. 80%라는 건 20번 실패할 수 있다는 뜻이다.
-    - 틀린 것만 방지해도 중간은 간다. 중간까지 갔으면 거기에서 발전시키면 된다. 첫술에 배부를 수 없다.
+    - 통계는 허수를 다루지 않는다. 확률로 시작해서 확률로 끝나는 학문이다. <br>
+    - 애초에 실수값만 다루는 게 통계고, 거기에서 이어지는 통계 가정론은 랜덤으로 시작해서 추정으로 끝난다. <br>
+    - 99%라도 100번 중에 1번이 바로 나올 수도 있다. 정답은 없다. 그 누구도 모르는 것이다. <br>
+    - ex) 일본의 방사능 쓰나미, 파도 높이 11m는 안 올 것이라고 생각해서 방파제를 10m로 만들었다(10m이상의 파도의 확률이 0.3% 정도... 재수 없게 발생한 것이다). <br>
+        - 일본이 오판했던 것은 파도 높이다. 몇 m만 높게 쌓았으면 방지가 되었을 것이다. 일본 방사능 문제는 지진이 아니라 파도 높이 때문이었다. <br>
+        - 파도 높이는 확률로 판단했다. 그게 바로 통계다. 장담할 수 없다. 정답이 없다. 수학은 정답이 있지만 통계는 정답이 없다. <br>
+    - 반대로 생각하면, 이렇게 하지 말라(실수는 하지 말라)는 식으로 접근할 수 있다. <br>
+    - 통계는 성능을 개선 시키는 것이지 정답은 아니다. 실수는 하지 않는다는 것은 확실하다. 그렇게 가는 것이다. <br>
+    - 분석이라는 것은 애매하다. 통계는 다 구간추정이다. 80%라는 건 20번 실패할 수 있다는 뜻이다. <br>
+    - 틀린 것만 방지해도 중간은 간다. 중간까지 갔으면 거기에서 발전시키면 된다. 첫술에 배부를 수 없다. <br>
     - 통계는 동 떨어져 있는 게 아니라 현실이다.
-- - -
-- http://kkokkilkon.tistory.com/36
+
+- 참고할 만한 사이트 : http://kkokkilkon.tistory.com/36
 
 
 
@@ -1129,9 +1131,7 @@ y = \beta_0 + \beta_1\chi + \varepsilon
                         - 최소제곱법 (Method of Least Squares)
                         - 회귀 모형의 타당성
                         - 상관분석 vs 회귀분석
-                        
- 
-                        
+                      
                     - 다중 선형 회귀 (Multiple Linear Regression)
                         - 독립변수가 두 개 이상일 때 종속변수의 값 예측
                         - 예) 여름철의 기온, 아이스크림 가격, 소득이 아이스크림의 판매량에 미치는 영향을 분석 및 예측
@@ -1158,10 +1158,6 @@ y = \beta_0 + \beta_1\chi_1 + \beta_2\chi_2 + \beta_3\chi_3 +  ... + \varepsilon
                 - e) ANN (Artificial Neural Network)
                 
                 - f) SVM (Support Vector Machine)
-                
-                        
-                        
-
 
         - 2) Classification (분류) : 종속 변수(y)가 명목형
             - Supervised Learning의 일종으로 다양한 X 변수들과 미리 정의된 class 변수(Y)와의 관계를 밝히는 과정
@@ -1185,7 +1181,6 @@ y = \beta_0 + \beta_1\chi + \varepsilon
 
 <img src = "https://uc2f1cda42c0fe7a8bfbd04480d0.previews.dropboxusercontent.com/p/thumb/AAOzgQbbSFxZUtVy_8yJ63oYbjl5KmMcDlm5jRo4GTr-2LbgbxfvJqW8Ttyp8VUgSsb9EPFvIu06H_3YDstDOncs4YqGazOCDXWWjQvoTYc-fYwQCT1nWWWAcTqUubPK7U0dIVnwH4BN11JzRkuc2jgD5CL-PNqvdROvn09KGjYUq70FmMYf8rqnk5JDPAYgp3HjITSpUISOR9zUmnvZUTtl5_xPDG-cFVRLtkGZ-2vKVA/p.png?size=2048x1536&size_mode=3">
                 
-
                         - 종속 변수의 범위를 [0, 1]에서 [−∞, ∞]로 바꿔주기 위한 작업이 필요
                         - 오즈(Odds) / 로짓(Logit) 변환
                             1. Y값에 대한 확률을 계산
@@ -1196,27 +1191,19 @@ y = \beta_0 + \beta_1\chi + \varepsilon
 odds = \frac p{1-P} = \frac {p(성공)}{1-P(실패)}
 \end{equation}
 
-\begin{equation}
-0 < Odds < \infty
-\end{equation}
+<img src="http://latex.codecogs.com/svg.latex?0<Odds<\infty" border="0"/>
+
 
                             3. Log Odds 계산
                                 - Odds에 Log를 취함
 
+<img src="http://latex.codecogs.com/svg.latex?log(odds)=logit(P)=In(odds)=ln\left(\frac{P}{1-P}\right)" border="0"/>
 
-\begin{equation}
-log(odds) = logit(P) = In(odds) = ln\left ( \frac{P}{1-P} \right )
-\end{equation}
-
-\begin{equation}
--\infty < Odds < \infty
-\end{equation}
+<img src="http://latex.codecogs.com/svg.latex?-\infty<Odds<\infty" border="0"/>
 
                     - Log odds를 이용한 회귀식 추정
 
-\begin{equation}
-ln\left ( \frac{P}{1-P} \right ) = \beta_0 + \beta_1x
-\end{equation}
+<img src="http://latex.codecogs.com/svg.latex?ln\left(\frac{P}{1-P}\right)=\beta_0+\beta_1x" border="0"/>
 
 
 
@@ -1230,34 +1217,26 @@ ln\left ( \frac{P}{1-P} \right ) = \beta_0 + \beta_1x
                         - 회귀계수가 음수일 때, x값이 증가하면 P(Y = 1)이 감소
                         - x가 한 단위 증가할 때 Odds가 
                         
-${\ e^{\beta_i}}$ 만큼 증가
+<img src="http://latex.codecogs.com/svg.latex?{\e^eta_i}}" border="0"/> 만큼 증가
               
                     - Simple linear regression
                         - y = -0.2 + 0.25 hours
                         
                     - Logistic regression
                          
-\begin{equation}
-ln\left ( \frac{P}{1-P} \right ) = -758.5 + 251.8hours
-\end{equation}
+<img src="http://latex.codecogs.com/svg.latex?ln\left(\frac{P}{1-P}\right)=-758.+251.8hours"  border="0"/>
 
-\begin{equation}
-P = \frac{1}{1+e^-(^-758.5+251.8hours)}
-\end{equation}
+<img src="http://latex.codecogs.com/svg.latex?P=rac{1}{1+e^-(^-758.5+251.8hours)}" border="0"/>
+
 <img src = "https://uce2c9faf4432d9d2fbf072f743e.previews.dropboxusercontent.com/p/thumb/AAOwtmBYIq6AJ0vqZOUz_hoy3RwJcLdphjuQkJvUjrCP2LG1uiMzagd-raH-geluYTf4OSOqlClyOjlL9IWCMq05QSwtuYEgynFvdme3Ln1p8ZRh-1yiJu8hFTb_k6trqhraBLKqrYQuNv3drBDoBqKYPllIjm2oBtj0SdCf_D4C-ChTsv_CcsRg9FMf1n0HvBJUi1KPBGamwZIxU9HcDORgaBU89YOHAKFUrLL2C1LScA/p.png?size=2048x1536&size_mode=3">
 
                     - 학생이 공부를 1/3/5 시간 했다면 시험에 pass를 할 확률
                      
-\begin{equation}
-\hat{p}(hours = 1) = 0
-\end{equation}
-\begin{equation}
-\hat{p}(hours = 3) = 0.045
-\end{equation}
-\begin{equation}
-\hat{p}(hours = 5) = 1
-\end{equation}
+<img src="http://latex.codecogs.com/svg.latex?\hat{p}(hours=1)=0" border="0"/>
 
+<img src="http://latex.codecogs.com/svg.latex?\hat{p}(hours=3)=0.045" border="0"/>
+
+<img src="http://latex.codecogs.com/svg.latex?\hat{p}(hours=5)=1" border="0"/>
 
 <img src="https://ucd5d00ff49a428944c62fcd609d.previews.dropboxusercontent.com/p/thumb/AANp-Ir_yqiTR9KJyEpZgDvmuj3dF6IVdrG_L_KzziddVhWNUvdTt1GdRArb8AcFwm1Rg3fNCIglzzsrfoAoargKTnYGd-UF8equVSgXVGvba3s6QE_UFVZZ33Q5ZWjmn5frSKsuzUYKg4rT2jcBBE6m5LZkSooh8z7BXnD4ywfLHA-8gNzIFg3YEuwTXdTiPefGMY8fdKxKQqS7gRZgTlOJCQmFCt3ewC5LV2LdtXAiAQ/p.png?size=2048x1536&size_mode=3">
 
@@ -1266,4 +1245,3 @@ P = \frac{1}{1+e^-(^-758.5+251.8hours)}
             - Bagging
             - Random Forest
             - Boosting
-            - 
