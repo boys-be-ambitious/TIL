@@ -1115,7 +1115,6 @@
                         - β1 : 기울기 (독립변수가 한 단위 증가함에 따라 발생하게 되는 종속변수 평균치의 증가분)
                         - ε : 랜덤 오차 (random error, εi - yi = ŷ)
                         
-                        
                         - 최소제곱법 (Method of Least Squares)
                         - 회귀 모형의 타당성
                         - 상관분석 vs 회귀분석
@@ -1130,8 +1129,7 @@
                     - 회귀 모형의 타당성
                     - Subset Selection (변수 선택법)
                     - 변수 중요도
-                    
-                    
+                        
                 - b) Shrinkage Method
                     - Ridge Regression
                     - Lasso Regression
@@ -1165,9 +1163,11 @@
 <img src = "https://uc2f1cda42c0fe7a8bfbd04480d0.previews.dropboxusercontent.com/p/thumb/AAOzgQbbSFxZUtVy_8yJ63oYbjl5KmMcDlm5jRo4GTr-2LbgbxfvJqW8Ttyp8VUgSsb9EPFvIu06H_3YDstDOncs4YqGazOCDXWWjQvoTYc-fYwQCT1nWWWAcTqUubPK7U0dIVnwH4BN11JzRkuc2jgD5CL-PNqvdROvn09KGjYUq70FmMYf8rqnk5JDPAYgp3HjITSpUISOR9zUmnvZUTtl5_xPDG-cFVRLtkGZ-2vKVA/p.png?size=2048x1536&size_mode=3">
                 
                         - 종속 변수의 범위를 [0, 1]에서 [−∞, ∞]로 바꿔주기 위한 작업이 필요
+
                         - 오즈(Odds) / 로짓(Logit) 변환
                             1. Y값에 대한 확률을 계산
                                 - P = P(Y=1) : 어떤 사건이 일어날 확률
+                                
                             2. Odds 계산
                                 - 사건이 발생할 확률 / 사건이 발생하지 않을 확률
 
