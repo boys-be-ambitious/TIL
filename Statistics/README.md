@@ -285,6 +285,24 @@ $\mu$
 
 $$\sigma^2$$
 
+1. 수식으로 삽입하기:
+
+
+\\( x(t)=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} \\)
+
+
+2. 문단 안에 바로 수식 삽입하기:
+
+
+\\({e}^{i\pi}+1=0\\)
+
+
+Markdown을 html로 변경한 결과
+수식으로 삽입하기:
+\[ x(t)=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} \]
+
+문단 안에 바로 수식 삽입하기: \({e}^{i\pi}+1=0\)
+
 \begin{equation} 
 표본 평균 : \overline{x} 
 \end{equation}
