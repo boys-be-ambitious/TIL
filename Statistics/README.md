@@ -268,19 +268,9 @@
 #### 2.1.2. 모집단과 표본
     - 모집단(Population)
         - 우리가 알고 싶은 것
-        
-\begin{equation}
-모평균 : \mu
-\end{equation}
-
-\begin{equation}
-모표준편차 : \sigma^2
-\end{equation}
-
-\begin{equation}
-표준편차 : \sigma, \sqrt{\sigma^2}
-\end{equation}
-
+            - 모평균 : $\mu$
+            - 모표준편차 : $\sigma^2$
+            - 표준편차 : $\sigma$, $\sqrt{\sigma^2}$
         - 허나, 모집단은 (현실적으로)측정할 수 없다.
 
     - 표본 (Sample)
