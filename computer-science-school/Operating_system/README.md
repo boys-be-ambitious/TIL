@@ -1,6 +1,6 @@
 # Operating System
 
-### [Back Home](https://github.com/boys-be-ambitious/TIL)
+### [Back to CS Home](https://github.com/boys-be-ambitious/TIL/tree/master/computer-science-school)
 
 ![os1](../../images/os_5.jpg)
 [![HitCount](http://hits.dwyl.io/boys-be-ambitious//Operating_system.svg)](http://hits.dwyl.io/boys-be-ambitious//Operating_system)
