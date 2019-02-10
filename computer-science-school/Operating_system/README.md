@@ -1,6 +1,6 @@
 # Operating System
 
-![os1](../images/os_5.jpg)
+![os1](../../images/os_5.jpg)
 [![HitCount](http://hits.dwyl.io/boys-be-ambitious//Operating_system.svg)](http://hits.dwyl.io/boys-be-ambitious//Operating_system)
 
 ## Table of Contents
@@ -55,4 +55,4 @@
 ### 48. 가상 머신의 이해 (참고)
 ### 49. 실제 최신 운영체제 이해 및 운영체제 총정리
 
-![os3](../images/os_6.png)
+![os3](../../images/os_6.png)
