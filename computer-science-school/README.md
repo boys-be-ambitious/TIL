@@ -1,6 +1,6 @@
 # Computer-Science-School
 
-![intoroduction](./img/cs_3.jpg)
+![intoroduction](../images/cs_3.jpg)
 [![HitCount](http://hits.dwyl.io/boys-be-ambitious//Computer-science-school.svg)](http://hits.dwyl.io/boys-be-ambitious//Computer-science-school)
 
 ## Table of Contents

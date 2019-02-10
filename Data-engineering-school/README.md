@@ -1,6 +1,6 @@
 # Data Engineering
 
-![intoroduction](./img/data_engineering_3.png)
+![intoroduction](../images/data_engineering_3.png)
 [![HitCount](http://hits.dwyl.io/boys-be-ambitious//Data-engineering-school.svg)](http://hits.dwyl.io/boys-be-ambitious//Data-engineering-school)
 
 ## Table of Contents
