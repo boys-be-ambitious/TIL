@@ -1,5 +1,5 @@
 ## Today I Learned
-![today-i-learned](./img/TIL.jpg)
+![today-i-learned](./images/TIL.jpg)
 [![HitCount](http://hits.dwyl.io/boys-be-ambitious//TIL.svg)](http://hits.dwyl.io/boys-be-ambitious//TIL)
 ​
 - 시작일 : 2019년 2월 6일
