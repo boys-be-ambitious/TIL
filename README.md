@@ -11,12 +11,26 @@
 ​
 ## Folder Structure
 ```
-├── 1) Data-anaytics
-├── 2) Data-engineering-school
+├── 1) Computer-Science-School
+├──├── 1. System Programming
+├──├── 2. Operating System
+├──├── 3. Python & Web
+├── 2) Data-Anaytics
+├──├── 1. Kickstarter
+├──├── 2. Lending Club
+├──├── 3. Hyundai Department Store
+├──├── 4. Airbnb
+├──├── 5. Boston House Price
+├──├── 6. Titanic
+├──├── 7. Bikeshare
+├──├── 8. Rossman Store
+├──├── 9. Sanfrancisco Crime
+├──├── 10. Korea Welfare 
+├── 3) Data-Engineering-School
 ├──├── 1. AWS
 ├──├──├── EC2
 ├──├──├── S3
-├──├──├── cloud watch
+├──├──├── Cloud Watch
 ├──├── 2. Data Engineering Intro
 ├──├──├── Hadoop
 ├──├──├── MapReduce
@@ -64,10 +78,11 @@
 ├──├──├── Linux
 ├──├──├── Network
 ├──├──├── Docker
-├── 3) Git
-├── 4) Scraping
-├── 5) SQL
-├── 6) Statistics
+├── 4) Git
+├── 5) Homebrew
+├── 6) Scraping
+├── 7) SQL
+├── 8) Statistics
 ```
 ​
 ## Reference
