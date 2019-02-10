@@ -1,4 +1,4 @@
-# Computer-Science-School
+# Computer Science School
 
 ![intoroduction](../images/cs_3.jpg)
 [![HitCount](http://hits.dwyl.io/boys-be-ambitious//Computer-science-school.svg)](http://hits.dwyl.io/boys-be-ambitious//Computer-science-school)
