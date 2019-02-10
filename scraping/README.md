@@ -17,6 +17,6 @@
 - 저장된 프로그램은 텔레그램 봇이나 메일로 자동화되어 보내집니다.
 
 ![web-scraping-1](../images/scraping_1.png)
-![web-scraping-2](../imagesscraping_2.png)
-![web-scraping-3](../imagesscraping_3.png)
-![web-scraping-4](../imagesscraping_4.png)
+![web-scraping-2](../images/scraping_2.png)
+![web-scraping-3](../images/scraping_3.png)
+![web-scraping-4](../images/scraping_4.png)
