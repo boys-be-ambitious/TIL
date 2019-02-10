@@ -11,7 +11,7 @@
 ​
 ## Folder Structure
 ```
-├── 1) Computer-Science-School
+├── 1) [Computer-Science-School](https://github.com/boys-be-ambitious/TIL/tree/master/computer-science-school)
 ├──├── 1. Operating System
 ├──├── 2. System Programming
 ├──├── 3. Python & Web
