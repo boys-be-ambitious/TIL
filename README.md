@@ -12,8 +12,8 @@
 ## Folder Structure
 ```
 ├── 1) Computer-Science-School
-├──├── 1. System Programming
-├──├── 2. Operating System
+├──├── 1. Operating System
+├──├── 2. System Programming
 ├──├── 3. Python & Web
 ├── 2) Data-Anaytics
 ├──├── 1. Kickstarter
