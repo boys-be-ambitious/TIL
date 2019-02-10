@@ -10,80 +10,81 @@
 - 파일명은 영어로 작성한다.
 ​
 ## Folder Structure
-```
-├── 1) [Computer-Science-School](https://github.com/boys-be-ambitious/TIL/tree/master/computer-science-school)
-├──├── 1. Operating System
-├──├── 2. System Programming
-├──├── 3. Python & Web
-├── 2) Data-Anaytics
-├──├── 1. Kickstarter
-├──├── 2. Lending Club
-├──├── 3. Hyundai Department Store
-├──├── 4. Airbnb
-├──├── 5. Boston House Price
-├──├── 6. Titanic
-├──├── 7. Bikeshare
-├──├── 8. Rossman Store
-├──├── 9. Sanfrancisco Crime
-├──├── 10. Korea Welfare 
-├── 3) Data-Engineering-School
-├──├── 1. AWS
-├──├──├── EC2
-├──├──├── S3
-├──├──├── Cloud Watch
-├──├── 2. Data Engineering Intro
-├──├──├── Hadoop
-├──├──├── MapReduce
-├──├──├── Hive
-├──├──├── 분산 DB
-├──├── 3. RDBMS 실습 및 효율화
-├──├──├── Managed RDBMS(RDS)
-├──├──├── Scale Up
-├──├──├── Load Balancing 
-├──├── 4. Spark
-├──├── 4.1. Spark DataFrame
-├──├──├── Spark SQL
-├──├──├── Spark DataFrame UDF
-├──├──├── Spark DataFrame Analytic Function
-├──├── 4.2. Spark Cluster
-├──├──├── Spark Cluster 구축 리뷰 (EMR)
-├──├──├── Master, Slave Script
-├──├──├── Cluster 구조 (이론)
-├──├──├── Cluster UI
-├──├── 4.3. Spark Streaming
-├──├──├── Spark Streaming 이론 수업
-├──├──├── 실습환경 구축
-├──├──├── 트위터 실시간 분석 실습
-├──├── 5. Practice using Cloud Platform
-├──├── 5.1. Preprocessing & Storage
-├──├──├── EMR
-├──├──├── Athena
-├──├──├── Redshift
-├──├── 5.2. Collection
-├──├──├── Kinesis stream
-├──├──├── Kinesis Firehose
-├──├──├── Lambda
-├──├── 5.3. Dashboard
-├──├──├── AWS ES (Elasticsearch Service)
-├──├──├── DMS (Database Migration Service)
-├──├── 5.4. Cloud_GCP
-├──├──├── GCP Bigquery
-├──├── 5.5. Sage Maker for ML
-├──├──├── Sage Marker
-├──├── 6.Visualization
-├──├──├── Tableau
-├──├──├── DataStudio
-├──├──├── BI Tools (Dashboard)
-├──├── 7. ETC
-├──├──├── Linux
-├──├──├── Network
-├──├──├── Docker
-├── 4) Git
-├── 5) Homebrew
-├── 6) Scraping
-├── 7) SQL
-├── 8) Statistics
-```
+### 1) [Computer-Science-School](https://github.com/boys-be-ambitious/TIL/tree/master/computer-science-school)
+├──├── 1. Operating System <br>
+├──├── 2. System Programming <br>
+├──├── 3. Python & Web <br>
+
+### 2) [Data-Anaytics](https://github.com/boys-be-ambitious/TIL/tree/master/Data-analytics)
+├──├── 1. Kickstarter <br>
+├──├── 2. Lending Club <br>
+├──├── 3. Hyundai Department Store <br>
+├──├── 4. Airbnb <br>
+├──├── 5. Boston House Price <br>
+├──├── 6. Titanic <br>
+├──├── 7. Bikeshare <br>
+├──├── 8. Rossman Store <br>
+├──├── 9. Sanfrancisco Crime <br>
+├──├── 10. Korea Welfare <br>
+
+### 3) [Data-Engineering-School](https://github.com/boys-be-ambitious/TIL/tree/master/Data-engineering-school)
+├──├── 1. AWS <br>
+├──├──├── EC2 <br>
+├──├──├── S3 <br>
+├──├──├── Cloud Watch <br>
+├──├── 2. Data Engineering Intro <br>
+├──├──├── Hadoop <br>
+├──├──├── MapReduce <br>
+├──├──├── Hive <br>
+├──├──├── 분산 DB <br>
+├──├── 3. RDBMS 실습 및 효율화 <br>
+├──├──├── Managed RDBMS(RDS) <br>
+├──├──├── Scale Up <br>
+├──├──├── Load Balancing <br>
+├──├── 4. Spark <br>
+├──├── 4.1. Spark DataFrame <br>
+├──├──├── Spark SQL <br>
+├──├──├── Spark DataFrame UDF <br>
+├──├──├── Spark DataFrame Analytic Function <br>
+├──├── 4.2. Spark Cluster <br>
+├──├──├── Spark Cluster 구축 리뷰 (EMR) <br>
+├──├──├── Master, Slave Script <br>
+├──├──├── Cluster 구조 (이론) <br>
+├──├──├── Cluster UI <br>
+├──├── 4.3. Spark Streaming <br>
+├──├──├── Spark Streaming 이론 수업 <br>
+├──├──├── 실습환경 구축 <br>
+├──├──├── 트위터 실시간 분석 실습 <br>
+├──├── 5. Practice using Cloud Platform <br>
+├──├── 5.1. Preprocessing & Storage <br>
+├──├──├── EMR <br>
+├──├──├── Athena <br>
+├──├──├── Redshift <br>
+├──├── 5.2. Collection <br>
+├──├──├── Kinesis stream <br>
+├──├──├── Kinesis Firehose <br>
+├──├──├── Lambda <br>
+├──├── 5.3. Dashboard <br>
+├──├──├── AWS ES (Elasticsearch Service) <br>
+├──├──├── DMS (Database Migration Service) <br>
+├──├── 5.4. Cloud_GCP <br>
+├──├──├── GCP Bigquery <br>
+├──├── 5.5. Sage Maker for ML <br>
+├──├──├── Sage Marker <br>
+├──├── 6.Visualization <br>
+├──├──├── Tableau <br>
+├──├──├── DataStudio <br>
+├──├──├── BI Tools (Dashboard) <br>
+├──├── 7. ETC <br>
+├──├──├── Linux <br>
+├──├──├── Network <br>
+├──├──├── Docker <br>
+├──├──├── Homebrew <br>
+
+### 4) [Git](https://github.com/boys-be-ambitious/TIL/tree/master/git)
+### 5) [Scraping](https://github.com/boys-be-ambitious/TIL/tree/master/scraping)
+### 6) [SQL]()
+### 7) [Statistics]()
 ​
 ## Reference
 - [유림님 TIL](https://github.com/milooy/TIL#today-i-learned)
