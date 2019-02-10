@@ -83,7 +83,7 @@
 
 ### 4) [Git](https://github.com/boys-be-ambitious/TIL/tree/master/git)
 ### 5) [Scraping](https://github.com/boys-be-ambitious/TIL/tree/master/scraping)
-### 6) [SQL]()
+### 6) SQL
 ### 7) [Statistics](https://github.com/boys-be-ambitious/TIL/tree/master/Statistics)
 ​
 ## Reference
