@@ -4,6 +4,7 @@
 
 # 1. 운영체제 역할을 큰그림으로 이해하기
 ![os6](../../images/os_66.png)
+[![HitCount](http://hits.dwyl.io/boys-be-ambitious//Operating_system/os_big_picture.md.svg)](http://hits.dwyl.io/boys-be-ambitious//Operating_system/os_big_picture.md)
 
 ## 1.1. 운영체제 역할 1 : 시스템 자원(System Resource) 관리자
 - Operating System 또는 OS라고 부른다.
