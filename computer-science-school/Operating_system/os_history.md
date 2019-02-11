@@ -1,6 +1,6 @@
 # Operating System
----
 ### [Back to OS Home](https://github.com/boys-be-ambitious/TIL/tree/master/computer-science-school/Operating_system)
+---
 
 # 1. 운영체제 역할을 큰그림으로 이해하기
 ![os6](../../images/os_66.png)
