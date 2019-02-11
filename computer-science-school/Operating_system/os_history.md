@@ -33,10 +33,10 @@
     	- 프로그래머, 전공자
         
 ### 쉬어가기 : OS는 만들기 어렵다.
-> TmaxOS 시연
-> 참고 : https://youtu.be/OylmhpqptkY
-> Windows 시연
-> 참고 : https://youtu.be/nA2SQcaB0ok
+> - TmaxOS 시연
+> - 참고 : https://youtu.be/OylmhpqptkY
+> - Windows 시연
+> - 참고 : https://youtu.be/nA2SQcaB0ok
 
 
 ## 1.2. 운영체제 역할2 : 사용자와 컴퓨터간의 커뮤니케이션 지원
