@@ -6,8 +6,7 @@
 [![HitCount](http://hits.dwyl.io/boys-be-ambitious//Operating_system.svg)](http://hits.dwyl.io/boys-be-ambitious//Operating_system)
 
 ## Table of Contents
-## Table of Contents
-### 1. 운영체제 큰 그림
+### 1. [운영체제 큰 그림](ttps://github.com/boys-be-ambitious/TIL/tree/master/computer-science-school/os_big_picture.md)
 #### 1.1. 운영체제 역할을 큰그림으로 이해하기
 #### 1.2. 운영체제와 응용 프로그램
 
