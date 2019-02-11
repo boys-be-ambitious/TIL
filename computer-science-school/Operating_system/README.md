@@ -20,7 +20,7 @@
 #### 2.6. 운영체제 역사 (1990년대)
 #### 2.7. 운영체제 역사 (2000년대) 및 총정리
 
-### 3. 운영체제 구조
+### 3. [운영체제 구조](https://github.com/boys-be-ambitious/TIL/blob/master/computer-science-school/Operating_system/os_3_structure.md)
 #### 3.1. 시스템콜
 #### 3.2. 사용자 모드와 커널 모드
 
