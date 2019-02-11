@@ -276,4 +276,100 @@
 ## - 1980년대
 
 ---
+## 1980년대 - 개인용 컴퓨터
+- 개인용 컴퓨터 시대
+	+ 1980년대 이전 ㅣ 대형 컴퓨터를 여러 명이 접속해서 사용 (Unix) -> 시분할 시스템이 컴퓨터 응답시간을 줄여서 다중 사용자를 지원하게 됨.
+	+ 1980년대 ~ : Personal Computer (PC)
+<center><img src="../../images/daewoo_pc.jpg">
+
+---
 ## 1980년대
+- 용어 이해 : CLI와 GUI
+	+ CLI (Command Line Interface) : 터미널 환경
+	+ GUI (Graphical User Interface) : GUI 환경
+
+<center><img src="../../images/os_1.jpg">
+
+---
+## 1980년대 : CLI --> GUI
+- 1980년대 초반 : 아직 터미널 환경
+- 1980년대 중후반 : GUI 환경 (마우스)
+<br>
+> Apple vs. Microsoft OS
+> 참고 : https://youtu.be/f_Q0XPher3o
+
+> Macintosh : 마우스를 사용한 OS
+> 참고 : https://youtu.be/cvjLc24VbI8
+
+> Apple Macintosh Commercials
+> 참고 : https://www.youtube.com/watch?v=I1YTahnDy1Y
+
+---
+## 정리
+### 1980년대
+1. 개인용 컴퓨터
+2. GUI 환경
+
+---
+---
+# History로 보는 운영체제
+## - 1990년대 
+1. 응용 프로그램 시대 by GUI 환경, 개인용 컴퓨터 (사용자 증대)
+	+ 엑셀, 워드프로세서 등
+	+ Windows OS 대중화
+	<br>
+    
+> Windows 95 Commercials
+> 참고 : https://youtu.be/lAkuJXGldrM
+
+---
+## 쉬어가기 : Killer Application
+> 1. '위닝 일레븐'이라는 축구 게임 프로그램을 위해 플레이스테이션 기기를 구매했다.
+> 2. '엑셀'프로그램을 사용하기 위해서, Windows 컴퓨터를 구매했다.
+
+---
+## 1990년대
+2. 네트워크 기술 발전 - 월드와이드웹(WWW) 인터넷 대중화
+
+---
+## 1990년대
+3. 오픈 소스 운동 활성화 시작
+	+ Unix 계열 OS + 응용 프로그램 자체 개발, 소스 오픈
+	+ Linux(리눅스) 운영체제, 소스 오픈, 무료
+
+---
+## 정리
+### 1990년대
+1. 다양한 응용프로그램 활성화 (Killer Application)
+2. 네트워크 발전 (인터넷)
+3. 오픈 소스 운동 활성화 (리눅스)
+
+---
+---
+# History로 보는 운영체제
+## 2000년대 이후 및 전체 운영체제 발전사 정리
+1. 오픈 소스 활성화
+	+ Linux 운영체제
+	+ Apache (웹서버)
+	+ MySQL (데이터베이스)
+	+ 요즘 기술들(안드로이드, 데이터사이언스, IoT)
+	 
+2. 가상 머신, 대용량 병렬 처리 등 활성화
+
+---
+## 정리1
+1. 1950년대 : 운영체제 없음 (프로그램이 시스템 자원 직접 제어)
+2. 1960년대 : 배치 처리 시스템
+3. 1970년대 : 시분할 시스템 / 멀티 태스킹 시스템 - Unix OS (C언어)
+4. 1980년대 : GUI, 개인용 컴퓨터(PC)
+5. 1990년대 : 다양한 응용프로그램(Killer Application), 인터넷(Network) 발달, 오픈 소스 운동 활성화, 가상 머신, 대용량 병렬 처리 등
+
+---
+## 정리2
+1. 운영체제는 응용 프로그램과 시스템 자원을 제어하고, 관리한다.
+2. 응용 프로그램(Application)용어 이해
+3. 배치 처리 시스템, 시분할 시스템, 멀티 태스킹 개념
+4. CLI(터미널) vs. GUI 환경 용어 이해
+5. History 전반은 가볍게만 알아두기
+
+
