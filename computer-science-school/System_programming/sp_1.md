@@ -1,4 +1,7 @@
 # System Programming
+### [Back to OS Home](https://github.com/boys-be-ambitious/TIL/tree/master/computer-science-school/Operating_system)
+---
+
 # 1. 한 번은 알아둬야 할 리눅스 배경, 역사, 철학
 <center><img src="../../images/linux_3.png"></center>
 
