@@ -2,6 +2,8 @@
 # 1. 한 번은 알아둬야 할 리눅스 배경, 역사, 철학
 <center><img src="../../images/linux_3.png"></center>
 
+[![HitCount](http://hits.dwyl.io/boys-be-ambitious//System_programming/sp_1.md.svg)](http://hits.dwyl.io/boys-be-ambitious//System_programming/sp_1.md)
+
 ## 1.1. 리눅스 특징과 장점
 ## - 리눅스 특징과 장점
 - 서버에 많이 사용되는 운영체제
