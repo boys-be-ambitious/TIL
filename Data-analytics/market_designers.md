@@ -1,6 +1,3 @@
-
-<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1709_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"튜터링","geo":"KR","time":"today 12-m"},{"keyword":"해외여행","geo":"KR","time":"today 12-m"},{"keyword":"영어회화","geo":"KR","time":"today 12-m"},{"keyword":"야나두","geo":"KR","time":"today 12-m"},{"keyword":"링글","geo":"KR","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=KR&q=%ED%8A%9C%ED%84%B0%EB%A7%81,%ED%95%B4%EC%99%B8%EC%97%AC%ED%96%89,%EC%98%81%EC%96%B4%ED%9A%8C%ED%99%94,%EC%95%BC%EB%82%98%EB%91%90,%EB%A7%81%EA%B8%80&date=today 12-m,today 12-m,today 12-m,today 12-m,today 12-m","guestPath":"https://trends.google.co.kr:443/trends/embed/"}); </script> 
-
 # Market Designers
 ## 1. Intro
 
@@ -196,6 +193,3 @@
 ---
 
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1709_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"해외여행","geo":"KR","time":"today 12-m"},{"keyword":"영어회화","geo":"KR","time":"today 12-m"},{"keyword":"튜터링","geo":"KR","time":"today 12-m"},{"keyword":"텔라","geo":"KR","time":"today 12-m"},{"keyword":"링글","geo":"KR","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=KR&q=%ED%95%B4%EC%99%B8%EC%97%AC%ED%96%89,%EC%98%81%EC%96%B4%ED%9A%8C%ED%99%94,%ED%8A%9C%ED%84%B0%EB%A7%81,%ED%85%94%EB%9D%BC,%EB%A7%81%EA%B8%80&date=today 12-m,today 12-m,today 12-m,today 12-m,today 12-m","guestPath":"https://trends.google.co.kr:443/trends/embed/"}); </script> 
-
-
-<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1709_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"이사","geo":"KR","time":"today 12-m"},{"keyword":"위매치다이사","geo":"KR","time":"today 12-m"},{"keyword":"포장이사","geo":"KR","time":"today 12-m"},{"keyword":"다이사","geo":"KR","time":"today 12-m"},{"keyword":"인테리어","geo":"KR","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=KR&q=%EC%9D%B4%EC%82%AC,%EC%9C%84%EB%A7%A4%EC%B9%98%EB%8B%A4%EC%9D%B4%EC%82%AC,%ED%8F%AC%EC%9E%A5%EC%9D%B4%EC%82%AC,%EB%8B%A4%EC%9D%B4%EC%82%AC,%EC%9D%B8%ED%85%8C%EB%A6%AC%EC%96%B4&date=today 12-m,today 12-m,today 12-m,today 12-m,today 12-m","guestPath":"https://trends.google.co.kr:443/trends/embed/"}); </script> 
