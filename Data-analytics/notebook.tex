@@ -1,0 +1,663 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{market\_designers}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    
+
+    
+
+    \hypertarget{market-designers}{%
+\section{Market Designers}\label{market-designers}}
+
+\hypertarget{intro}{%
+\subsection{1. Intro}\label{intro}}
+
+\begin{itemize}
+\tightlist
+\item
+  `원하는 시간에 원하는 내용'에 대해 바로 도움을 받을 수 있는 서비스
+\end{itemize}
+
+\hypertarget{edutech-uxc601uxc5b4}{%
+\subsubsection{1.1. Edutech : 영어}\label{edutech-uxc601uxc5b4}}
+
+\begin{itemize}
+\tightlist
+\item
+  국내 영어 시장 개요
+
+  \begin{itemize}
+  \tightlist
+  \item
+    시장 규모
+
+    \begin{itemize}
+    \tightlist
+    \item
+      사교육 시장 : 17조 8,000억 원(과외시장 포함하면 33조 원)
+    \item
+      성인 대상 영어 교육시장 :7,200억 원
+    \item
+      성인 대상 영어 회화 시장 : 약 3,000억 원
+    \item
+      주요 고객 연령층 : 30대, 40대, 20대, 50대 (직장인, 가정주부)
+    \end{itemize}
+  \item
+    트렌드
+
+    \begin{itemize}
+    \tightlist
+    \item
+      시험을 위한 영어 공부 -\textgreater{} 실질적 회화 능력
+
+      \begin{itemize}
+      \tightlist
+      \item
+        기존 어학 교육 빅3의 하락세
+
+        \begin{itemize}
+        \tightlist
+        \item
+          근거자료 : YBM(766-\textgreater{}575-\textgreater{}억원),
+          Pagoda의 매출 감소(709억 원 -\textgreater{} 506억 원)
+        \item
+          기준년도 : 2016\textasciitilde{}2017년
+        \end{itemize}
+      \end{itemize}
+    \item
+      하루 10분, 평생 수강, 패키지
+    \end{itemize}
+  \item
+    플레이어
+
+    \begin{itemize}
+    \tightlist
+    \item
+      야나두, 스피킹맥스, 시원스쿨, 영단기, 스터디서치, 월스트리트
+      인스티튜트, 패스트원, ybm, 파고다, 파이널리스피크, 미티영,
+      리얼클래스, 브릿잉글리쉬, 슈퍼팬, 링글, 텔라, 캠블리
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{moving-uxd3ecuxc7a5uxc774uxc0acuxc5c5}{%
+\subsubsection{1.2. Moving :
+포장이사업}\label{moving-uxd3ecuxc7a5uxc774uxc0acuxc5c5}}
+
+\begin{itemize}
+\tightlist
+\item
+  화물자동차운수사업법
+\item
+  시장 규모 : 4.5조원(1.5\textasciitilde{}2조원)
+\item
+  한해 평균 이동 인구 : 약 715만 명
+\item
+  1회 평균 포장이사 비용 : 약 170만원
+\item
+  플레이어
+
+  \begin{itemize}
+  \tightlist
+  \item
+    전략 제휴
+
+    \begin{itemize}
+    \tightlist
+    \item
+      짐카
+
+      \begin{itemize}
+      \tightlist
+      \item
+        원룸이사 전문 (2톤 이하 이사만 가능)
+      \item
+        타겟 : 20\textasciitilde{}30대 1인 가구
+      \item
+        자체 이사 서비스 제공 (라이트, 베이직, 플러스, 파트너)
+      \item
+        이사 가능 지역 : 서울, 인천, 경기
+      \item
+        누적 견적 수 : 19,723 건
+      \item
+        투자금액 : 1억5천만원 + @
+      \end{itemize}
+    \item
+      이사모아 : 이사 업체 중계 서비스
+
+      \begin{itemize}
+      \tightlist
+      \item
+        이사 경험 : 170,390건
+
+        \begin{itemize}
+        \tightlist
+        \item
+          서울지역 누적 건수 : 35,218건
+        \item
+          월 5,000명의 고객?
+        \item
+          평균 포장이사 단가 : 105만원
+        \item
+          평균 용달 단가 : 15만원
+        \item
+          이사후기 : 2천 건
+        \end{itemize}
+      \item
+        누적투자금액 : 10억원
+      \item
+        특징 : 이사꿀팁
+      \end{itemize}
+    \end{itemize}
+  \item
+    짐싸
+
+    \begin{itemize}
+    \tightlist
+    \item
+      원룸이사 전 문(이사 견적비교 서비스)
+    \item
+      타겟 : 20\textasciitilde{}30대 1인 가구
+    \item
+      누적 견적금액 : 2,163억
+    \item
+      누적 견적 수 : 747,038건
+    \item
+      이사 요청수 : 203,253건
+    \item
+      누적 앱 다운로드 수 : 20만 건
+    \item
+      투자금액 : 10억원 (빅베이슨캐피탈, TIPS 프로그램)
+    \item
+      특징 : 이사박스, 짐싸 파트너
+    \end{itemize}
+  \end{itemize}
+\item
+  기사 발췌
+
+  \begin{itemize}
+  \item
+    ``이사를 처음 경험하는 이들은 무엇이 중요한 요소인지 잘 모르는
+    경우도 있고, 단순히 가격만 비교하다가는 A씨의 사례처럼 서비스를
+    불렀음에도 자신이 노동해야 하는 일도 발생할 수 있다.''
+  \item
+    성장 요인에 대해 ``정보의 부족 등으로 이사가격이 정확하게 정해지지
+    않아, 기존에는 컴퓨터에 접속해야만 견적을 의뢰하고 볼 수 있었지만
+    이는 즉시성이 떨어진다는 단점이 있었다''며 ``하지만 최근 스마트폰의
+    등장 등 모바일이 성장하면서 언제 어디서나 이사업체 견적을 확인하고
+    연락할 수 있다''
+  \item
+    결론을 말하자면 짐카는 셀프이사를 원하는 자취하는 학생이나 처음
+    독립을 하는 사회초년생에게는 적합하지만, 짐 포장을 할 시간이 없는
+    직장인이나 오랜 1인가구 생활로 짐이 늘어난 사람들에게는 적합하지
+    않게 느껴졌다.
+  \item
+    온라인 상에서 짐카의 입소문이 좋은 이유가 SNS나 후기 작성에 적극적인
+    젊은 층이 많이 이용하기 때문으로도 추측할 수 있다.
+  \item
+    기자는 그 중 근무시간을 고려해 아침시간에 직접 집으로 견적사항을
+    확인하러온 다른 업체를 선택했다. 해당 업체에서는 기자가 여성임을
+    배려해 여성플래너를 배치하는 배려까지 보였다.
+  \end{itemize}
+\item
+  중계서비스의 약점
+
+  \begin{itemize}
+  \tightlist
+  \item
+    소비자 - 이사업체와의 갈등 (미스매치)
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{wematch-uxb2e4uxc774uxc0ac}{%
+\subsection{3. Wematch 다이사}\label{wematch-uxb2e4uxc774uxc0ac}}
+
+\begin{itemize}
+\tightlist
+\item
+  사업 아이템 : 빅데이터 기반 이사/청소/대출 매칭 플랫폼
+\item
+  수치로 보는 위매치 다이사
+
+  \begin{itemize}
+  \tightlist
+  \item
+    이사 거래액 : 3,306억원
+  \item
+    누적 이용자 수 : 60만 명 (방문자수 약 413만 명)
+  \item
+    누적 이사 매칭 수 : 581,348건
+  \item
+    이용자수 : 32만명(2018년 기준, 전년대비 86\% 증가, 누적이용자수
+    60만명)
+  \item
+    이사업체 수 : 1580개
+  \item
+    이사 매칭 월 평균 3.1만 건
+  \end{itemize}
+\item
+  특징
+
+  \begin{itemize}
+  \item
+    실제 이사업체를 이용한 유저를 직접 컨택하여 모은 평가 데이터를
+    기반으로, 평가 시스템을 통해 '소비자평가등급'을 소비자에게 투명하게
+    제공.
+  \item
+    스마트물류의 앞단인 `데이터 수집 및 분석'에 중점을 두고 있는 만큼,
+    자사 시스템을 통해 수집된 데이터는 사내 DSL(Data Science Lab)을 거쳐
+    수요분석에 따른 요금제 등과 같은 다양한 결과물로 산출되며 관련
+    정보를 통해 정보 불균형이 심화된 시장에 선순환 구조를 만든다는
+    것이다.
+  \item
+    회사는 최근 이사업체에서 선호하는 특정 지역에서 안정적으로 많은 이사
+    고객을 확보할 수 있는 상품인 `프리미엄 정액제'를 개발해 시범 운영
+    중인 점을 언급, 소비자와 이사업체 모두에게 필요한 서비스 상품을 지속
+    개발할 계획이라고 밝혔다.
+  \item
+    알아두면 좋을 정보 (달력, 체크리스트, 꿀팁\textgreater{}
+  \end{itemize}
+\item
+  궁금한 점
+
+  \begin{itemize}
+  \tightlist
+  \item
+    초기에 어떻게 수집을 했는지? (콜드 스타트), 어떤 지표들로 평가를
+    하는지?
+  \item
+    신뢰할 수 있는 정보제공자
+  \end{itemize}
+\end{itemize}
+
+ \#\#\#\# 리스크 - 어려운 부분 : 맘카페, 업체 --\textgreater{} 지인 추천
+선호 - 대부분의 소비자들은 몇 년에 한 번이나 있을법한 큰 행사인 이사를
+이왕이면 믿고 신뢰할 수 있는 이사서비스 업체에 맡기고자 하는 신중함을
+보이고 있다. - 이사를 많이하는 시즌이 되기 전에 타겟이 있는 곳에
+집중적으로 광고/제휴를 한다든지 - 소비자 영상, 후기, 캠페인을 꾸준히
+올려서 인지도를 상승시킬 필요가 보임. - 는 아주 좋은 캠페인
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\hypertarget{reference}{%
+\subsection{4. Reference}\label{reference}}
+
+\begin{itemize}
+\item
+  \href{https://platum.kr/archives/114062}{위매치다이사, 2018 거래액
+  1690억\ldots{}누적 3천억 넘어}
+\item
+  \href{https://platum.kr/archives/104597}{에듀테크 기업 `튜터링',
+  마켓디자이너스와 합병}
+\item
+  \href{http://www.newstap.co.kr/news/articleView.html?idxno=68629}{190조
+  규모 글로벌 온라인 과외 시장 급성장, 국내선 온디맨드 모바일 과외
+  서비스 `튜터링' 한해 30배 성장}
+\item
+  \href{http://www.mashupangels.com/\%EA\%B8\%80\%EB\%A1\%9C\%EB\%B2\%8C-\%EC\%98\%A8\%EB\%9D\%BC\%EC\%9D\%B8-\%EA\%B3\%BC\%EC\%99\%B8-\%EC\%8B\%9C\%EC\%9E\%A5-190\%EC\%A1\%B0\%EC\%9B\%90-\%EA\%B8\%89\%EC\%84\%B1\%EC\%9E\%A5-\%EA\%B5\%AD\%EB\%82\%B4-\%EC\%8A\%A4\%ED\%83\%80\%ED\%8A\%B8/}{글로벌
+  온라인 과외 시장 190조원 급성장\ldots{}국내 스타트업 튜터링 주목}
+\item
+  \href{http://www.iconsumer.or.kr/news/articleView.html?idxno=5017}{소비자평가
+  리포트 : 토익에서 '말하기'로\ldots{}변화하는 영어 교육 시장}
+\item
+  \href{http://www.edaily.co.kr/news/read?newsId=01462886619142336\&mediaCodeNo=257}{마켓인
+  : 성장가도 달리는 영어교육시장\ldots{}투자열기도 후끈}
+\item
+  \href{https://ppss.kr/archives/186393}{스타트업, UX관리자에게 필요한
+  5가지}
+\item
+  \href{http://gametoc.hankyung.com/news/articleView.html?idxno=50684}{`새해
+  목표' 영어공부, 회화 앱으로 영어 울렁증 `극복'}
+\item
+  \href{http://www.businesspost.co.kr/BP?command=article_view\&num=113609}{`마켓컬리'
+  전지현 광고효과 톡톡, 스타트업도 광고에 톱스타 기용}
+\item
+  \href{https://liveandventure.com/2018/08/12/tutoring/}{튜터링 투자에서
+  엑시트까지}
+\item
+  \href{https://brunch.co.kr/@insight-kmh/17}{한해 30배 성장하는 동안
+  우리에게 일어난 일들}
+\item
+  \href{https://www.facebook.com/684762124/posts/10156503774537125/}{스타트업
+  얼라이언스 임정욱 센터장님 페이스북 게시글}
+\item
+  \href{https://brunch.co.kr/@insight-kmh/26}{마켓플레이스와 서비스
+  플랫폼의 차이}
+\item
+  \href{https://datalab.naver.com/keyword/trendResult.naver?hashKey=N_c74527ec567c919d711124833fb5d6c4}{네이버
+  검색어 트렌드 : 영어회화}
+\item
+  \href{https://trends.google.co.kr/trends/explore?geo=KR\&q=\%EC\%9D\%B4\%EC\%82\%AC,\%EC\%9C\%84\%EB\%A7\%A4\%EC\%B9\%98\%EB\%8B\%A4\%EC\%9D\%B4\%EC\%82\%AC,\%EB\%A7\%98\%EC\%B9\%B4\%ED\%8E\%98,\%EB\%A7\%98,\%EC\%9C\%84\%EB\%A7\%A4\%EC\%B9\%98}{구글
+  트렌드 : 영어회화}
+\item
+  \href{https://datalab.naver.com/keyword/trendResult.naver?hashKey=N_50863677abeb20b470749175fc1841c1}{네이버
+  검색어 트렌드 : 이사}
+\item
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://trends.google.co.kr/trends/explore?geo=KR\&q=\%EC\%9D\%B4\%EC\%82\%AC,\%EC\%9C\%84\%EB\%A7\%A4\%EC\%B9\%98\%EB\%8B\%A4\%EC\%9D\%B4\%EC\%82\%AC,\%ED\%8F\%AC\%EC\%9E\%A5\%EC\%9D\%B4\%EC\%82\%AC,\%EB\%8B\%A4\%EC\%9D\%B4\%EC\%82\%AC,\%EC\%9D\%B8\%ED\%85\%8C\%EB\%A6\%AC\%EC\%96\%B4}{구글
+    트렌드 : 이사}
+  \end{itemize}
+\item
+  \href{https://outstanding.kr/startupleadership20181107/?fbclid=IwAR2sVa1gzyPeWQGK0M_J2a9i_WzpnHttNO3Ar51_qUPwqR4KE29FFB8xMmI\#comment-72583}{스타트업은
+  성장단계별로 다른 리더십을 요구합니다}
+\item
+  \href{http://clomag.co.kr/article/1817}{이재홍의 회계인사이드 :
+  2017년, 2조 7000억 포장이사 대목이 온다}
+\item
+  \href{http://www.dailypop.kr/news/articleView.html?idxno=19619}{O2O가
+  뜬다 : 1인 가구 이사서비스 `짐카' vs 이사업체 견적비교 `이사모아',
+  특징은?}
+\item
+  \href{http://www.dailypop.kr/news/articleView.html?idxno=21703}{솔직체험기
+  : '이사말고, 짐카'를 선택하지 않은 이유}
+\item
+  \href{https://platum.kr/archives/116187}{이사 견적비교 서비스 `짐싸',
+  누적 이사 신청 20만 건 넘어}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\hypertarget{uxc55euxc73cuxb85c-uxc0dduxac01uxd574uxbd10uxc57cuxd560-uxc810}{%
+\subsection{5. 앞으로 생각해봐야할
+점}\label{uxc55euxc73cuxb85c-uxc0dduxac01uxd574uxbd10uxc57cuxd560-uxc810}}
+
+\hypertarget{uxc18cuxbe44uxc790uxb294-uxbb34uxc5c7uxc744-uxc6d0uxd558uxb294uxac00}{%
+\subsubsection{소비자는 무엇을
+원하는가?}\label{uxc18cuxbe44uxc790uxb294-uxbb34uxc5c7uxc744-uxc6d0uxd558uxb294uxac00}}
+
+\hypertarget{uxb0b4uxac00-uxc601uxc5b4-uxacf5uxbd80uxb97c-uxd55cuxb2e4uxba74-uxb0b4uxac00-uxc774uxc0acuxb97c-uxd55cuxb2e4uxba74-uxb0b4uxac00-uxc774uxc0ac-uxc11cuxbe44uxc2a4uxb97c-uxc774uxc6a9uxd55cuxb2e4uxba74-uxb0b4uxac00-uxb300uxcd9cuxc744-uxbc1buxb294uxb2e4uxba74}{%
+\paragraph{내가 영어 공부를 한다면\ldots{} 내가 이사를 한다면\ldots{}
+내가 이사 서비스를 이용한다면\ldots{} 내가 대출을
+받는다면\ldots{}}\label{uxb0b4uxac00-uxc601uxc5b4-uxacf5uxbd80uxb97c-uxd55cuxb2e4uxba74-uxb0b4uxac00-uxc774uxc0acuxb97c-uxd55cuxb2e4uxba74-uxb0b4uxac00-uxc774uxc0ac-uxc11cuxbe44uxc2a4uxb97c-uxc774uxc6a9uxd55cuxb2e4uxba74-uxb0b4uxac00-uxb300uxcd9cuxc744-uxbc1buxb294uxb2e4uxba74}}
+
+\hypertarget{uxc790uxc0ac-uxc11cuxbe44uxc2a4uxc640-uxacbduxc7c1-uxc11cuxbe44uxc2a4uxb97c-uxcda9uxbd84uxd788-uxc774uxc6a9uxd574uxbcf4uxace0-uxc18cuxbe44uxc790-uxc778uxd130uxbdf0uxb3c4-uxd574uxc57c-uxb354uxc6b1-uxb0a0uxce74uxb85cuxc6b4-uxbe44uxc988uxb2c8uxc2a4uxac00-uxb420-uxc218-uxc788uxc744-uxb4ef.}{%
+\paragraph{자사 서비스와, 경쟁 서비스를 충분히 이용해보고, 소비자
+인터뷰도 해야 더욱 날카로운 비즈니스가 될 수 있을
+듯.}\label{uxc790uxc0ac-uxc11cuxbe44uxc2a4uxc640-uxacbduxc7c1-uxc11cuxbe44uxc2a4uxb97c-uxcda9uxbd84uxd788-uxc774uxc6a9uxd574uxbcf4uxace0-uxc18cuxbe44uxc790-uxc778uxd130uxbdf0uxb3c4-uxd574uxc57c-uxb354uxc6b1-uxb0a0uxce74uxb85cuxc6b4-uxbe44uxc988uxb2c8uxc2a4uxac00-uxb420-uxc218-uxc788uxc744-uxb4ef.}}
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
