@@ -5,7 +5,7 @@
 [![HitCount](http://hits.dwyl.io/boys-be-ambitious//Data-engineering-school.svg)](http://hits.dwyl.io/boys-be-ambitious//Data-engineering-school)
 
 ## Table of Contents
-### 1. Building Cloud Infra (AWS)
+### 1. [Building Cloud Infra (AWS)](https://github.com/boys-be-ambitious/TIL/blob/master/Data-engineering-school/dees_knj/dees_knj_1.md)
     - AWS EC2
     - VPC 생성
     - IAM 권한관리
@@ -13,7 +13,7 @@
     - CloudWatch를 이용한 모니터링
 
 ### 2. Data Engineering Overview
-#### Data Engineering Intro
+#### [Data Engineering Intro](https://github.com/boys-be-ambitious/TIL/blob/master/Data-engineering-school/dees_ksw/dees_ksw_1.md)
     - Case Study  
 #### Big Data Intro
     - Hadoop
