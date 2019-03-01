@@ -1,4 +1,6 @@
 # Data Engineering Extension School 1-1
+### [Back to DE Home](https://github.com/boys-be-ambitious/TIL/tree/master/Data-engineering-school)
+- - -
 ## Goal
 > - 클라우드와 온프레미스의 차이를 이해한다.
 > - AWS 클라우드 환경에서의 Network 구조를 이해한다.
@@ -140,3 +142,6 @@
 - Subnet : 방 (Server)
 - Internet Gateway: 연결통로 (각 층?)
 - Route Tables : 어디로 가야하는지 지시(설정)
+
+- - -
+[다음으로](https://github.com/boys-be-ambitious/TIL/blob/master/Data-engineering-school/dees_knj/dees_knj_2.md)
