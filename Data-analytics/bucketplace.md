@@ -1,9 +1,9 @@
 # 1. Home Interior Market Research
-<img src = "../images/oj_0.jpg">
+<img src = "../images/oj/oj_0.jpg">
 
 ## 1.1. 국내 홈 인테리어 현황
-<img src = "../images/oj_1.jpg">
-<img src = "../images/oj_2.jpg">
+<img src = "../images/oj/oj_1.jpg">
+<img src = "../images/oj/oj_2.jpg">
 
     -  시장 규모 : 12조 5,000억원 (2015년, 통계청)
         - 10조원 규모인 북미 LED 조명시장, 국내 수입차 시장보다 큰 규모의 시장
@@ -66,10 +66,10 @@
     - 오래된 집이 많으니 그만큼 보수·리모델링 관련 잠재 수요가 클 수밖에 없다.
     - 경기도 분당, 일산 등 1기 신도시와 서울 목동과 같은 노후된 아파트들이 많다.
 
-<img src = "../images/oj_3.png">
-<img src = "../images/oj_4.png">
-<img src = "../images/oj_5.png">
-<img src = "../images/oj_6.png">
+<img src = "../images/oj/oj_3.png">
+<img src = "../images/oj/oj_4.png">
+<img src = "../images/oj/oj_5.png">
+<img src = "../images/oj/oj_6.png">
 
 ### 1.4.2. 국민소득 증가, 삶의 질을 중요시하는 사회로의 성장
     - 미국, 일본 등 선진국도 국민소득 3만달러 시대에 진입하면서 인테리어 관련 소비가 급증했다. 우리나라도 이런 흐름을 따라가고 있는 것으로 보인다.
@@ -80,8 +80,8 @@
 
     - 한국에서 생활 관련 산업이 성장하는 현상은 과거 스웨덴과 일본 같은 선진국이 거쳐온 길과 비슷하다. 1인당 연간 소득이 3만달러를 넘어서면 자신의 공간인 집안 꾸미기에 대한 욕구가 증가한다. 또 1~2인 가구는 자주 이사를 가기 때문에 고가품보다는 아기자기한 생활 소품을 선호하는 측면이 강하다. 스웨덴의 1인 가구 비율은 47％에 달한다. 현대경제연구원 주원 수석연구위원은 "소득 수준이 올라가면 삶의 질을 돌아보고 양질의 휴식을 통해 정신 건강을 챙기는 이들이 늘어난다"며 "늘 긴장하며 스트레스를 받는 현대인의 피로를 풀어주는 산업이 발전하고 있다"고 말했다.
 
-<img src = "../images/oj_7.png">
-<img src = "../images/oj_8.png">
+<img src = "../images/oj/oj_7.png">
+<img src = "../images/oj/oj_8.png">
 
 ### 1.4.3. 온라인 집들이
     - 셀프 인테리어 카페 '레몬테라스' 회원은 303만명에 달한다.
@@ -89,8 +89,8 @@
     
     - 요즘에는 집안의 셀프 인테리어를 공유하는 게시물에 대한 반응이 뜨겁다. '집 + 인스타그램'을 뜻하는 해시태그 #집스타그램으로 검색되는 게시물은 282만개(2016년 기준 54만 3천개로 5.2배 성장하였음), #집꾸미기는 125만개, #온라인집들이는 8.8만개(2016년 기준 3,500여개로 25배 이상 성장)일 정도로 인기가 많다.
 
-<img src = "../images/oj_9.png">
-<img src = "../images/oj_10.JPG">
+<img src = "../images/oj/oj_9.png">
+<img src = "../images/oj/oj_10.JPG">
 
 ### 1.4.4. 집에 대한 인식의 변화
 ##### "집은 비밀스럽고 사적인 공간에서 자기 표현 수단 중 하나로 변모하고 있다. 요즘 사람들은 SNS에서 인테리어 센스를 과시하길 원한다." - 전미영 서울대 소비자학과 교수
@@ -101,7 +101,7 @@
 
 ---
 # 2. 오늘의집 (버킷플레이스)
-<img src = "../images/oj_11.png">
+<img src = "../images/oj/oj_11.png">
 
 ### 2.1. 국내에서 가장 규모가 큰 인테리어 플랫폼
     - 가장 쉬운 인테리어 레시피
@@ -155,7 +155,7 @@
     - 온라인 집들이의 포인트는, 비 전문가를 독자로 둔다는 데에 있다. 블로그나 카페뿐 아니라 오늘의 집과 같은 전문 서비스도 인테리어 전문가를 독자로 삼지 않는다. 전문 용어를 풀어 쓰거나 ‘나도 몰랐는데 이번에 알게 되었다’라는 식으로 설명하여 누구나 읽을 수 있게 한다. 고가의 주문형 가구뿐 아니라 다이소나 이케아에서 저렴하게 구입한 소품이나 가구를 활용한 스타일이 다양하게 올라와서 ‘나도 해볼까’라는 심리를 자극한다. 이 심리는 '이 정도면 우리집도 소개할 만'이라는 마음으로 이어지는데 오늘의 집과 하우스 같은 전문 서비스가 배출구가 된다.
 
 ### 2.5. Player
-<img src = "../images/oj_12.jpg">
+<img src = "../images/oj/oj_12.jpg">
 
 #### 집꾸미기
     - 설립일 : 2012.04.01 (7년차)
@@ -174,52 +174,52 @@
     - 주요 타겟 : 3040
     - 실제로 사용자가 사용해 본 뒤 남긴 제품리뷰글의 구매전환률이 10%를 넘어선다. 유명 SNS의 게시물의 구매전환률이 2~3% 수주인 것을 고려하면 높은 수준이다.
 
-<img src = "../images/oj_13.png">
+<img src = "../images/oj/oj_13.png">
 
-<img src = "../images/oj_14.png">
+<img src = "../images/oj/oj_14.png">
 
 ### 2.6. 한 줄 요약
     - "오늘의집은 집을 꾸미는 소비자의 시간과 비용을 아껴주는 인테리어 콘텐츠 커머스 서비스이며, 터치 한 번으로 인테리어 사진 속 제품 정보를 확인하고 저렴한 가격에 구매할 수 있는 서비스 입니다."
  
-<img src = "../images/oj_15.jpeg">
+<img src = "../images/oj/oj_15.jpeg">
 
 ---
 # 3. Feedback
 ## 3.1. Tutorial
 ### 처음 앱을 실행하면 아래와 같이 튜토리얼 모드 형식으로 사용법을 안내해준다.
-<img src = "../images/oj_16.jpeg">
-<img src = "../images/oj_17.jpg">
+<img src = "../images/oj/oj_16.jpeg">
+<img src = "../images/oj/oj_17.jpg">
 
 ## 3.2. Gamification
 ### 콘텐츠를 읽을 때, 어느 정도 읽었는지 알 수 있도록 표시한다.
-<img src = "../images/oj_18.png">
+<img src = "../images/oj/oj_18.png">
 
 ## 3.3. AR
-<img src = "../images/oj_19.jpeg">
-<img src = "../images/oj_20.jpeg">
+<img src = "../images/oj/oj_19.jpeg">
+<img src = "../images/oj/oj_20.jpeg">
 
 ## 3.4. MOU
 ### 인테리어를 하는 타겟들의 인생에서 발생할 이벤트와 접점을 가진 업체와 전략적 제휴
 
 ### 3.4.1. 이사
 - 집을 알아보는 어플, 이사를 알아보는 서비스 어플
-<img src = "../images/oj_21.png">
-<img src = "../images/oj_22.jpeg">
+<img src = "../images/oj/oj_21.png">
+<img src = "../images/oj/oj_22.jpeg">
 
 ### 3.4.2. 결혼
 - 웨딩박람회, 스드메 업체, 관련 커뮤니티 등
-<img src = "../images/oj_23.jpg">
+<img src = "../images/oj/oj_23.jpg">
 
 ## 3.5. Campaign & Event (Branding)
 ### 3.5.1. 업계 1위 전략인 캠페인 전략
-<img src = "../images/oj_24.jpeg">
+<img src = "../images/oj/oj_24.jpeg">
 
 ### 3.5.2. 소비자 이벤트
-<img src = "../images/oj_25.jpeg">
-<img src = "../images/oj_26.png">
+<img src = "../images/oj/oj_25.jpeg">
+<img src = "../images/oj/oj_26.png">
 
-<img src = "../images/oj_27.jpg">
-<img src = "../images/oj_28.jpg">
+<img src = "../images/oj/oj_27.jpg">
+<img src = "../images/oj/oj_28.jpg">
 
 ---
 # 4. Reference
