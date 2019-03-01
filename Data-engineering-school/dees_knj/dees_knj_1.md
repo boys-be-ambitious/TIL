@@ -1,10 +1,10 @@
-# Data Engineering Extension School 1 Weeks (knj_1)
+# Data Engineering Extension School 1-1
 ## Goal
-- 클라우드와 온프레미스의 차이를 이해한다.
+> - 클라우드와 온프레미스의 차이를 이해한다.
 - AWS 클라우드 환경에서의 Network 구조를 이해한다.
 
-## Table of Contents
-1. 용어의 이해
+## Index
+> 1. 용어의 이해
 2. 클라우드 서비스 이해
 3. AWS 이해
 4. AWS EC2 이해

@@ -1,16 +1,15 @@
 # Data Engineering Extension School 1-2
-
-# Introduction
 ## Goal
 > - EC2 인스턴스와 S3 사용해보기
 
 ##  Index
-> - EC2 인스턴스 생성
-> - EC2 관리 실습
-> - S3란
-> - S3 버킷 생성, 관리, 설정
-> - Cloud Watch를 이용한 모니터링
+> 1. EC2 인스턴스 생성
+> 2. EC2 관리 실습
+> 3. S3란
+> 4. S3 버킷 생성, 관리, 설정
+> 5. Cloud Watch를 이용한 모니터링
 
+- - -
 # 1.  EC2 인스턴스 생성
 ## 1.1. EC2 (Amazon Elastic Compute)란 ?
 > - Amazon Web Services(AWS) 클라우드에서 확장식 컴퓨팅을 제공
@@ -63,6 +62,7 @@
 ### 1.2.8. Step 9 : EC2 Instance 웹 서버 올리기
 > <img src = "../../images/dees_knj_2_16.png">
 
+- - -
 # 2. EC2 관리 실습
 ## 2.1. Create Template From Instances (시작 템플릿에서 인스턴스 시작)
 > - 시작 템플릿과 AMI의 차이 : 시작 템플릿은 스크립트를 실행시켜주고, AMI는 스냅샷의 개념. 어떠한 경우에 쓰는지?
@@ -78,7 +78,6 @@
 - Job이 돌고 있는 EC2는 주의해야 한다. 이미지를 뜨는 순간 종료되기 때문에.
 <img src = "../../images/dees_knj_2_21.png">
 <img src = "../../images/dees_knj_2_22.png">
-
 
 ## 2.3. Spot Instance로 시작
 ### 정의
@@ -99,7 +98,6 @@
     - 그래서 그냥 사라질 수 있다. 그 점은 꼭 유의해야한다. 서버가 죽으면 서버에 인스톨했거나 리소스가 그 안에 있다면 잃어버릴 수 있다. 그럴 경우에는 보통 안 하고, 마스터와 워커 개념으로 두고 작업한다.
     - 보통 마스터 : 온디맨드, 워커 : 스팟 인스턴스 이렇게 사용한다.
     - 마스터가 관장을 하고 있는 중, 워카가 죽으면 다른 워커로 변경하면 된다.
-    
 
 ### 관련 URL
 > - [Amazon EC2 - 온디맨드 요금](https://aws.amazon.com/ko/ec2/pricing/on-demand/)
@@ -114,7 +112,7 @@
 > - 데이터 분석을 하는 경우에는 r3.xlarge를 가장 많이 선택한다.
 <img src = "../../images/dees_knj_2_4.png">
 
-
+- - -
 # 3. S3란
 ## 3.1. S3
     - 인터넷 스토리지 서비스
@@ -163,6 +161,7 @@
 ### S3 One Zone IA
     - 이전의 RRS를 대체하는 새로운 클래스
 
+- - -
 # 4. S3 버킷 생성, 관리, 설정
 ## 4.1. 스토리지 클래스의 선택
 > <img src = "../../images/dees_knj_2_27.png">
@@ -189,6 +188,7 @@
 <img src = "../../images/dees_knj_2_35.png">
 <img src = "../../images/dees_knj_2_36.png">
 
+- - -
 # 5. Cloud Watch를 이용한 모니터링
 > - AWS 리소스와 AWS에서 실시간으로 실행 중인 애플리케이션을 모니터링
 > - 리소스 및 애플리케이션에 대해 측정할 수 있는 변수인 지표를 수집하고 추적할 수 있다.

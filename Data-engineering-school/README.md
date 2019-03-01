@@ -9,8 +9,8 @@
     - AWS EC2
     - VPC 생성
     - IAM 권한관리
-    - S3 버킷 생성, 관리, 설정
-    - CloudWatch를 이용한 모니터링
+    - [S3 버킷 생성, 관리, 설정](https://github.com/boys-be-ambitious/TIL/blob/master/Data-engineering-school/dees_knj/dees_knj_2.md)
+    - [CloudWatch를 이용한 모니터링](https://github.com/boys-be-ambitious/TIL/blob/master/Data-engineering-school/dees_knj/dees_knj_2.md)
 
 ### 2. Data Engineering Overview
 #### [Data Engineering Intro](https://github.com/boys-be-ambitious/TIL/blob/master/Data-engineering-school/dees_ksw/dees_ksw_1.md)
@@ -70,10 +70,3 @@
 ### 6. Machine Learning, Deep Learning
 
 ### 7. Project
-
-### Profile
-> - Name           : Seokhyeon Jang
-> - Email          : verbena.jang@gmail.com
-> - Portfolio Page : http://rpubs.com/verbena/
-> - Mobile         : 010-7711-3553
-> - Hobby          : Reading, Writing, Programming
