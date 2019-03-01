@@ -11,7 +11,7 @@
     - IAM 권한관리
 ### 1.2. [Building Cloud Infra (AWS) 2](https://github.com/boys-be-ambitious/TIL/blob/master/Data-engineering-school/dees_knj/dees_knj_2.md)
     - S3 버킷 생성, 관리, 설정
-    - [CloudWatch를 이용한 모니터링
+    - CloudWatch를 이용한 모니터링
 
 ### 2. Data Engineering Overview
 #### [Data Engineering Intro](https://github.com/boys-be-ambitious/TIL/blob/master/Data-engineering-school/dees_ksw/dees_ksw_1.md)
