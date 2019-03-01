@@ -1,15 +1,15 @@
 # Data Engineering Extension School 1-1
 ## Goal
 > - 클라우드와 온프레미스의 차이를 이해한다.
-- AWS 클라우드 환경에서의 Network 구조를 이해한다.
+> - AWS 클라우드 환경에서의 Network 구조를 이해한다.
 
 ## Index
 > 1. 용어의 이해
-2. 클라우드 서비스 이해
-3. AWS 이해
-4. AWS EC2 이해
-5. IAM 권한 관리
-6. VPC 생성
+> 2. 클라우드 서비스 이해
+> 3. AWS 이해
+> 4. AWS EC2 이해
+> 5. IAM 권한 관리
+> 6. VPC 생성
 
 - - -
 ## 1. 용어의 이해
