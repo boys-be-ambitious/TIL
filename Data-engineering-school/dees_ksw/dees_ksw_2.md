@@ -94,6 +94,8 @@
 ### 2.8. Conditions
 ### 2.9. Loops
 ### 2.10. Functions
+- [lambda](https://www.w3schools.com/python/python_lambda.asp)
+
 ### 2.11. Classes and Objects
 
 ### 2.12. 실습 : FizzBuzz
@@ -112,9 +114,100 @@ else:
 ### 2.13. Dictionaries
 
 ### 2.14. Modules and Packages
+- pip install의 문제점
+    - 그걸 보완하기 위해 Virtual Environment로 환경을 분리시킴
+    
 
 ## 3. Python for Data
 ### 3.1. NumPy
+- 과학분야에서의 계산을 효율적으로 하기 위한 패키지
+- 강력한 N차원 배열(매트릭스) 계산
+- 머신러닝 분야에서 매트릭스 계산을 많이하므로, 많이 사용됨
+
+#### NumPy Array
+- Python List의 대체품
+- 빠르고, 기능이 많다.
+- 내부의 원소들에 일괄 연산
+- Subset
+
+#### 실습 (숙제)
+- [Game of Life](https://namu.wiki/w/%EC%BD%98%EC%9B%A8%EC%9D%B4%EC%9D%98%20%EC%83%9D%EB%AA%85%20%EA%B2%8C%EC%9E%84)
+
 ### 3.2. Pandas (DataFrame)
+- local에서 사용하는 것이기 때문에, 데이터 용량이 많아지면 한계가 발생한다.
+- 그 경우에는, pyspark를 사용한다.
+
 ### 3.3. PySpark
+
+
 ### 3.4. TensorFlow
+
+
+## 4. Spatial Index
+
+- [Uber - H3](https://eng.uber.com/h3/)
+    - 육각형 모양
+        - 장점 : 
+        - 단점 : 계산해야할 게 많고 복잡하다. 큰 범위의 육각형이 작은 범위를 모두 포함하지 않는 경우도 있다.
+        <img src= "../../images/h3.png">
+        <img src= "../../images/h3_2.png">
+        
+- [geohash](https://www.movable-type.co.uk/scripts/geohash.html)
+    - 사각형 모양
+        - 장점 : 이해하기 쉽고, 만들기가 쉽다.
+        - 단점 : 거리 계산할 때, 껄끄럽다.
+        
+<img src= "../../images/geohash.jpg">
+
+
+```Python
+import ipywidgets as widgets
+import geopy
+import gmaps
+import json
+from h3 import h3
+```
+
+### 수요예측
+- 기존 방식
+    - '구별' -> 간단하게 operation 할 수 있으니까.
+- 새로운 방식
+    - 벌집 모양의 격자로 만들어서 구역 나누기
+        - '강남구'도 꽤 넓기 때문에, 구체적으로 어느 지역의 수요가 더 많은지 확인해서 배치를 최적화해서 더 정확하게 예측할수록 효율이 더 좋아진다.
+        - 회사와 사용자 입장 모두 Win-Win이다.
+        - 동 대신에 격자로 하는 이유는? -> 동으로 했을 때, 문제가 조금 있다.
+            - 강남역 기준으로 다른 여러 동이 나온다... 강남역 수요는 강남역 수요이지, 행정구역 수요가 아니다. 우리가 원하는 모양으로 만들고 싶은 니즈가 있었다. -> 그러니까 격자무늬 모양으로 나눔
+
+
+- 3단계
+    - 1. 서울 모양 가져오기
+        <img src= "../../images/shapefile.png">
+        
+        - [Shapefile](https://en.wikipedia.org/wiki/Shapefile)
+        - [seoul boundary shapefile github](https://github.com/southkorea/southkorea-maps)
+        - 
+    - 2. 6각형 구하기
+        - h3의 polyfill
+            - h3.polyfill
+            
+    - 3. 지도에 그리기
+        - [gmaps](https://jupyter-gmaps.readthedocs.io/en/latest/tutorial.html)
+
+- KPI : **매출**
+    - 구역을 나눠서 평균적인 수요를 분석해서 배치
+    - 시간대별로 많이 나오는 시간대를 분석해서 그때 기사들을 많이 출근하라고 배치
+    
+## 5. 질문
+### DataRobot
+- 쿠폰의 효과를 예측해보고 싶은 것 (회사 입장)
+    - 쿠폰을 주지 않아도 쓸 생각인 사람에게 쿠폰을 준다면? -> 손해
+    - 쿠폰을 안줬으면 쓸 생각이 없던 사람이 쓴다면? -> 이득
+    
+    - 누구한테 보내는 게 +이고, -일까?
+        - 이걸 조사하려면 몇 가지 과정이 필요하다.
+        - 실험을 한다. 전체 유저에 뿌리고, 랜덤하고 주사위를 굴려서 반에는 보내고, 나머지 반은 보내지 않는다(A/B Test)
+        - 원하는 모든 segment에 대해서 반반씩 나가고 안 나간다.
+        - 나이별 사용량 분포도
+            - 1번 seg (20대 초반 ~ 20대 중반) : 소비가 많다.
+            - 2번 seg (20대 중반 ~ 30대) : 소비가 짜다.
+            - 
