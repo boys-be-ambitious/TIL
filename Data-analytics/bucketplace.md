@@ -276,6 +276,6 @@
         - 물품 배송의 경우, 어떤 상품이 문제가 있는지 발견해서 개선하기(boxplot).
 ---
 # 6. Point
-- [개발 : 업무자동화 정리](https://github.com/boys-be-ambitious/TIL/tree/master/scraping)
-- [통계, 기계학습 이론 정리](https://github.com/boys-be-ambitious/TIL/tree/master/Statistics)
-- [데이터 분석 정리](https://github.com/boys-be-ambitious/TIL/tree/master/Data-analytics)
+- [개발 : 업무자동 프로그램 소스코드 정리](https://github.com/boys-be-ambitious/TIL/tree/master/scraping)
+- [이론 : 통계, 기계학습 이론 정리](https://github.com/boys-be-ambitious/TIL/tree/master/Statistics)
+- [분석 : 데이터 분석 정리](https://github.com/boys-be-ambitious/TIL/tree/master/Data-analytics)
