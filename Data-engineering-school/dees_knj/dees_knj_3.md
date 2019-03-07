@@ -26,6 +26,8 @@
 - Oracle : 성능이 좋으나 비싼 가격이 흠
 - Microsoft SQL Server
 
+- - -
+
 ## OLTP / OLAP
 ### OLTP
 - 트랜잭션에서 많이 사용하는 DB
@@ -55,6 +57,7 @@ DW의 하위단위라고 볼 수 있으며, DW는 중앙집중식 데이터 집�
 #### Batch Processing
 작업을 몰아두었다가 한번에 처리하는 시스템. 예:선거투표결과 추출, 게임 이벤트 아이템 일괄 지급 등
 
+
 ### OLTP / OLAP 2
 #### - OLTP (Online Transaction Processing) : 온라인 트랜잭션 처리
 
@@ -64,9 +67,11 @@ DW의 하위단위라고 볼 수 있으며, DW는 중앙집중식 데이터 집�
 
 OLAP는 사용자가 다양한 각도에서 직접 대화식으로 정보를 분석하는 과정을 말한다.OLAP 시스템은 단독으로 존재하는 정보 시스템이 아니며, 데이터 웨어하우스나 데이터 마트와 같은 시스템과 상호 연관된다. 데이터 웨어하우스가 데이터를 저장하고 관리한다면, OLAP은 데이터 웨어하우스의 데이터를 전략적인 정보로 변환시키는 역할을 한다. OLAP은 기본적인 접근과 조회·계산·시계열·복잡한 모델링까지도 가능하다. OLAP은 최근의 정보 시스템과 같이 중간매개체 없이 이용자들이 직접 컴퓨터를 이용하여 데이터에 접근하는 데 있어 필수적인 시스템이라 할 수 있다. 
 
+
 ### OLAP 와 OLTP 의 차이점 
 #### - OLTP :  현재 업무의 효율적인 처리에만 관심이 있음
 #### - OLAP : 의사결정에 도움되는 데이터 분석에 관심이 있음
+
 
 ### OLTP / OLAP 3
 
@@ -79,12 +84,82 @@ OLAP는 사용자가 다양한 각도에서 직접 대화식으로 정보를 분
 
 # 2. AWS RDS 서버 생성 및 관리
 ## 2.1. AWS RDS 서버 생성 및 관리
-- 삭제 방지 비활성화
+### MySQL
+### Amazon Aurora
+
+- Enable deletion protection (삭제 방지 비활성화)
+- Public accessibility (퍼블릭 액세스)
+- Port
 
 ## 2.2. MySQL Workbench와 연동
 - hostname : Endpoint
 - username : AWS RDS에서 만든 name
 - password : AWS RDS에서 만든 password
+
+## 2.3. Insert Data
+```SQL
+show schemas;
+show tables;
+
+#drop table movies;
+#drop table tags;
+
+SELECT * 
+FROM information_schema.SCHEMATA 
+WHERE schema_name = "dees";
+
+ALTER DATABASE dees
+CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_unicode_ci;
+
+create database dees2 
+CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_unicode_ci;
+
+show schemas;
+use dees2;
+
+
+CREATE TABLE `movies` (
+  `movie_id` int(10) NOT NULL,
+  `title` varchar(100)  DEFAULT NULL,
+  `genres` varchar(200)  DEFAULT NULL,
+  PRIMARY KEY (`movie_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE tags (
+   userId int(10) not null ,
+  movie_id int(10) NOT NULL,
+  tag varchar(100)  DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+select *
+from movies;
+
+select *
+from tags;
+
+select a.userId,
+       b.title,
+       b.genres, 
+       a.tag
+from tags a 
+join movies b 
+on a.movie_id = b.movie_id;
+
+
+select a.userId,
+       b.title,
+       b.genres, 
+       a.tag
+from tags a 
+left join movies b 
+on a.movie_id = b.movie_id;
+
+
+```
 
 # 3. AWS RDS 백업 및 복구
 ## 3.1. Snapshot 만들기
@@ -101,10 +176,13 @@ select * from movies;
 ```
 
 # 4. AWS RDS Scale up & Scale out 실습
-## 4.1. 네트워킹 가용영역 다르게 만들기 (a, c)
-### Role : 쓰기, 읽기
+## 4.1. Scale up
+- Modified
 
-## 4.2. Scale up
+## 4.2. Scale out
+- add reader
+    - 네트워킹 가용영역 다르게 만들기 (a, c)
+    - Role : 쓰기, 읽기
 
 # 5. Cache 서비스
 
