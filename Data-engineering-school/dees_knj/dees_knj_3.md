@@ -1,15 +1,16 @@
 # Data Engineering Extension School 1-3
+### [Back to DE Home](https://github.com/boys-be-ambitious/TIL/tree/master/Data-engineering-school)
 
-## 목표
-- AWS RDS에 대해서 이해한다.
+## Goal
+> - AWS RDS에 대한 이해
 
-## 목차
-1. AWS RDS란
-2. AWS RDS 서버 생성 및 관리
-3. AWS RDS 백업 및 복구
-4. AWS RDS Scale up & Scale out 실습
-4. Cache 서비스
-5. Redshift의 실습
+## Index
+> 1. AWS RDS란
+> 2. AWS RDS 서버 생성 및 관리
+> 3. AWS RDS 백업 및 복구
+> 4. AWS RDS Scale up & Scale out 실습
+> 4. Cache 서비스
+> 5. Redshift의 실습
 
 # 1. AWS RDS란
 ## RDS란
@@ -157,8 +158,6 @@ select a.userId,
 from tags a 
 left join movies b 
 on a.movie_id = b.movie_id;
-
-
 ```
 
 # 3. AWS RDS 백업 및 복구

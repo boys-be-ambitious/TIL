@@ -1,5 +1,6 @@
 # Data Engineering Extension School 1-2
 ### [Back to DE Home](https://github.com/boys-be-ambitious/TIL/tree/master/Data-engineering-school)
+
 ## Goal
 > - EC2 인스턴스와 S3 사용해보기
 
