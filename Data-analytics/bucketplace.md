@@ -250,6 +250,8 @@
 24. [오늘의집, 누적 거래액 1천억원 돌파](https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&oid=092&aid=0002155367&sid1=001)
 25. [앱 개발 통해 본 올해 라이프 트렌드는?](https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&oid=014&aid=0004169833&sid1=001)
 26. [검색어트렌드 : 네이버 데이터랩](https://datalab.naver.com/keyword/trendResult.naver?hashKey=N_485398496c0e82bf660cb00ca0af7d66)
+27. [2019년 메가 트렌드 : 공간의 재탄생, #카멜레존](http://blog.naver.com/PostView.nhn?blogId=datamarketing&logNo=221416800921&categoryNo=8&parentCategoryNo=0&viewDate=&currentPage=3&postListTopCurrentPage=&from=menu&userTopListOpen=true&userTopListCount=5&userTopListManageOpen=false&userTopListCurrentPage=3)
+28. [소비자의 공간을 점유하라! 인테리어 마케팅사례](https://blog.naver.com/datamarketing/221171236423)
 
 ---
 # 5. 생각해봐야할 점
