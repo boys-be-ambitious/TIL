@@ -1,7 +1,16 @@
 # Data Enginnering Extension School 2-2
+### [Back to DE Home](https://github.com/boys-be-ambitious/TIL/tree/master/Data-engineering-school)
+---
+## Goal
+> - Python for Spark
 
-- [Google Cloud Next ’19](https://cloud.withgoogle.com/next/sf)
-
+## Index
+> 1. Small Talks
+> 2. Python Basic
+> 3. Python for Data
+> 4. Pyspark
+> 5. TensorFlow
+> 6. Spatial Index
 
 ## 1. Small Talks
 - 대세는 Python, 잘하면 잘할 수록 좋다. 생산성을 끌어 올려준다.
@@ -29,12 +38,10 @@
 <img src = "../../images/dees_ksw_1_2.jpg">
 <img src = "../../images/dees_ksw_1_3.jpg">
 
-
-
+- [추천 컨퍼런스 : Google Cloud Next ’19](https://cloud.withgoogle.com/next/sf)
 
 ## 2. Python
 <img src = "../../images/dees_ksw_2_1.png">
-
 ### 2.1. Introduction
     - 간단하게 사용할 수 있는 하이레벨 프로그래밍 언어
     - 많은 사용자
@@ -66,7 +73,6 @@
     
     
 ### 2.3. Python Basic
-
 ### 2.4. Variables and Types
 - Object Oriented, Dynamic Type 언어
     - OOP (Object Oriented)
@@ -81,13 +87,12 @@
         - Variable을 미리 선언할 필요가 없음
         - 모든 Variable은 object
         
-### 2.5.  Lists
+### 2.5. Lists
 - 빈약한 기능
     - 장점 : 기능이 없어서 진입 장벽이 낮다(?)
 
 - Scala의 위엄함?
 <img src = "../../images/dees_ksw_2_4.svg">
-
 
 ### 2.6. Basic Operators
 ### 2.7. Basic String Operations
@@ -117,7 +122,6 @@ else:
 - pip install의 문제점
     - 그걸 보완하기 위해 Virtual Environment로 환경을 분리시킴
     
-
 ## 3. Python for Data
 ### 3.1. NumPy
 - 과학분야에서의 계산을 효율적으로 하기 위한 패키지
@@ -139,12 +143,9 @@ else:
 
 ### 3.3. PySpark
 
-
 ### 3.4. TensorFlow
 
-
 ## 4. Spatial Index
-
 - [Uber - H3](https://eng.uber.com/h3/)
     - 육각형 모양
         - 장점 : 
@@ -158,7 +159,6 @@ else:
         - 단점 : 거리 계산할 때, 껄끄럽다.
         
 <img src= "../../images/geohash.jpg">
-
 
 ```Python
 import ipywidgets as widgets

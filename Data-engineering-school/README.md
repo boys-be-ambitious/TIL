@@ -21,13 +21,13 @@
     - MapReduce
     - Hive
     - 분산 DB
-#### RDBMS 실습 및 효율화
+#### [RDBMS 실습 및 효율화](https://github.com/boys-be-ambitious/TIL/blob/master/Data-engineering-school/dees_knj/dees_knj_3.md)
     - Managed RDBMS(RDS)
     - Scale Up
     - Load Balancing 
 
 ### 3. Spark
-#### Python for Spark
+#### [Python for Spark](https://github.com/boys-be-ambitious/TIL/blob/master/Data-engineering-school/dees_ksw/dees_ksw_2.md)
 #### Spark Intro
     - Core Concept
     - RDD, DataFrame, Machine Learning 
