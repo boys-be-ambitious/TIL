@@ -308,7 +308,7 @@
 
 <img src = "../images/oj/bp_9.jpeg">
 <img src = "../images/oj/bp_8.jpeg">
-<img src = "../images/oj/bp_6.jpeg">
+<!-- <img src = "../images/oj/bp_6.jpeg"> -->
 <img src = "../images/oj/bp_7.jpeg">
 
 ## 데이터 분석
