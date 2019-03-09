@@ -334,7 +334,7 @@
 ## 6. 데이터 분석 추가
 ### 6.1. left join 활용
 
-<img src = "../../images/oj/sql_2.png">
+<img src = "../images/oj/sql_2.png">
 
 ```SQL
 select
@@ -355,7 +355,7 @@ group by name, prd_id
 - [SQL 관련 지표 추출 분석 2 : Airbnb](http://rpubs.com/verbena/airbnb)
 
 ### 6.2. 처음에 데이터 추출 전에 접근하는 방법
-<img src = "../../images/oj/sql_1.png">
+<img src = "../images/oj/sql_1.png">
 
 ---
 # 7. Point
