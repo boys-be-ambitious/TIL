@@ -352,6 +352,16 @@ group by name, prd_id
 ```
 
 ### 6.2. 처음에 데이터 추출 전에 접근하는 방법
+- 확인 방법 1
+    - 각각의 부서 담당자들이 요청한 데이터를 추출하기 전에,
+    - 집계 함수를 사용해서 크게 뽑은 다음에,
+    - 실제로 뽑은 수치와 맞는지 확인한다.
+- 확인 방법 2
+    - 뽑은 데이터가 맞는지 Raw Data를 실제로 까본다.
+- 확인 방법 3
+    - 다른 사람들과 Communication을 통해 Double Check를 한다.
+
+
 <img src = "../images/oj/sql_1.png">
 
 ### 6.3. 차원의 저주(Curse of Dimensionality)
