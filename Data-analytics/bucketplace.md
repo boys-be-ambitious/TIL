@@ -349,13 +349,13 @@ left join tmp2 on b
 a.prd_id = b.prd_id
 where name like '%공기청정기%'
 group by name, prd_id
-
 ```
-- [SQL 관련 지표 추출 분석 1 : Rossman Store](http://rpubs.com/verbena/rossman)
-- [SQL 관련 지표 추출 분석 2 : Airbnb](http://rpubs.com/verbena/airbnb)
 
 ### 6.2. 처음에 데이터 추출 전에 접근하는 방법
 <img src = "../images/oj/sql_1.png">
+
+#### [SQL 관련 지표 추출 분석 1 : Rossman Store](http://rpubs.com/verbena/rossman)
+#### [SQL 관련 지표 추출 분석 2 : Airbnb](http://rpubs.com/verbena/airbnb)
 
 ---
 # 7. Point
