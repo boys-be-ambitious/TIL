@@ -16,7 +16,7 @@
 ### 2. Data Engineering Overview
 #### [Data Engineering Intro](https://github.com/boys-be-ambitious/TIL/blob/master/Data-engineering-school/dees_ksw/dees_ksw_1.md)
     - Case Study  
-#### Big Data Intro
+#### [Big Data Intro](https://github.com/boys-be-ambitious/TIL/blob/master/Data-engineering-school/dees_ksw/dees_ksw_3.md)
     - Hadoop
     - MapReduce
     - Hive
