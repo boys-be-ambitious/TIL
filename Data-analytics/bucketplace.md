@@ -331,7 +331,7 @@
 - 인테리어 시장의 마케팅도 다른 업계의 마케팅과 근본적인 면에서 큰 차이가 없다. 결국 소비자의 니즈를 파악하고 그에 맞는 서비스를 도출하며, 이를 적절한 소비자군에게 커뮤니케이션 한다.
 
 ---
-## 6. 데이터 분석 추가
+## 6. 인터뷰 피드백
 ### 6.1. left join 활용
 
 <img src = "../images/oj/sql_2.png">
@@ -354,8 +354,36 @@ group by name, prd_id
 ### 6.2. 처음에 데이터 추출 전에 접근하는 방법
 <img src = "../images/oj/sql_1.png">
 
+### 6.3. 차원의 저주(Curse of Dimensionality)
+- 데이터의 차원이 증가할 수록 동일한 설명력을 유지하기 위한 샘플 데이터의 개수가 기하급수적으로 증가한다.
+<br>
+<br>
+- 차원의 저주 (curse of dimensionality)를 피하기 위해 상관성이 높거나 분석결과에 영향력이 적은 변수를 변환 또는 제거한다.
+<br>
+<br>
+- 다중공선성이 존재할 경우 모델의 정확도가 하락하게 되므로 어떤 두 변수 간에 다중 공선성이 존재할 경우 설명력이 더 적은 변수를 제거하고 모델을 재구성한다.
+    - Feature Extration
+    - Variable Selection
+<br>
+<br>
+- 다중공선성 제거 : 차원 축소법 (Dimensionality Reduction)
+    - 1. Principle Component Analysis (PCA)
+    - 2. vif 분상팽창 지수 (활용하여 변수 제거)
+    - 3. **설명력이 적은 변수를 제거**
+<br>
+<br>
+- 데이터 분석 상황
+    - 파생변수 포함 186개의 변수를 돌리면 Noise, Cost의 문제가 발생하므로 보다 정확한 예측 분석을 위해 유의미한 변수로 tidy한 dataset을 만들어서 학습시킬 필요가 있음.
+<br>
+<br>
+- 선택한 프로세스
+    - 각각의 모델 (Logistic Regression, Decision Tree)에서 유의미하게 나온 변수들을 교집합하여(설명력이 적은 변수를 제거함으로써) 차원을 축소하였음.
+    - 설명력 : 타인에게 모델에서 어떤 변수가 중요한지 설득해야하기 때문에, Tree 계열을 사용해서 Feature Importance를 뽑아서 어떤 것들이 예측을 하는데 주요한 변수 추출
+    - 예측력 : Ensemble 모델인 RandomForest를 활용해서 모델의 예측 정확도를 높이기.
+
 #### [SQL 관련 지표 추출 분석 1 : Rossman Store](http://rpubs.com/verbena/rossman)
 #### [SQL 관련 지표 추출 분석 2 : Airbnb](http://rpubs.com/verbena/airbnb)
+#### [현대백화점 예측 분석](http://rpubs.com/verbena/hds)
 
 ---
 # 7. Point
