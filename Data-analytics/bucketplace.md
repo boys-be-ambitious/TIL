@@ -372,16 +372,16 @@ group by name, prd_id
 - 다중공선성 완화 : 차원 축소법 (Dimensionality Reduction)
     - 1. Principle Component Analysis (PCA)
     - 2. vif 분상팽창 지수 (활용하여 변수 제거)
-    - 3. **설명력이 적은 변수를 제거** <br>
+    - 3. Correlation Analysis (히트맵 형태로 상관관계가 높은 변수 제거)
+    - 4. **설명력이 적은 변수를 제거** <br>
 <br>
 
 - 데이터 분석 상황
     - 파생변수 포함 186개의 변수를 돌리면 Noise, Cost의 문제가 발생하므로 보다 정확한 예측 분석을 위해 유의미한 변수로 tidy한 dataset을 만들어서 학습시킬 필요가 있음.
     - **Logistic Regression과 Tree 모형의 목적은 예측을 위해서 돌리는 것이 아니고, 변수를 줄이기 위한 작업이다.**
     - **Tree 계열인 RandomForest(모든 변수를 사용하지 않는 Ensemble 형태의 알고리즘)를 사용하기 때문에 다중공선성 문제가 완화된다.**
-    - 한계 : 다중공선성을 제거하려면 Heatmap 형태의 Correlation Analysis로 상관계수가 높은 변수들을 제거하는 것이 좋음. <br>
 
-<img src = "../images/oj/correlation.png">
+<!-- <img src = "../images/oj/correlation.png"> -->
 
 - 선택
     - 각각의 모델 (Logistic Regression, Decision Tree)에서 유의미하게 나온 변수들을 교집합하여(설명력이 적은 변수를 제거함으로써) 차원을 축소하였음.
