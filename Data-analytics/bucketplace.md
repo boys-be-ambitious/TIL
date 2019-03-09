@@ -383,7 +383,7 @@ group by name, prd_id
 - 데이터 분석 상황
     - 파생변수 포함 186개의 변수를 돌리면 Noise, Cost의 문제가 발생하므로 보다 정확한 예측 분석을 위해 유의미한 변수로 tidy한 dataset을 만들어서 학습시킬 필요가 있음.
     - **Logistic Regression과 Tree 모형의 목적은 예측을 위해서 돌리는 것이 아니고, 변수를 줄이기 위한 작업이다.**
-    - **Tree 계열인 RandomForest를 사용하기 때문에 다중공선성 문제가 발생할 수 없다.** <br>
+    - **Tree 계열인 RandomForest를 사용하기 때문에 다중공선성 문제가 완화된다.** <br>
 <br>
 
 - 선택
