@@ -374,7 +374,7 @@ group by name, prd_id
     - 다중공선성이 존재할 경우 모델의 정확도가 하락하게 되므로 상관성이 높거나 분석결과에 영향력이 적은(설명력이 더 적은) 변수를 제거하고 모델을 재구성한다. <br>
 <br>
 
-- 다중공선성 제거 : 차원 축소법 (Dimensionality Reduction)
+- 다중공선성 완화 : 차원 축소법 (Dimensionality Reduction)
     - 1. Principle Component Analysis (PCA)
     - 2. vif 분상팽창 지수 (활용하여 변수 제거)
     - 3. **설명력이 적은 변수를 제거** <br>
