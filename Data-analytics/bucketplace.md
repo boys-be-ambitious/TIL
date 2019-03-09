@@ -331,7 +331,34 @@
 - 인테리어 시장의 마케팅도 다른 업계의 마케팅과 근본적인 면에서 큰 차이가 없다. 결국 소비자의 니즈를 파악하고 그에 맞는 서비스를 도출하며, 이를 적절한 소비자군에게 커뮤니케이션 한다.
 
 ---
-# 6. Point
+## 6. 데이터 분석 추가
+### 6.1. left join 활용
+
+<img src = "../../images/oj/sql_2.png">
+
+```SQL
+select
+    a.name as "상품명"
+    , a.prd_id as "상품코드"
+    , count(b.user_id) as "총 유저 수 (구매 수)"
+    , count(distinct b.user_id) as "중복 제거한 유저 수" 
+    , sum(b.salse_amount) as "총 매출액"
+    , avg(b.salse_amount) as "평균 매출액"
+from tmp1 a
+left join tmp2 on b
+a.prd_id = b.prd_id
+where name like '%공기청정기%'
+group by name, prd_id
+
+```
+- [SQL 관련 지표 추출 분석 1 : Rossman Store](http://rpubs.com/verbena/rossman)
+- [SQL 관련 지표 추출 분석 2 : Airbnb](http://rpubs.com/verbena/airbnb)
+
+### 6.2. 처음에 데이터 추출 전에 접근하는 방법
+<img src = "../../images/oj/sql_1.png">
+
+---
+# 7. Point
 - [개발 : 업무자동 프로그램 소스코드 정리](https://github.com/boys-be-ambitious/TIL/tree/master/scraping)
 - [엔지니어 : 데이터엔지니어링 스쿨 정리](https://github.com/boys-be-ambitious/TIL/tree/master/Data-engineering-school)
 - [이론 : 통계, 기계학습 이론 정리](https://github.com/boys-be-ambitious/TIL/tree/master/Statistics)
