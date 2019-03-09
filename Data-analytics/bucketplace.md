@@ -306,11 +306,6 @@
 
 - **공간에서 소확행을 찾고자 하는 니즈가 반영된 결과인가? 시간을 내어 머무르고 싶은 공간으로 변신하는데 도움을 주는 콘텐츠인가?**
 
-<img src = "../images/oj/bp_9.jpeg">
-<img src = "../images/oj/bp_8.jpeg">
-<!-- <img src = "../images/oj/bp_6.jpeg"> -->
-<img src = "../images/oj/bp_7.jpeg">
-
 ## 데이터 분석
 ### 마음 읽기
 - 데이터 분석가는 사람들의 마음(+ 사람이 아닌 것들)에 대해 탐구하는 사람, 매우 흥미롭지만 그만큼 어려운 일이다.
@@ -406,7 +401,19 @@ group by name, prd_id
 #### [현대백화점 예측 분석](http://rpubs.com/verbena/hds)
 
 ---
-# 7. Point
+# 7. 구매 경험
+
+<img src = "../images/oj/bp_9.jpeg">
+<img src = "../images/oj/bp_8.jpeg">
+<!-- <img src = "../images/oj/bp_6.jpeg"> -->
+<img src = "../images/oj/bp_7.jpeg">
+
+<img src = "../images/oj/item_1.jpeg">
+<img src = "../images/oj/item_2.jpeg">
+<img src = "../images/oj/item_3.jpeg">
+
+---
+# 8. ETC
 - [개발 : 업무자동 프로그램 소스코드 정리](https://github.com/boys-be-ambitious/TIL/tree/master/scraping)
 - [엔지니어 : 데이터엔지니어링 스쿨 정리](https://github.com/boys-be-ambitious/TIL/tree/master/Data-engineering-school)
 - [이론 : 통계, 기계학습 이론 정리](https://github.com/boys-be-ambitious/TIL/tree/master/Statistics)
