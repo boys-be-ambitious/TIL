@@ -369,7 +369,7 @@ group by name, prd_id
     - 데이터의 차원이 증가할 수록 동일한 설명력을 유지하기 위한 샘플 데이터의 개수가 기하급수적으로 증가한다.
 - 해결 방법
     - 차원의 저주 (curse of dimensionality)를 피하기 위해 상관성이 높거나 분석결과에 영향력이 적은 변수를 변환 또는 제거한다.
-    - 다중공선성이 존재할 경우 모델의 정확도가 하락하게 되므로 어떤 두 변수 간에 다중 공선성이 존재할 경우 설명력이 더 적은 변수를 제거하고 모델을 재구성한다. <br>
+    - 다중공선성이 존재할 경우 모델의 정확도가 하락하게 되므로 상관성이 높거나 분석결과에 영향력이 적은(설명력이 더 적은) 변수를 제거하고 모델을 재구성한다. <br>
 <br>
 
 - 다중공선성 제거 : 차원 축소법 (Dimensionality Reduction)
@@ -383,10 +383,18 @@ group by name, prd_id
     - **Logistic Regression과 Tree 모형의 목적은 예측을 위해서 돌리는 것이 아니고, 변수를 줄이기 위한 작업이다.** <br>
 <br>
 
-- 선택한 프로세스
+- 선택
     - 각각의 모델 (Logistic Regression, Decision Tree)에서 유의미하게 나온 변수들을 교집합하여(설명력이 적은 변수를 제거함으로써) 차원을 축소하였음.
     - 설명력 : 타인에게 모델에서 어떤 변수가 중요한지 설득해야하기 때문에, Tree 계열을 사용해서 Feature Importance를 뽑아서 어떤 것들이 예측을 하는데 주요한 변수 추출
-    - 예측력 : Ensemble 모델인 RandomForest를 활용해서 모델의 예측 정확도를 높이기.
+    - 예측력 : Ensemble 모델인 RandomForest를 활용해서 모델의 예측 정확도를 높이기. <br>
+<br>
+
+- 프로세스
+    - 1. Logistic Regression을 통해 통계적으로 유의한 변수를 추출
+    - 2. Decision Tree를 통해 유의한 변수 추출
+    - 3. 교집합된 변수 추리기
+    - 4. Ensemble 모형을 Cross validation 기법을 활용해 최적화
+    - 5. 평가
 
 #### [SQL 관련 지표 추출 분석 1 : Rossman Store](http://rpubs.com/verbena/rossman)
 #### [SQL 관련 지표 추출 분석 2 : Airbnb](http://rpubs.com/verbena/airbnb)
