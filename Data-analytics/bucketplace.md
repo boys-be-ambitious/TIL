@@ -306,6 +306,8 @@
 
 - **공간에서 소확행을 찾고자 하는 니즈가 반영된 결과인가? 시간을 내어 머무르고 싶은 공간으로 변신하는데 도움을 주는 콘텐츠인가?**
 
+<img src = "../images/oj/bp_9.jpeg">
+<img src = "../images/oj/bp_8.jpeg">
 <img src = "../images/oj/bp_6.jpeg">
 <img src = "../images/oj/bp_7.jpeg">
 
