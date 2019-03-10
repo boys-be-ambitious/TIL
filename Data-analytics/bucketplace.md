@@ -370,7 +370,7 @@ group by name, prd_id
 <br>
 
 - 다중공선성 완화 : 차원 축소법 (Dimensionality Reduction)
-    - 1. Principle Component Analysis (PCA)
+    - 1. Principle Component Analysis (PCA, 차원축소)
     - 2. vif 분상팽창 지수 (활용하여 변수 제거)
     - 3. Correlation Analysis (히트맵 형태로 상관관계가 높은 변수 제거)
     - 4. **설명력이 적은 변수를 제거** <br>
@@ -404,7 +404,8 @@ group by name, prd_id
 # 7. 구매 경험
 
 <img src = "../images/oj/bp_9.jpeg">
-<img src = "../images/oj/bp_8.jpeg">
+<img src = "../images/oj/bp_88.jpeg">
+<!-- <img src = "../images/oj/bp_8.jpeg"> -->
 <!-- <img src = "../images/oj/bp_6.jpeg"> -->
 <img src = "../images/oj/bp_7.jpeg">
 
