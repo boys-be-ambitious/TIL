@@ -192,7 +192,6 @@ These are <b style='color:red'>red words</b>.
 - 성장하고 싶은 욕구가 강한 편이라(성장력), 사비로 15개가 넘는 데이터, 개발 수업을 들었음
 
 ## 3.2. J.D 중심으로
-
 ### 1. '사랑의 욕망 충족'의 큐피스트 미션에 대한 동의
     - '3.3. 마음에 들었던 부분'에 적은 것처럼 미션과 비전에 대해 충분히 공감이 간다.
 
@@ -243,6 +242,7 @@ These are <b style='color:red'>red words</b>.
 <img src ="../images/cupist_2.jpg">
 
 ---
+
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" 
      xmlns="http://www.w3.org/2000/svg"
@@ -254,3 +254,7 @@ These are <b style='color:red'>red words</b>.
     <tspan fill="green">world</tspan>!
   </text>
 </svg>
+
+---
+
+<a><img src="http://dump.thecybershadow.net/6c736bfd11ded8cdc5e2bda009a6694a/colortext.svg"/></a>
