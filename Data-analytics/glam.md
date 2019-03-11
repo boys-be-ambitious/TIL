@@ -10,7 +10,7 @@
 
 - - -
 # 1. Introduction : 데이팅 시장 개요
-<img src ="./images/cupist_1.jpg">
+<img src ="../images/cupist_1.jpg">
 
 ### 1.1. 스마트폰의 등장, 간편한 만남
 - 모바일 서비스를 통해 이성과의 만남을 주선하는 '데이팅 앱'은 스마트폰으로 간편하게 낯선 이성과의 만남이 성사될 수 있어 인기가 높다.
@@ -147,12 +147,12 @@
 #### 1.5.4. 오케이큐피드
 <b style='color:#ee1155'> 데이팅 앱에 관심을 갖게 된 계기</b>
 
-<img src ="./images/cupist_6.png">
+<img src ="../images/cupist_6.png">
 - x : 여성의 연령
 - y : 여성이 선호하는 남성의 연령 범위
 - 여성은 어릴 경우 연상을 만나고 싶어하다가, 연하도 만나고 싶어한다.
 
-<img src ="./images/cupist_7.png">
+<img src ="../images/cupist_7.png">
 - x : 남성의 연령
 - y : 남성이 선호하는 여성의 연령 범위
 - 남성은 꾸준히 연하를 만나고 싶어한다.
@@ -167,8 +167,8 @@
 
 - - -
 # 2. GLAM
-<img src ="./images/cupist_4.jpg">
-<img src ="./images/cupist_3.jpg">
+<img src ="../images/cupist_4.jpg">
+<img src ="../images/cupist_3.jpg">
 
 - '큐피드의 대리자'로서 누구나 사랑할 수 있는 세상을 꿈꾼다. 사랑의 욕망을 충족시킬 가치 있는 제품들을 통해 인류의 행복과 진보에 기여하고자 함.
 
@@ -225,7 +225,7 @@
 
 <b style='color:#ee1155'> - 어떻게든 잘 먹고 잘살 순 있겠지만 삶이란 좀 더 큰 무언가를 위헤 존재해야 한다고 생각합니다. 죽기전에 우주에 흔적이나마 남겨봅시다.</b>
 
-<img src ="./images/cupist_5.png">
+<img src ="../images/cupist_5.png">
 
 - - -
 # 4. Reference
@@ -238,4 +238,4 @@
 7. [큐피스트 자세히 알아보기](https://brunch.co.kr/@iamzenon/3)
 8. [큐피스트 데쓰벨리 탈출기](https://brunch.co.kr/@iamzenon/1)
 
-<img src ="./images/cupist_2.jpg">
+<img src ="../images/cupist_2.jpg">
