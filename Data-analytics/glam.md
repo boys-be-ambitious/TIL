@@ -191,10 +191,6 @@ These are <b style='color:red'>red words</b>.
 - 스타트업 경험으로 인생의 습관이 변하였는데 그 이후로 72 법칙이 생김
 - 성장하고 싶은 욕구가 강한 편이라(성장력), 사비로 15개가 넘는 데이터, 개발 수업을 들었음
 
-<font color="#ee1155"> </font>
-<b style='color:red'> </b>
-<b style='color:#ee1155'></b>
-
 ## 3.2. J.D 중심으로
 
 ### 1. '사랑의 욕망 충족'의 큐피스트 미션에 대한 동의
@@ -245,3 +241,16 @@ These are <b style='color:red'>red words</b>.
 8. [큐피스트 데쓰벨리 탈출기](https://brunch.co.kr/@iamzenon/1)
 
 <img src ="../images/cupist_2.jpg">
+
+---
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" 
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="100" height="50"
+>
+  <text font-size="16" x="10" y="20">
+    <tspan fill="red">Hello</tspan>,
+    <tspan fill="green">world</tspan>!
+  </text>
+</svg>
