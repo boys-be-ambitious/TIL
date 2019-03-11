@@ -148,11 +148,13 @@
 <b style='color:#ee1155'> 데이팅 앱에 관심을 갖게 된 계기</b>
 
 <img src ="../images/cupist_6.png">
+
 - x : 여성의 연령
 - y : 여성이 선호하는 남성의 연령 범위
 - 여성은 어릴 경우 연상을 만나고 싶어하다가, 연하도 만나고 싶어한다.
 
 <img src ="../images/cupist_7.png">
+
 - x : 남성의 연령
 - y : 남성이 선호하는 여성의 연령 범위
 - 남성은 꾸준히 연하를 만나고 싶어한다.
@@ -164,6 +166,10 @@
 - <b style='color:#ee1155'>소비자에게 물어보고 나온 경우랑, 실제랑 다르다</b>
 - <b style='color:#ee1155'>교훈 : 언행불일치!</b>
 - <b style='color:#ee1155'>소비자에게 묻지 말고, 행동을 관찰해라(100배, 1000배 더 정확하다.)</b>
+
+<p style='color:red'>This is some red text.</p>
+<font color="red">This is some text!</font>
+These are <b style='color:red'>red words</b>.
 
 - - -
 # 2. GLAM
