@@ -362,8 +362,8 @@ select
     , sum(b.sales_amount) as "총 매출액"
     , round(avg(b.sales_amount), 2) as "평균 매출액"
 from tmp1 a
-left join tmp2 b on
-a.prd_id = b.prd_id
+left join tmp2 b
+    on a.prd_id = b.prd_id
 where name like '%공기청정기%'
 group by a.name, a.prd_id
 ```
