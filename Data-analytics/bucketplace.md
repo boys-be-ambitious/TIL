@@ -359,13 +359,13 @@ select
     , a.prd_id as "상품코드"
     , count(b.user_id) as "총 유저 수 (구매 수)"
     , count(distinct b.user_id) as "중복 제거한 유저 수" 
-    , sum(b.salse_amount) as "총 매출액"
-    , avg(b.salse_amount) as "평균 매출액"
+    , sum(b.sales_amount) as "총 매출액"
+    , round(avg(b.sales_amount), 2) as "평균 매출액"
 from tmp1 a
-left join tmp2 on b
+left join tmp2 b on
 a.prd_id = b.prd_id
 where name like '%공기청정기%'
-group by name, prd_id
+group by a.name, a.prd_id
 ```
 
 ### 6.2. 제대로 데이터를 뽑았는지 확인하는 방법

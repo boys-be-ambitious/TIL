@@ -167,10 +167,6 @@
 - <b style='color:#ee1155'>교훈 : 언행불일치!</b>
 - <b style='color:#ee1155'>소비자에게 묻지 말고, 행동을 관찰해라(100배, 1000배 더 정확하다.)</b>
 
-<p style='color:red'>This is some red text.</p>
-<font color="red">This is some text!</font>
-These are <b style='color:red'>red words</b>.
-
 - - -
 # 2. GLAM
 <img src ="../images/cupist_4.jpg">
@@ -240,20 +236,6 @@ These are <b style='color:red'>red words</b>.
 8. [큐피스트 데쓰벨리 탈출기](https://brunch.co.kr/@iamzenon/1)
 
 <img src ="../images/cupist_2.jpg">
-
----
-
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" 
-     xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="100" height="50"
->
-  <text font-size="16" x="10" y="20">
-    <tspan fill="red">Hello</tspan>,
-    <tspan fill="green">world</tspan>!
-  </text>
-</svg>
 
 ---
 
