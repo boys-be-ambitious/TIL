@@ -147,17 +147,22 @@
 #### 1.5.4. 오케이큐피드
 <b style='color:#ee1155'> 데이팅 앱에 관심을 갖게 된 계기</b>
 
+<img src ="../images/cupist_8.png">
 <img src ="../images/cupist_6.png">
+<img src ="../images/cupist_10.png">
 
 - x : 여성의 연령
 - y : 여성이 선호하는 남성의 연령 범위
 - 여성은 어릴 경우 연상을 만나고 싶어하다가, 연하도 만나고 싶어한다.
 
 <img src ="../images/cupist_7.png">
+<img src ="../images/cupist_9.png">
 
 - x : 남성의 연령
 - y : 남성이 선호하는 여성의 연령 범위
 - 남성은 꾸준히 연하를 만나고 싶어한다.
+
+<img src ="../images/cupist_11.png">
 
 - 연락(메시지) 보낸 것
 - 여자의 경우, 어리면 연상, 나이가 있을 경우 연하
@@ -236,7 +241,3 @@
 8. [큐피스트 데쓰벨리 탈출기](https://brunch.co.kr/@iamzenon/1)
 
 <img src ="../images/cupist_2.jpg">
-
----
-
-<a><img src="http://dump.thecybershadow.net/6c736bfd11ded8cdc5e2bda009a6694a/colortext.svg"/></a>
