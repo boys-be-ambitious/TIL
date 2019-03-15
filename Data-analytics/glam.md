@@ -212,6 +212,8 @@
 6. [글램 국내 1위 고군분투기](https://brunch.co.kr/@iamzenon/11)
 7. [큐피스트 자세히 알아보기](https://brunch.co.kr/@iamzenon/3)
 8. [큐피스트 데쓰벨리 탈출기](https://brunch.co.kr/@iamzenon/1)
+9. [The Back Story: Dating Preferences & Age](https://theblog.okcupid.com/the-case-for-an-older-woman-99d8cabacdf5)
+<img src ="./images/cupist_2.jpg">
 
 ---
 # 5. Future ...
