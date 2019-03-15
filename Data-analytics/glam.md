@@ -214,8 +214,6 @@
 8. [큐피스트 데쓰벨리 탈출기](https://brunch.co.kr/@iamzenon/1)
 9. [The Back Story: Dating Preferences & Age](https://theblog.okcupid.com/the-case-for-an-older-woman-99d8cabacdf5)
 
-<img src ="./images/cupist_2.jpg">
-
 ---
 # 5. Future ...
 <img src ="../images/cupist_2.jpg">
