@@ -162,7 +162,7 @@
             15.3.2.2. Decision Tree
             15.3.2.3. ANN (Artificial Neural Network)
             15.3.2.4. SVM (Support Vector Machine)       
-            15.3.2.5. Losistic Regerssion
+            15.3.2.5. Logistic Regerssion
 
         15.3.3. Ensemble
 
@@ -1091,16 +1091,14 @@
     - 머신러닝에 대한 설명은 추후에 자세하게 설명할 예정이니, 머릿 속에 지도를 그릴 수 있을 정도로 간략하게 설명하겠다.
 
     - 1. Label 유무에 따른 머신러닝
-        - 1) Label(정답)이 있으면 지도학습(Supervised Learning)
-
-        - 2) Label(정답)이 없으면 비지도 학습(Unsupervised Learning)
+        - 1) Label(정답)이 있으면 Supervised Learning (지도학습)
+        - 2) Label(정답)이 없으면 Unsupervised Learning (비지도학습)
             
     - 2. Label의 종류에 따른 머신러닝 기법
         - 1) Regression (회귀) : 종속 변수(y)가 수치형
             - 종속변수(Y)가 독립변수(X)에 영향을 받을 때, 그 변수들 간의 함수 관계를 규명하기 위하여 이용되는 통계적 방법
             - 회귀 모형이 학습되었을 때, 새로운 독립 변수의 값으로부터 종속 변수의 값을 예측할 수 있다.
             - 종속변수(Y)에 중요한 영향을 주는 주요 독립변수 선별
- 
 
 <img src = "https://t1.daumcdn.net/cfile/tistory/9933C13E5B2A0F2427">
  
