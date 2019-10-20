@@ -1,5 +1,8 @@
-# 알면 쓸모 있는 맥북 개발 환경 세팅
-<b>별것 아닌 거 같지만 도움이 되는 맥북 환경 세팅</b>
+# 별것 아닌 거 같지만 도움이 되는 : 알면 쓸모 있는 맥북 개발 환경 세팅
+### [Back Home](https://github.com/boys-be-ambitious/TIL)
+
+![git_intoroduction_1](../images/apple_developer.jpg)
+[![HitCount](http://hits.dwyl.io/boys-be-ambitious//Git.svg)](http://hits.dwyl.io/boys-be-ambitious//env-of-mac)
 
 ## 1. 시스템 기본 설정
 본격적인 개발환경 설정에 앞서 몇 가지 유용한 시스템 설정을 확인해보겠다. macOS Catalina를 기준으로 작성하였으나, 다른 버전도 비슷하다고 생각된다. 반드시 동일하게 설정할 필요는 없으며, 보시면서 필요하다고 느껴지는 항목을 적용하시면 되겠다.
