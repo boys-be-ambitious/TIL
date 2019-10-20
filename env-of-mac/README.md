@@ -300,7 +300,7 @@ JSON 결과를 이쁘게 보여주고 원하는 대로 편집할 수 있는 도�
 ### neofetch
 간단하게 시스템 상태를 보여준다.
 
-<img src = "../images/env_of_mac_12.png" width="640" height="310">
+<img src = "../images/env_of_mac_12.png" width="500" height="320">
 
     # 설치
     brew install neofetch
