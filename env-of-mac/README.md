@@ -51,7 +51,7 @@
 ## 2. Finder Preference
 <img src = "../images/env_of_mac_6.png" width="450" height="425">
 
-> ```Finder```실행한 후에 ```⌘``` + ```,``` (```Finder``` &rightarrow; ```Preferences...```)를 선택
+> ```Finder```실행한 후에 ```⌘``` + ```,``` ( ```Finder``` &rightarrow; ```Preferences...``` )를 선택
 
 ### 파인더 기본 폴더 설정
 파인더 최초 실행 시 버벅임이 없도록 기본 폴더를 홈 폴더로 설정
