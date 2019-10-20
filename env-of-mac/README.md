@@ -13,7 +13,7 @@
 
 ### 언어 설정 : 영어로 변경
 간혹 locale 설정 때문에 오류가 발생하는 걸 방지해주고 영어 오류 메시지가 구글 검색이 잘됨
-> ```Language & Region (언어 및 지역)``` &rightarrow; ```Preferred languages(선호하는 언어)```: English > 한국어 (드래그로 순서 조정)
+> ```Language & Region (언어 및 지역)``` &rightarrow; ```Preferred languages(선호하는 언어)```: English &rightarrow; 한국어 (드래그로 순서 조정)
 
 ### 패스워드 즉시 설정
 잠자기 모드나 화면 보호기가 켜지면 즉시 패스워드 입력을 활성화하여 보안을 최대한 안전하게 유지
@@ -200,7 +200,7 @@ https://github.com/naver/d2codingfont 에 들어가 폰트를 다운받은 후 �
 
 <img src = "../images/env_of_mac_10.png">
 
-아까와 마찬가지로 cmd + ,를눌러 환경설정에 들어간 후 상단 Profile -> Text로 진입한다음 change Font를 누른 후 D2Coding폰트를 선택한다.
+아까와 마찬가지로 cmd + ,를눌러 환경설정에 들어간 후 상단 Profile &rightarrow; Text로 진입한다음 change Font를 누른 후 D2Coding폰트를 선택한다.
 
 3024Night과 D2를 적용한다면 터미널이 몰라보게 이뻐진다. 불필요한 몇 가지가 더 있는데 이름 부분에 계속 나오는 macbook-pro부분도 지워보겠다. 조금 전 ~/.zshrc파일로 다시 들어가 하단에 아래와 같이 추가해준다.
 
@@ -260,7 +260,7 @@ zsh과 oh-my-zsh의 조합으로 강력한 쉘을 사용할 수 있게 되었다
 
 - 명령어가 기억나지 않으면 tab을 누르자.
 - cd ../.. 대신 ..., ...., ....., …
-- 단축명령어 - git status => gst, git pull => gl 등등 다양한 단축명령어
+- 단축명령어 : ```git status``` &rightarrow; ```gst```, ```git pull``` &rightarrow; ```gl``` 등등 다양한 단축명령어
 
 
 ## 6. 추천 애플리케이션
