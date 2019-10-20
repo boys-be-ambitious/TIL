@@ -51,7 +51,7 @@
 ## 2. Finder Preference
 <img src = "../images/env_of_mac_6.png" width="450" height="425">
 
-> ```Finder```실행한 후에 ```⌘``` + ```,``` ( ```Finder``` &rightarrow; ```Preferences...``` )를 선택
+> ```Finder```실행한 후에 ```⌘``` + ```,``` &rightarrow; ```Finder``` &rightarrow; ```Preferences...``` )를 선택
 
 ### 파인더 기본 폴더 설정
 파인더 최초 실행 시 버벅임이 없도록 기본 폴더를 홈 폴더로 설정
@@ -66,7 +66,7 @@
 ## 3. Download Folder Option
 <img src = "../images/env_of_mac_7_.png">
 
-> ```Downloads```폴더로 이동한 후에 ```⌘``` + ```J``` (```View&rightarrow; ```Show View Options```)를 선택
+> ```Downloads```폴더로 이동한 후에 ```⌘``` + ```J``` &rightarrow; ```Show View Options```를 선택
 
 ### 날짜그룹 + 이름 정렬
 파일 목록을 보여줄 때 날짜별로 그룹화 하고 그룹 내에서 이름으로 다시 정렬
