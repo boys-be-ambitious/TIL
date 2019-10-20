@@ -2,44 +2,32 @@
 #### 별것 아닌 거 같지만 도움이 되는 맥북 환경 세팅
 - - -
 
-
 ## 1. 시스템 기본 설정
-- - -
-본격적인 개발환경 설정에 앞서 몇 가지 유용한 시스템 설정을 확인해봅니다. macOS Catalina를 기준으로 작성하였으나, 다른 버전도 비슷하다고 생각됩니다.<br> 반드시 동일하게 설정할 필요는 없으며, 보시면서 필요하다고 느껴지는 항목을 적용하시면 되겠습니다.
+본격적인 개발환경 설정에 앞서 몇 가지 유용한 시스템 설정을 확인해보겠다. macOS Catalina를 기준으로 작성하였으나, 다른 버전도 비슷하다고 생각된다. 반드시 동일하게 설정할 필요는 없으며, 보시면서 필요하다고 느껴지는 항목을 적용하시면 되겠다.
 
 <img src = "../images/env_of_mac_0.png" width="640" height="585">
 
 > 상단 메뉴의 `````` 로고를 누르고 ```System Preferences(시스템 환경설정)...```를 선택합니다.
 
 ### 언어 설정 : 영어로 변경
-- - -
 간혹 locale 설정 때문에 오류가 발생하는 걸 방지해주고 영어 오류 메시지가 구글 검색이 잘됨
 > ```Language & Region (언어 및 지역)``` &rightarrow; ```Preferred languages(선호하는 언어)```: English > 한국어 (드래그로 순서 조정)
 
 ### 패스워드 즉시 설정
-- - -
 잠자기 모드나 화면 보호기가 켜지면 즉시 패스워드 입력을 활성화하여 보안을 최대한 안전하게 유지
 > ```Security & Privacy (보안 및 개인 정보 보호)``` &rightarrow; ```General (일반)``` &rightarrow; ```Require password(암호 요구)``` : immediately
 
-
-
 ### 분실 대비 잠금화면 메시지 설정
-- - -
 잠금화면에서 자신의 이름과 연락처를 표시될 수 있도록 (분실시 찾을 수 있게).
-
 > ```Security & Privacy (보안 및 개인 정보 보호)``` &rightarrow; ```General(일반)``` &rightarrow; ```Show a message when the screen is locked``` (화면이 잠겨있는 동안 메시지 표시) 체크박스 클릭 &rightarrow; ```Set Lock Message... (잠금 메시지 설정...)``` : 이름 / 전화번호 / 메일주소
 
-
 ### 마우스 세 손가락 드래그
-- - -
 창 또는 아이콘을 이동할 때, 트랙패드를 누른 상태로 이동할 필요 없이, 세 손가락으로 편하게 드래그 할 수 있게끔.
-
 > ```Accessibility (손쉬운 사용)``` &rightarrow; ```Pointer Control (포인터 제어 or 마우스와 트랙패드)``` &rightarrow; ```Trackpad Options...(트랙패드 옵션...)``` &rightarrow; ```Enable Dragging (드래그 활성화)``` 클릭 &rightarrow; three finger drag (세 손가락으로 드래그하기)
 
 
 
 ### 한영 키보드 전환 및 커맨드 키 위치 변경
-- - -
 윈도우처럼 편하게 한영 키보드 전환을 할 수 있고, 커맨드 키를 한영 키에 둠으로써 편리하게 이용할 수 있게끔.
 > 1단계 :  ```Keyboard (키보드)``` &rightarrow; ```Modifier Keys...(보조키...)``` &rightarrow; ```Caps Lock``` 키 : ```Command```으로 , ```Command``` 키 : ```Caps Lock```으로 전환
 
@@ -54,74 +42,62 @@
 | ⇧	 | Shift | Shift |
 
 ### 모든 텍스트 자동 변경 옵션 끄기
-- - -
 입력한 단어를 컴퓨터 마음대로 바꾸는 걸 방지
 > ```Keyboard``` > ```Text```: 모든 자동 변경 옵션(Correct spelling automatically, Capitalize words automatically, Use smart quotes and dashes) 해제
 
 
 ## 2. Finder Preference
-- - -
 <img src = "../images/env_of_mac_6.png" width="450" height="425">
 
 > ```Finder```실행한 후에 ```⌘``` + ```,``` (```Finder``` $\rightarrow$ ```Preferences...```)를 선택
 
 ### 파인더 기본 폴더 설정
-- - -
 파인더 최초 실행 시 버벅임이 없도록 기본 폴더를 홈 폴더로 설정
 
 > ```General``` $\rightarrow$ ```New Finder windows show: seokhyeonjang (본인 맥의 home folder를 선택)```
 
 ### 파일 확장자 보여주기
-- - -
 모든 파일의 확장자를 보여줌
 
 > ```Advanced``` $\rightarrow$ ```Show all filename extensions```: 체크함
 
 ## 3. Download Folder Option
-- - -
-
 <img src = "../images/env_of_mac_7.png" width="250" height="200">
 
 > ```Downloads```폴더로 이동한 후에 ```⌘``` + ```J``` (```View``` > ```Show View Options```)를 선택
 
 ### 날짜그룹 + 이름 정렬
-- - -
 파일 목록을 보여줄 때 날짜별로 그룹화 하고 그룹 내에서 이름으로 다시 정렬
 다운로드 폴더 특성상 최근에 받은 파일들을 찾는 경우가 많으므로 유용함
 > ```Group By```: Date added
 
 > ```Sort By```: Name
 
-
 ## 4. 필수 프로그램
-- - -
 시스템 설정을 완료했으니, 개발 환경 구축을 위한 필수 프로그램을 설치
 
 ### Xcode
-- - -
 macOS에는 기본적으로 ```gcc```, ```make```와 같은 컴파일 도구가 설치되어 있지 않기 때문에 명령어 도구<sub>Command Line Tools</sub>를 설치해야 한다. 예전에는 Xcode를 전체 설치하고, 추가로 명령어 도구를 설치해야 했으나 Xcode용량이 꽤 크고 모든 사람이 IDE가 필요한 게 아니기 때문에 명령어 도구만 따로 설치할 수 있게 변경.
 
 #### 설치
-> ```terminal
-xcode-select --install ```
+> xcode-select --install
     
 #### 확인
-> ```terminal
+> ```
 $ gcc
-clang: error: no input files ```
+clang: error: no input files 
+```
 
 [Xcode 홈페이지](https://developer.apple.com/xcode/)
 
 
 ### homebrew
-- - -
 각종 커맨드라인 프로그램을 손쉽게 설치해주는 맥용 패키지 매니저. 리눅스의 ```apt```나 ```yum```과 비슷하다. 다양한 프로그램을 복잡한 빌드과정 없이 손쉽게 설치할 수 있고 업데이트, 관리도 간단하므로 쓰지 않을 이유가 없는 필수 프로그램.
 
 #### 설치
-
-> ```terminal
+> ``````terminal
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
+``````
 
 #### 확인
 > ```terminal
