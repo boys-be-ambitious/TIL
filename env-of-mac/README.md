@@ -62,7 +62,7 @@
 > ```Advanced``` &rightarrow; ```Show all filename extensions```: 체크함
 
 ## 3. Download Folder Option
-<img src = "../images/env_of_mac_7.png" width="250" height="200">
+<img src = "../images/env_of_mac_7.png">
 
 > ```Downloads```폴더로 이동한 후에 ```⌘``` + ```J``` (```View&rightarrow; ```Show View Options```)를 선택
 
@@ -126,14 +126,14 @@ macOS에 기본으로 설치되어 있는 Terminal 앱 대신 iTerm2를 터미�
     brew cask install iterm2
 
 #### 테마선택
-<img src = "../images/env_of_mac_8_2.png" width="640" height="585">
+<img src = "../images/env_of_mac_8_2.png">
 
 설치를 완료했으면 [3024 Night.itermcolors](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/3024%20Night.itermcolors) 파일을 오른쪽 버튼 누르고 다운 받거나 [여러 개의 테마](https://iterm2colorschemes.com/)를 둘러보고 맘에 드는 것을 고른다. 다운받은 파일을 더블 클릭하면 자동으로 ```iTerm Color Preset```에 추가.
 
 
 #### 테마적용
 
-<img src = "../images/env_of_mac_9.png" width="640" height="510">
+<img src = "../images/env_of_mac_9.png">
 
 > ```iTerm```을 실행하고 설정(```⌘``` + ```,```)창에서 ```Profiles``` 항목을 선택하고 ```Colors```탭을 선택.
 > 오른쪽 하단에 ```Color presets...```를 클릭하면 조금 전에 추가한 Relaxed preset을 선택할 수 있음.
@@ -196,7 +196,7 @@ agnoster 테마는 현재 디렉토리에서 Git의 상태를 알려준다. <br>
 https://github.com/naver/d2codingfont 에 들어가 폰트를 다운받은 후 최신버전을 설치해준다.
 
 
-<img src = "../images/env_of_mac_10.png" width="467" height="241">
+<img src = "../images/env_of_mac_10.png">
 
 아까와 마찬가지로 cmd + ,를눌러 환경설정에 들어간 후 상단 Profile -> Text로 진입한다음 change Font를 누른 후 D2Coding폰트를 선택한다.
 
@@ -300,7 +300,7 @@ JSON 결과를 이쁘게 보여주고 원하는 대로 편집할 수 있는 도�
 ### neofetch
 간단하게 시스템 상태를 보여준다.
 
-<img src = "../images/env_of_mac_12.png" width="500" height="320">
+<img src = "../images/env_of_mac_12.png">
 
     # 설치
     brew install neofetch
