@@ -196,7 +196,7 @@ agnoster 테마는 현재 디렉토리에서 Git의 상태를 알려준다. <br>
 https://github.com/naver/d2codingfont 에 들어가 폰트를 다운받은 후 최신버전을 설치해준다.
 
 
-<img src = "../images/env_of_mac_10.png" width="640" height="585">
+<img src = "../images/env_of_mac_10.png" width="467" height="241">
 
 아까와 마찬가지로 cmd + ,를눌러 환경설정에 들어간 후 상단 Profile -> Text로 진입한다음 change Font를 누른 후 D2Coding폰트를 선택한다.
 
