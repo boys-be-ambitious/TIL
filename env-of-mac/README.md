@@ -64,7 +64,7 @@
 > ```Advanced``` &rightarrow; ```Show all filename extensions```: 체크함
 
 ## 3. Download Folder Option
-<img src = "../images/env_of_mac_7.png">
+<img src = "../images/env_of_mac_7_.png">
 
 > ```Downloads```폴더로 이동한 후에 ```⌘``` + ```J``` (```View&rightarrow; ```Show View Options```)를 선택
 
