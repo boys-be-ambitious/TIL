@@ -80,11 +80,11 @@
 macOS에는 기본적으로 ```gcc```, ```make```와 같은 컴파일 도구가 설치되어 있지 않기 때문에 명령어 도구<sub>Command Line Tools</sub>를 설치해야 한다. 예전에는 Xcode를 전체 설치하고, 추가로 명령어 도구를 설치해야 했으나 Xcode용량이 꽤 크고 모든 사람이 IDE가 필요한 게 아니기 때문에 명령어 도구만 따로 설치할 수 있게 변경.
 
 #### 설치
-> xcode-select --install
+    xcode-select --install
     
 #### 확인
-> $ gcc
-> clang: error: no input files 
+    $ gcc
+    clang: error: no input files 
 
 [Xcode 홈페이지](https://developer.apple.com/xcode/)
 
@@ -93,11 +93,11 @@ macOS에는 기본적으로 ```gcc```, ```make```와 같은 컴파일 도구가 
 각종 커맨드라인 프로그램을 손쉽게 설치해주는 맥용 패키지 매니저. 리눅스의 ```apt```나 ```yum```과 비슷하다. 다양한 프로그램을 복잡한 빌드과정 없이 손쉽게 설치할 수 있고 업데이트, 관리도 간단하므로 쓰지 않을 이유가 없는 필수 프로그램.
 
 #### 설치
-> /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 #### 확인
-> $ brew doctor
-> Your system is ready to brew.
+    $ brew doctor
+    Your system is ready to brew.
 
 [Homebrew 홈페이지](https://brew.sh/) / [brew 명령어](https://docs.brew.sh/Manpage.html) / [brew 패키지 검색](https://formulae.brew.sh/)
 
@@ -105,15 +105,15 @@ macOS에는 기본적으로 ```gcc```, ```make```와 같은 컴파일 도구가 
 버전 관리 도구. (macOS에 기본으로 설치되어 있지만 최신 버전이 아니므로) brew를 이용해서 업데이트. git-lfs 는 Git Large File Storage로 용량이 큰 바이너리 파일을 git으로 관리할 때 유용하다. git 설치할 때 같이 설치. 보다 자세한 내용이 궁금하다면 [링크](https://github.com/boys-be-ambitious/TIL/tree/master/git)를 클릭하면 된다.
 
 #### 설치
-> brew install git git-lfs
+    brew install git git-lfs
 
 git 설치가 완료되었으면 개인정보를 설정.
 
 #### 설정
-> git config --global user.name "Your Name"
-> git config --global user.email "you@your-domain.com"
-> git config --global core.precomposeunicode true
-> git config --global core.quotepath false
+    git config --global user.name "Your Name"
+    git config --global user.email "you@your-domain.com"
+    git config --global core.precomposeunicode true
+    git config --global core.quotepath false
 
 
 ## 5. 터미널 설정
@@ -123,7 +123,7 @@ git 설치가 완료되었으면 개인정보를 설정.
 macOS에 기본으로 설치되어 있는 Terminal 앱 대신 iTerm2를 터미널 앱으로 사용. iTerm2는 기본 앱에 없는 다양한 기능이 있고 손쉽게 테마를 설정할 수 있음.
 
 #### 설치
-> brew cask install iterm2
+    brew cask install iterm2
 
 #### 테마선택
 <img src = "../images/env_of_mac_8_2.png" width="640" height="585">
@@ -133,7 +133,7 @@ macOS에 기본으로 설치되어 있는 Terminal 앱 대신 iTerm2를 터미�
 
 #### 테마적용
 
-<img src = "../images/env_of_mac_9.png" width="640" height="585">
+<img src = "../images/env_of_mac_9.png" width="640" height="510">
 
 > ```iTerm```을 실행하고 설정(```⌘``` + ```,```)창에서 ```Profiles``` 항목을 선택하고 ```Colors```탭을 선택.
 > 오른쪽 하단에 ```Color presets...```를 클릭하면 조금 전에 추가한 Relaxed preset을 선택할 수 있음.
@@ -158,7 +158,7 @@ iTerm2도 설치하고 테마도 설치했으니, 이젠 쉘을 바꿀 차례다
 
 macOS는 기본으로 Bash shell을 사용하고 있다. bash외에 csh, ksh, sh, tcsh, zsh 등을 내장하고 있다. 그 중 제일 잘 나가는 zsh을 설치하겠다. zsh에 설정 관리 프레임워크인 oh-my-zsh을 사용하여 이쁜 테마를 적용하고 여러 가지 플러그인을 설치해봅니다.
 
-      brew install zsh zsh-completions
+    brew install zsh zsh-completions
 
 그리고 zsh의 설정을 관리해주는 oh-my-zsh을 설치한다.
 
@@ -218,42 +218,43 @@ https://github.com/naver/d2codingfont 에 들어가 폰트를 다운받은 후 �
 
 agnoster테마를 적용한것을 기준으로하면
 
-        vi ~/.oh-my-zsh/themes/agnoster.zsh-theme
+    vi ~/.oh-my-zsh/themes/agnoster.zsh-theme
 
 
 theme파일을 연다.
 
-        build_prompt() {
-          RETVAL=$?
-          prompt_status
-          prompt_virtualenv
-          prompt_context
-          prompt_dir
-          prompt_git
-          prompt_bzr
-          prompt_hg
-          prompt_newline //이부분을 추가 꼭 순서 지켜서
-          prompt_end
-        }
+    build_prompt() {
+      RETVAL=$?
+      prompt_status
+      prompt_virtualenv
+      prompt_context
+      prompt_dir
+      prompt_git
+      prompt_bzr
+      prompt_hg
+      prompt_newline //이부분을 추가 꼭 순서 지켜서
+      prompt_end
+    }
         
 하단 buld_prompt를 찾아 꼭 prompt_end 위에 prompt_newline을 추가한다. 그다음 아래 코드를 추가한다.
 
-        prompt_newline() {
-          if [[ -n $CURRENT_BG ]]; then
-            echo -n "%{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR
-        %{%k%F{blue}%}$SEGMENT_SEPARATOR"
-          else
-            echo -n "%{%k%}"
-          fi
+    prompt_newline() {
+      if [[ -n $CURRENT_BG ]]; then
+        echo -n "%{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR
+    %{%k%F{blue}%}$SEGMENT_SEPARATOR"
+      else
+        echo -n "%{%k%}"
+      fi
 
-          echo -n "%{%f%}"
-          CURRENT_BG=''
-        }
+      echo -n "%{%f%}"
+      CURRENT_BG=''
+    }
 
 
 #### oh-my-zsh 팁
 
-zsh과 oh-my-zsh의 조합으로 강력한 쉘을 사용할 수 있게 되었다. 여기서 모든 기능을 설명할 순 없지만 자주 사용하는 몇 가지 팁을 소개한다.
+zsh과 oh-my-zsh의 조합으로 강력한 쉘을 사용할 수 있게 되었다. <br>
+여기서 모든 기능을 설명할 순 없지만 자주 사용하는 몇 가지 팁을 소개한다.
 
 - 명령어가 기억나지 않으면 tab을 누르자.
 - cd ../.. 대신 ..., ...., ....., …
@@ -261,11 +262,9 @@ zsh과 oh-my-zsh의 조합으로 강력한 쉘을 사용할 수 있게 되었다
 
 
 ## 6. 추천 애플리케이션
-- - -
 기본적인 프로그램 외에 사용하면 꽤 쓸만한 프로그램을 소개한다.
 
 ### docker
-
 <img src = "../images/env_of_mac_11.png" width="640" height="585">
 
 따로 소개할 필요가 없을 정도로 유명한 가상화 프로그램이다. MySQL, Redis, Oracle과 같은 데이터베이스나 rails, php 개발 환경까지 두루두루 사용하고 있다. 하나의 개발 PC에 여러 버전의 MySQL이나 Redis를 설치하는 건 쉽지 않은데 docker를 사용하면 쉽고 간단하게 개발환경을 구축할 수 있다.
@@ -276,12 +275,14 @@ docker에 대한 자세한 내용은 [여기](https://subicura.com/2017/01/19/do
 
 ### jq
 
-JSON 결과를 이쁘게 보여주고 원하는 대로 편집할 수 있는 도구이다. 간단하게 필터를 적용하여 원하는 항목만 볼 수 있고 특정 결과를 다른 형태로 변경할 수 있다.
+JSON 결과를 이쁘게 보여주고 원하는 대로 편집할 수 있는 도구이다.<br>
+간단하게 필터를 적용하여 원하는 항목만 볼 수 있고 특정 결과를 다른 형태로 변경할 수 있다.
 
 [jq github](https://stedolan.github.io/jq/)
 
 ### ngrok
-로컬 서버를 외부로 터널링을 통해 오픈해주는 도구이다. 보통 로컬에 개발 서버를 띄우면 외부에서 접근하기가 어려운데 ngrok을 이용하여 간단하게 오픈할 수 있다. 사용법도 간단하다.
+로컬 서버를 외부로 터널링을 통해 오픈해주는 도구이다. <br>
+보통 로컬에 개발 서버를 띄우면 외부에서 접근하기가 어려운데 ngrok을 이용하여 간단하게 오픈할 수 있다. 사용법도 간단하다.
 
 [ngrok 홈페이지](https://ngrok.com/)
 
@@ -298,7 +299,8 @@ JSON 결과를 이쁘게 보여주고 원하는 대로 편집할 수 있는 도�
 
 ### neofetch
 간단하게 시스템 상태를 보여준다.
-<img src = "../images/env_of_mac_12.png" width="640" height="585">
+
+<img src = "../images/env_of_mac_12.png" width="640" height="510">
 
     # 설치
     brew install neofetch
@@ -308,7 +310,7 @@ JSON 결과를 이쁘게 보여주고 원하는 대로 편집할 수 있는 도�
 
 
 
-### References
+## 7.References
 - - -
 많은 선배님들의 좋은 포스트가 있었기에 그래도 수월하게 셋업을 마칠 수 있었다. <br>
 아래 포스트들을 많이 참고하였으며, 조금 더 발전시킬 수 있을 것 같은 부분은 발전시켜 포스팅하였다.<br>
@@ -321,8 +323,3 @@ JSON 결과를 이쁘게 보여주고 원하는 대로 편집할 수 있는 도�
 
 
 이외에도 많은 자료들을 참고하였으며 가능한 한 해당 글/자료들의 링크를 포스트에 첨부시켜 놓았다.
-
-
-```
-```
-&rightarrow;
