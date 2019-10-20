@@ -43,28 +43,28 @@
 
 ### 모든 텍스트 자동 변경 옵션 끄기
 입력한 단어를 컴퓨터 마음대로 바꾸는 걸 방지
-> ```Keyboard``` > ```Text```: 모든 자동 변경 옵션(Correct spelling automatically, Capitalize words automatically, Use smart quotes and dashes) 해제
+> ```Keyboard``` &rightarrow; ```Text```: 모든 자동 변경 옵션(Correct spelling automatically, Capitalize words automatically, Use smart quotes and dashes) 해제
 
 
 ## 2. Finder Preference
 <img src = "../images/env_of_mac_6.png" width="450" height="425">
 
-> ```Finder```실행한 후에 ```⌘``` + ```,``` (```Finder``` $\rightarrow$ ```Preferences...```)를 선택
+> ```Finder```실행한 후에 ```⌘``` + ```,``` (```Finder``` &rightarrow; ```Preferences...```)를 선택
 
 ### 파인더 기본 폴더 설정
 파인더 최초 실행 시 버벅임이 없도록 기본 폴더를 홈 폴더로 설정
 
-> ```General``` $\rightarrow$ ```New Finder windows show: seokhyeonjang (본인 맥의 home folder를 선택)```
+> ```General``` &rightarrow; ```New Finder windows show: seokhyeonjang (본인 맥의 home folder를 선택)```
 
 ### 파일 확장자 보여주기
 모든 파일의 확장자를 보여줌
 
-> ```Advanced``` $\rightarrow$ ```Show all filename extensions```: 체크함
+> ```Advanced``` &rightarrow; ```Show all filename extensions```: 체크함
 
 ## 3. Download Folder Option
 <img src = "../images/env_of_mac_7.png" width="250" height="200">
 
-> ```Downloads```폴더로 이동한 후에 ```⌘``` + ```J``` (```View``` > ```Show View Options```)를 선택
+> ```Downloads```폴더로 이동한 후에 ```⌘``` + ```J``` (```View&rightarrow; ```Show View Options```)를 선택
 
 ### 날짜그룹 + 이름 정렬
 파일 목록을 보여줄 때 날짜별로 그룹화 하고 그룹 내에서 이름으로 다시 정렬
@@ -83,10 +83,8 @@ macOS에는 기본적으로 ```gcc```, ```make```와 같은 컴파일 도구가 
 > xcode-select --install
     
 #### 확인
-> ```
-$ gcc
-clang: error: no input files 
-```
+> $ gcc
+> clang: error: no input files 
 
 [Xcode 홈페이지](https://developer.apple.com/xcode/)
 
@@ -95,50 +93,37 @@ clang: error: no input files
 각종 커맨드라인 프로그램을 손쉽게 설치해주는 맥용 패키지 매니저. 리눅스의 ```apt```나 ```yum```과 비슷하다. 다양한 프로그램을 복잡한 빌드과정 없이 손쉽게 설치할 수 있고 업데이트, 관리도 간단하므로 쓰지 않을 이유가 없는 필수 프로그램.
 
 #### 설치
-> ``````terminal
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-``````
+> /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 #### 확인
-> ```terminal
-$ brew doctor
-Your system is ready to brew.
-```
+> $ brew doctor
+> Your system is ready to brew.
 
 [Homebrew 홈페이지](https://brew.sh/) / [brew 명령어](https://docs.brew.sh/Manpage.html) / [brew 패키지 검색](https://formulae.brew.sh/)
 
 ### git
-- - -
 버전 관리 도구. (macOS에 기본으로 설치되어 있지만 최신 버전이 아니므로) brew를 이용해서 업데이트. git-lfs 는 Git Large File Storage로 용량이 큰 바이너리 파일을 git으로 관리할 때 유용하다. git 설치할 때 같이 설치. 보다 자세한 내용이 궁금하다면 [링크](https://github.com/boys-be-ambitious/TIL/tree/master/git)를 클릭하면 된다.
 
 #### 설치
-> ```terminal
-brew install git git-lfs
-```
+> brew install git git-lfs
 
 git 설치가 완료되었으면 개인정보를 설정.
 
 #### 설정
-> ```terminal
-git config --global user.name "Your Name"
-git config --global user.email "you@your-domain.com"
-git config --global core.precomposeunicode true
-git config --global core.quotepath false
-```
+> git config --global user.name "Your Name"
+> git config --global user.email "you@your-domain.com"
+> git config --global core.precomposeunicode true
+> git config --global core.quotepath false
 
 
 ## 5. 터미널 설정
-- - -
 시스템 설정도 하고 필수 프로그램도 설치했으니, 본격적으로 터미널을 설정해본다.
 
 ### iTerm2
-- - -
 macOS에 기본으로 설치되어 있는 Terminal 앱 대신 iTerm2를 터미널 앱으로 사용. iTerm2는 기본 앱에 없는 다양한 기능이 있고 손쉽게 테마를 설정할 수 있음.
 
 #### 설치
-> ```terminal
-brew cask install iterm2
-```
+> brew cask install iterm2
 
 #### 테마선택
 <img src = "../images/env_of_mac_8_2.png" width="640" height="585">
@@ -155,34 +140,32 @@ brew cask install iterm2
 
 #### 추가설정
 - 타이틀바 배경색 어둡게 변경
-> ```Appearance``` > ```Theme```: Dark
+  > ```Appearance&rightarrow; ```Theme```: Dark
 
 - 스크롤바 감추기
-> ```Appearance``` > ```Hide scrollbars```: 체크
+  > ```Appearance``` &rightarrow; ```Hide scrollbars```: 체크
 
 - 타이틀바 밑에 1px 라인 제거
-> ```Appearance``` > ```Show line under title bar when the tab bar is not visible```: 체크 안함
+  > ```Appearance``` &rightarrow; ```Show line under title bar when the tab bar is not visible```: 체크 안함
 
 - 마진 수정
-> ```Advanced``` > ```Height of top and bottom margins in terminal panes```: 10 <br>
-> ```Advanced``` > ```Width of left and right margins in terminal panes```: 12
+  > ```Advanced``` &rightarrow; ```Height of top and bottom margins in terminal panes```: 10 <br>
+  > ```Advanced``` &rightarrow; ```Width of left and right margins in terminal panes```: 12
 
 
 ### zsh
-- - -
 iTerm2도 설치하고 테마도 설치했으니, 이젠 쉘을 바꿀 차례다.
 
 macOS는 기본으로 Bash shell을 사용하고 있다. bash외에 csh, ksh, sh, tcsh, zsh 등을 내장하고 있다. 그 중 제일 잘 나가는 zsh을 설치하겠다. zsh에 설정 관리 프레임워크인 oh-my-zsh을 사용하여 이쁜 테마를 적용하고 여러 가지 플러그인을 설치해봅니다.
 
-        brew install zsh zsh-completions
+      brew install zsh zsh-completions
 
 그리고 zsh의 설정을 관리해주는 oh-my-zsh을 설치한다.
 
-         sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
                   
-설치스크립트를 실행하면 관련 파일을 설치하고 패스워드를 물어본다. 계정의 패스워드를 입력하면 기본쉘을 자동으로 bash에서 zsh로 변경해준다.
-
-
+설치스크립트를 실행하면 관련 파일을 설치하고 패스워드를 물어본다.<br>
+계정의 패스워드를 입력하면 기본쉘을 자동으로 bash에서 zsh로 변경해준다. <br>
 이미 터미널이 상당히 이쁘게 변해있을 것이다. 하지만 더 강력하게 만들기 위해선 몇가지 과정이 더 필요하다.
 
 #### 플러그인
@@ -190,24 +173,25 @@ macOS는 기본으로 Bash shell을 사용하고 있다. bash외에 csh, ksh, sh
 oh-my-zsh의 가장 강력한 점은 플러그인이다. 기본 플러그인 외에 명령어 하이라이팅 플러그인 zsh-syntax-highlighting과 자동완성 플러그인 zsh-autosuggestions을 설치한다.
 
 
-        # zsh-syntax-highlighting
-        git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    # zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-        # zsh-autosuggestions
-        git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+    # zsh-autosuggestions
+    git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
 
 플러그인을 설치하면 반드시 ~/.zshrc파일에 설정을 해야한다. 파일을 열고 plugins항목에 플러그인을 추가한다.
 
 #### 테마
+agnoster 테마는 현재 디렉토리에서 Git의 상태를 알려준다. <br>
+이 기능은 보이는 것보다 아주 강력해서 현재 마스터 브랜치인지 개발 브랜치인지 혹은 커밋은 까먹고 하지 않았는지 등을 자연스레 알려준다.
 
-agnoster 테마는 현재 디렉토리에서 Git의 상태를 알려준다. 이 기능은 보이는 것보다 아주 강력해서 현재 마스터 브랜치인지 개발 브랜치인지 혹은 커밋은 까먹고 하지 않았는지 등을 자연스레 알려준다.
-
-```zshrc``` 설정 파일에 진입 &rightarrow; ```ZSH_THEME```=”agnoster”로 수정. <br>
+> ```zshrc``` 설정 파일에 진입 &rightarrow; ```ZSH_THEME```=”agnoster”로 수정. <br>
 그 다음 저장을해준 후 터미널을 나온 다음 zshrc파일을 적용(source ~/.zshrc)시킨다
 
 
-그럼 폰트가 깨지는 모습을 볼 수 있다. D2 코딩 폰트를 사용하길 권장한다. 참고로 코딩용 폰트이 중요성은 이 [링크](https://ppss.kr/archives/66633)를 통해 읽어볼 수 있다.
+그럼 폰트가 깨지는 모습을 볼 수 있다. D2 코딩 폰트를 사용하길 권장한다. <br>
+참고로 코딩용 폰트이 중요성은 이 [링크](https://ppss.kr/archives/66633)를 통해 읽어볼 수 있다.
 
 https://github.com/naver/d2codingfont 에 들어가 폰트를 다운받은 후 최신버전을 설치해준다.
 
@@ -218,11 +202,11 @@ https://github.com/naver/d2codingfont 에 들어가 폰트를 다운받은 후 �
 
 3024Night과 D2를 적용한다면 터미널이 몰라보게 이뻐진다. 불필요한 몇 가지가 더 있는데 이름 부분에 계속 나오는 macbook-pro부분도 지워보겠다. 조금 전 ~/.zshrc파일로 다시 들어가 하단에 아래와 같이 추가해준다.
 
-        prompt_context() {
-          if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-            prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
-          fi
-        }
+    prompt_context() {
+      if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+        prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+      fi
+    }
 
 이렇게하면 사용자 이름만 변경되고 아무 것도 나오게 하고 싶지 않다면 중괄호안의 내용을 지우고 {}로만 놔둔다.
 
