@@ -1,4 +1,4 @@
-# 별것 아니지만 도움이 되는 : GitHub 블로그 (Pages) 만들기
+# 별것 아니지만 도움이 되는 : GitHub Pages (블로그) 만들기
 
 
 <b> Jekyll를 설치하여, 쉽고 빠르게 나만의 Blog 만들기 </b>
