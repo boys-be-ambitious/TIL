@@ -148,14 +148,17 @@ README.md는 만든 저장소의 설명서라고 생각하면 쉽다(설명 : �
 <img src = "../images/github_pages_15.png">
 
 - 터미널을 통해 GitHub 저장소와 연동된 로컬 디렉토리로 이동한 뒤, 아래와 같이 따라서 입력하면 된다.
+
 <br><br>
 
 
+    
     git clone
     git add -A
     git commit -m "commit github-pages theme"
     git push -u origin master
     
+
 <img src = "../images/github_pages_16.png">
 
 여기까지 했으면 절반은 완성했다. 이제 자신의 블로그를 어떻게 커스텀할 것인지 정해야 한다(GitHub Pages의 Theme는 거의 비슷한 구조를 가지고 있다).
