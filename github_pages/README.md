@@ -124,6 +124,7 @@ README.md는 만든 저장소의 설명서라고 생각하면 쉽다(설명 : �
 
 
 <img src = "../images/github_pages_13.png">
+
 > <span style="color:#FE2E64"><b>tale</b></span> 이라는 theme를 선택했다.
 
 
@@ -146,7 +147,8 @@ README.md는 만든 저장소의 설명서라고 생각하면 쉽다(설명 : �
 
 <img src = "../images/github_pages_15.png">
 
-- 터미널을 통해 GitHub 저장소와 연동된 로컬 디렉토리로 이동한 뒤, 아래와 같이 따라서 입력하면 된다.<br><br>
+- 터미널을 통해 GitHub 저장소와 연동된 로컬 디렉토리로 이동한 뒤, 아래와 같이 따라서 입력하면 된다.
+<br><br>
 
 
     git clone
