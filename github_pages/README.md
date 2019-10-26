@@ -1,13 +1,10 @@
 # 별것 아니지만 도움이 되는 : GitHub Pages (블로그) 만들기
 
-#### 우리가 최종적으로 만들어 볼 페이지는 아래와 같다.
-<img src = "../images/github_pages_13.png">
-
-
-<b> Jekyll를 설치하여, 쉽고 빠르게 나만의 Blog 만들기 </b>
-
+#### Jekyll를 설치하여, 쉽고 빠르게 나만의 Blog 만들기
 포트폴리오를 정리할 겸, Github Pages를 만들어 보려고 한다. [Jekyll 공식 사이트](https://jekyllrb-ko.github.io/)에 나와 있는 빠른 시작 방법을 참고했다.
 
+#### 우리가 최종적으로 만들어 볼 페이지는 아래와 같다.
+<img src = "../images/github_pages_13.png">
 
 ## Jekyll 설치를 위한 환경 만들기
 - macOS Catalina를 기준(19.10.20)으로 작성했다.
