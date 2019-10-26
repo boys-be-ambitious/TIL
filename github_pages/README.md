@@ -110,7 +110,7 @@ README.md는 만든 저장소의 설명서라고 생각하면 쉽다(설명 : �
 <img src = "../images/github_pages_11.png">
 
 ### 3.1. Blog 테마 설정
-아래의 링크에 들어가서 적용하고 싶은 Blog의 Themes를 확인할 수 있다(블로그의 테마를 고른다고 생각하면 된다).
+아래의 링크에 들어가면 Github Pages에 적용할 수 있는 Theme를 확인할 수 있다(마음에 드는 블로그의 테마를 고른다고 생각하면 된다).
 - 인기 순으로 정렬 (무료) : https://github.com/topics/jekyll-themes
 - 유료 : https://jekyllthemes.io
 - 무료 : http://jekyllthemes.org
@@ -120,11 +120,11 @@ README.md는 만든 저장소의 설명서라고 생각하면 쉽다(설명 : �
 각 페이지에 들어가면 데모를 확인할 수 있다(잘 모르겠다면 `Ctrl`+`F`키를 눌러서 Demo라고 검색하면 URL들이 보일 것이다).
 
 
-> <span style="color:#FE2E64"><b> 경고! </b> </span> : 심플한 Theme을 사용하는 것이 추천한다. 멋지고 화려한 Theme를 선택하고 싶은 유혹이 크지만 그런 테마일수록 구조가 복잡해서, 까딱 잘못 건드렸다가 예상하지 못한 에러들이 발생하는데 `에러 났는데, 그게 뭔지는 안 알랴줌ㅋ 잘 찾아보삼 수고 ㅎ` 형태라 본인의 정신건강을 위해 추천하지 않는다.
+> <span style="color:#FE2E64"><b> 경고! </b> </span> : 심플한 Theme을 사용하는 것을 추천한다. 멋지고 화려한 Theme를 선택하고 싶은 유혹이 크겠지만 그런 테마일수록 구조가 복잡해서, 까딱 잘못 건드렸다가 예상하지 못한 에러들이 발생하는데 `에러 났는데, 그게 뭔지는 안 알랴줌ㅋ 잘 찾아보삼 수고 ㅎ` 형태라 본인의 정신건강을 위해 추천하지 않는다.
 
 
 <img src = "../images/github_pages_13.png">
-<span style="color:#FE2E64"><b>tale</b></span> 이라는 theme를 선택했다.
+> <span style="color:#FE2E64"><b>tale</b></span> 이라는 theme를 선택했다.
 
 
 
