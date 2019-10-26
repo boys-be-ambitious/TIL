@@ -1,7 +1,7 @@
 # 별것 아니지만 도움이 되는 : GitHub Pages (블로그) 만들기
 
 #### 우리가 최종적으로 만들어 볼 페이지는 아래와 같다.
-<img src = "../images/github_pages_14_.png">
+<img src = "../images/github_pages_13.png">
 
 
 <b> Jekyll를 설치하여, 쉽고 빠르게 나만의 Blog 만들기 </b>
