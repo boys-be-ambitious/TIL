@@ -6,7 +6,7 @@
 #### 우리가 최종적으로 만들어 볼 페이지는 아래와 같다.
 <img src = "../images/github_pages_13.png">
 
-## Jekyll 설치를 위한 환경 만들기
+## Step 1. Jekyll 설치를 위한 환경 만들기
 - macOS Catalina를 기준(19.10.20)으로 작성했다.
 
 
@@ -68,7 +68,7 @@
 <img src = "../images/github_pages_1.png">
 
 
-## 2. GitHub에 Jekyll 블로그 올리고, Publishing 하기 
+## Step 2. GitHub에 Jekyll 블로그 올리고, Publishing 하기 
 로컬에서 만든 Jekyll 테마의 블로그 폴더를 올릴 것이다. 그리고 GitHub Pages로 Jekyll 블로그를 호스팅하여 http://username.github.io/ 로 접속하기까지 진행해볼 예정이다.
 
 
