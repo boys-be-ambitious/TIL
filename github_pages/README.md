@@ -191,3 +191,14 @@ Jekyll의 기본 구조는 다음과 같다.
 
 
 > <span style="color:#FE2E64"><b> 주의사항! </b> </span> : 본인이 선택한 Theme의 `README.md`를 읽고, `_config.yml`에 들어가서 기본설정을 하고 https://본인의githubusername.github.io 로 들어가서 제대로 적용이 되었는지 확인해보자. 저장소에 반영한 다음에 5~10분 정도 후에 들어갔을 때, 홈페이지가 제대로 보인다면 성공이다(그렇지 않다면 당신은 어딘가 놓친 부분이 있을 것이다). 천천히 따라해보자 (하다가 막혀서 정 못하겠으면 메일로 문의를...).
+
+
+
+## Reference
+본 글은 아래에 나와 있는 링크에 나온 내용을 토대로 참고하여 작성하였다.
+
+- [쉽고 빠르게 수준 급의 GitHub 블로그 만들기 - jekyll remote theme으로](https://dreamgonfly.github.io/2018/01/27/jekyll-remote-theme.html)
+- [블로그 만들기 GitHub 편 총정리](https://blog.chulgil.me/how-to-make-blog-using-github/)
+- [Github Blog 빠르게 만들기](https://devmjun.github.io/archive/CreatGithubBlog)
+- [본격적으로 Jekyll Theme 커스터마이징하기](http://jihyeleee.com/blog/third-designer-can-make-jekyll-blog/)
+- [Github-page로-블로그-만들기.md](https://github.com/gjchoi/gjchoi.github.io/blob/master/_posts/2016-02-18-Github-page%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
